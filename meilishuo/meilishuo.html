@@ -1,0 +1,1270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>美丽说</title>
+<link rel="stylesheet" href="css/base.css" />
+<style>
+/*头部上方*/
+.head_t{ height:38px; background:#F5F5F5; border-bottom:1px solid #EEEEEE;}
+.head_box{ width:1200px; margin:0 auto; padding:10px 0 0 596px;}
+.wenxi{float:left; color:#666666; padding:0 16px 0 19px; border-right:1px dashed #CBCBCB;}
+.pic_1{ width:17px; height:17px; background:url(img/mls_global140607.png) no-repeat 0 -20px; float:left; padding-right:6px;}
+.pic_2 { width:17px; height:17px; background:url(img/mls_global140607.png) no-repeat -188px -20px; float:left; padding-right:5px;}
+.pic_3{width:17px; height:17px; background:url(img/mls_global140607.png) no-repeat 0 -162px; float:left; padding-right:6px;}
+.pic_4 {width:17px; height:17px; background:url(img/mls_global140607.png) no-repeat -222px -45px; float:left; padding-right:6px;}
+.pic_4 {width:17px; height:17px; background:url(img/mls_global140607.png) no-repeat -170px -45px; float:left; padding-right:6px;}
+.wenxi:hover{color:#F09;}
+.buy_hua{ height:15px; background:url(img/gouwu_c.png) repeat-x; color:#FFF; position:relative; display:inline-block; float:left;}
+.buy_l{ width:5px; height:15px; background:url(img/gouwu_l.png) no-repeat; position:absolute; left:-5px; top:0;}
+.buy_r{ width:5px; height:15px; background:url(img/gouwu_r.png) no-repeat; position:absolute; right:-5px; top:0;}
+/*logo*/
+.logo_box{width:1200px; height:36px; margin:15px auto; background:url(img/logo_n4.png) no-repeat; position:relative;}
+.input_box{ width:370px;; height:30px; border:2px solid #EE5F8F; margin-left:360px; padding-left:70px; outline:none;}
+.search{ width:20px; height:20px; background:url(img/mls_global140607.png) no-repeat 0 -68px; position:absolute; top:10px; left:418px;}
+.baobei{ position:absolute; top:10px; left:361px;}
+.searche_btn{ width:92px; height:36px; background:#EE5F8F; line-height:36px; text-align:center; position:absolute; left:802px; top:0; font-size:14px; color:#FFF; font-weight:bold;}
+/*导航栏*/
+.nav{ height:40px; background:#FF6599; margin-top:15px;}
+.nav_box{ width:1075px; margin:0 auto; padding-left:125px; }
+.nav_a{ height:40px; padding:0 15px 0 14px; line-height:40px; font-size:14px; color:#FFFFFF; display:block;}
+.nav_a:hover{ background:#ED3577;}
+.nav_aone{height:40px; padding:0 15px 0 14px; line-height:40px; font-size:14px; color:#FFFFFF; background:#ED3577; display:inline-block; }
+/*page_1*/
+.page_1{ height:578px; background:url(img/linzhiling.jpg) no-repeat center 0; position:relative;}
+.page1_box{width:1200px; margin:0 auto;height:200px; position:relative;}
+/*page_1左*/
+.page1_lul{width:218px; height:572px;border:1px solid #E6E6E6; padding-left:20px; position:absolute;top:0;left:0; background:#FFF; }
+.page1_li{ width:198px; height:105px; border-bottom:1px dashed #CBCBCB; position:relative;}
+.page1_lilast{width:198px; height:68px;position:relative;}
+.page1_lh3{ font-size:16px; color:#FF6699; margin-top:14px; font-weight:bold;}
+.page1_a{ color:#666666; float:left;position:relative; margin:12px 15px 0 0;}
+.copink{ color:#FF6699;}
+.jiantou{ position:absolute; top:50%; right:0;}
+.hovera_box{ position:absolute; left:218px;top:-15px; border:1px solid blue; width:339px; height:298px; padding-left:20px; border:1px solid #E6E6E6; border-left:none; display:none; background:#FFF; z-index:2;}
+.hover_li{ width:308px;}
+.hover_litit{margin-top:15px; font-size:14px; color:#666666; font-weight:bold;}
+.hover_list{ float:left; margin:9px 16px 0 0; color:#666666;}
+.page1_li:hover .hovera_box{ display:block;}
+.page1_lilast:hover .hovera_box{ display:block;}
+/*page_1右*/
+.page1_rul{ position:absolute;top:0; right:0;background:#FFF;}
+.page1_ra{border-bottom:1px solid #E6E6E6;}
+/*page_1右下*/
+.page1_rbul{ position:absolute;top:430px;left:240px; background:#FFF;}
+.page1_rbli{border-bottom:1px solid #E6E6E6; padding-left:12px; float:left;}
+.jizhongyin{display:block;}
+/*page_2*/
+.page2_box{width:1200px; margin:0 auto;}
+.page2_ttitle{ font-size:20px; font-weight:bold; margin-top:20px; background:url(img/star.png) no-repeat; padding-left:39px;}
+.page2_tul{ margin-top:8px; border-top: 1px solid #E6E6E6;}
+.page2_tli{ width:180px; float:left; margin-right:24px;}
+.page2_tli_last{ width:180px; float:left; }
+.meinv{margin-top:15px;}
+.page2_ta{ margin-top:10px; color:#666666; display:block;}
+.page2_ta:hover{color:#F09;}
+.price_now{ margin-top:28px; color:#FF6699; font-size:14px; padding-bottom:12px; border-bottom:1px dashed #CBCBCB;}
+.price_before{ color:#999999; font-size:12px; text-decoration:line-through; }
+.buy_num{ color:#666666; margin-top:10px;}
+.look{ float:right; color:#999999; font-size:12px;}
+.look:hover{color:#F09;}
+/*page_3*/
+.page3_box{width:1200px; margin:0 auto; margin-top:43px;}
+.page3_title{ color:#FF6699; font-size:20px; font-weight:bold; background:url(img/yifu.png) no-repeat; padding-left:39px; margin-top:20px;}
+.new_play{ font-size:14px; padding-left:9px; border-left:1px dashed #CCCCCC; color:#999999;}
+.page3_ltul{ height:533px;}
+.page3_lul{ width:940px; border-top:1px solid #E6E6E6; padding-top:20px; margin-top:10px; float:left;}
+.page3_lli{ float:left; margin:0 5px 5px 0;}
+/*page_3右*/
+.page3_rul{ float:left; border: 1px solid #E6E6E6; margin-top:10px; border-right:none; padding-left:20px;}
+.page3_rli{ width:239px; height:62px;border-bottom:1px dashed #CBCBCB;}
+.page3_rlilast{width:239px; height:62px;}
+.page3_rh3{ font-size:16px; font-weight:bold; color:#666666; margin-top:20px;}
+.li_div{ float:left; margin:15px 0 0 12px;}
+.page3_lipic{ border:1px solid #E6E6E6; float:left;margin-top:15px;}
+.rli_a{ color:#666666;}
+.rli_a:hover{ color:#F09;}
+.xiaoliang{ color:#999999; margin-top:10px;}
+/*page_3左下*/
+.page3_lbul{ width:940px; height:51px; border-bottom:1px solid #E6E6E6;}
+.page3_lbli{ width:312px;  border-right:1px dashed #CCCCCC; float:left;}
+.lbli_la{ color:#FF6699;  font-size:16px; float:left; margin:14px 19px 0 12px;}
+.lbli_div{ width:248px; float:left;}
+.lbli_diva{color:#666666; padding-right:11px;padding-bottom:10px; display:block;}
+.lbli_diva:hover{color:#F09;}
+.page3_lblilast{float:left;}
+/*page_4*/
+.page4_box{width:1200px; margin:0 auto;margin-top:21px; height:321px;}
+.page4_title{ height:21px;color:#FF6699; font-size:20px; font-weight:bold; background:url(img/zazhi.png) no-repeat; padding-left:35px;  float:left;} 
+.page4_tita{ font-size:12px; color:#999999; padding:0 14px 0 17px; border-right:1px dashed #CCCCCC;}
+.brnone{ border-right:none;}
+.page4_tita:hover{color:#F09;}
+.page4_div{ width:226px; height:283px; border:1px solid #DDDDDD; margin-top:15px; position:relative; float:left; margin-right:15px;}
+.page4_divlast{ width:226px; height:283px; border:1px solid #DDDDDD; margin-top:15px; position:relative; float:left; }
+.page4_h3{ font-size:14px; font-weight:bold; color:#666666; margin:12px 0 0 13px;}
+.page4_ul{ padding:11px 0 0 13px;}
+.page4_li{ margin:0 4px 4px 0; float:left;}
+.share{ color:#999999; margin:14px 0 0 14px;}
+.go_look{ width:64px; height:20px; background:#FF6699; color:#FFF; line-height:20px; text-align:center; display:inline-block;position:absolute; bottom:10px; right:13px;}
+/*尾部*/
+.footer{ height:311px; border-top:1px solid #DDDDDD; margin-top:20px; background:#F5F5F5;}
+.tel_pic{ width:35px; height:35px; background:url(img/mls_global140607.png) no-repeat 0 -116px; position:absolute; top:36px; left:0;}
+.foot_li{padding:30px 0 0 50px; float:left;position:relative;}
+.foot_t{ height:210px; width:1200px; margin:0 auto; border-bottom: 1px solid #E6E6E6; }
+.tel{ font-size:20px; font-weight:bold; color:#666666;} 
+.rexian{ font-size:14px; color:#666666; margin-top:14px;}
+.help{ font-size:16px; font-weight:bold; color:#666666; margin-bottom:15px;}
+.new_use{ margin-top:14px;color:#666666; display:block;}
+.new_use:hover{ color:#F09;}
+.weixin_pic{ width:17px; height:17px; background:url(img/mls_global140607.png) no-repeat 0 -21px;float:left;}
+.qq_pic{width:20px; height:20px; background:url(img/mls_global140607.png) no-repeat -72px -21px;float:left;}
+.weibo_pic{width:20px; height:20px; background:url(img/mls_global140607.png) no-repeat -24px -21px;float:left;}
+.foot_lilast{padding-top:30px; float:right;}
+.down_pic{width:133px; height:97px; background:url(img/mls_global140607.png) no-repeat 0 -401px;}
+.foot_link{  width:1200px;height:30px; border-bottom: 1px solid #E6E6E6; margin:0 auto; line-height:30px; color:#666666; }
+.linklist:hover{color:#F09;}
+.linklist{ color:#666666; padding-left:11px;}
+.foot_b{width:1200px; margin:15px auto 0;}
+.foot_p{ float:left; color:#999; padding-right:8px; margin-bottom:8px; }
+.foot_a{ float: left; color:#666;padding-right:8px; margin-bottom:8px; }
+.foot_a:hover{color:#F09;}
+</style> 
+</head>
+<body>
+<!--头部上方-->
+<div class="head_t clearfix">
+	<div class="head_box">
+    <a  href="#" class="wenxi"><span class="pic_1"></span>微信登陆</a>
+    <a  href="#" class="wenxi"><span class="pic_2"></span>QQ登陆</a>
+    <a  href="#" class="wenxi">登陆</a>
+    <a  href="#" class="wenxi">注册</a>
+    <a  href="#" class="wenxi"><span class="pic_3"></span>我的购物车
+    	<a href="#" class="buy_hua">
+        <i class="buy_l"></i>
+        0
+        <i class="buy_r"></i>
+        </a>
+    </a>	
+    <a  href="#" class="wenxi"><span class="pic_4"></span>我的订单</a>
+    <a  href="#" class="wenxi"><span class="pic_5"></span>下载APP</a>
+    <a  href="#" class="wenxi brnone">客户服务</a>
+    </div>
+ </div>   
+<!--logo-->
+<h1 class="logo_box"> 
+	<input type="text" placeholder="搜流行商品" class="input_box"/>
+    <select class="baobei">
+    	<option selected="selected">宝贝</option>
+    </select>
+    <span class="search"></span>
+    <a href="#" class="searche_btn">搜索</a>
+</h1>
+<!--导航栏-->
+<div class="nav">
+	<ul class="nav_box clearfix">
+    	<li class="fl"><a href="#" class="nav_aone">首页</a></li>
+        <li class="fl"><a href="#" class="nav_a">今日最热</a></li>
+        <li class="fl"><a href="#" class="nav_a">衣服</a></li>
+        <li class="fl"><a href="#" class="nav_a">鞋子</a></li>
+        <li class="fl"><a href="#" class="nav_a">包包</a></li>
+        <li class="fl"><a href="#" class="nav_a">配饰</a></li>
+        <li class="fl"><a href="#" class="nav_a">美妆</a></li>
+        <li class="fl"><a href="#" class="nav_a">特卖</a></li>
+        <li class="fl"><a href="#" class="nav_a">团购</a></li>
+        <li class="fl"><a href="#" class="nav_a">好店</a></li>
+        <li class="fl"><a href="#" class="nav_a">杂志</a></li>
+        <li class="fl"><a href="#" class="nav_a">爱美丽CLUB</a></li>
+    </ul>
+</div>
+<!--page_1-->
+<!--page_1左-->
+<div class="page_1">
+	<div class="page1_box">
+        <ul class="page1_lul">
+               <li class="page1_li"> 
+                <a href="#"  class="jiantou">&gt;</a> 
+                	<ul class="hovera_box">
+                    	<li class="hover_li clearfix">
+                        	<h2 class="hover_litit">本季最IN风尚</h2>
+                        	<a href="#" class="hover_list">冬季新品</a>
+                            <a href="#" class="hover_list">毛衣</a>
+                            <a href="#" class="hover_list">连衣裙</a>
+                            <a href="#" class="hover_list">时髦牛仔裤</a>
+                            <a href="#" class="hover_list">卫衣</a>
+                            <a href="#" class="hover_list">超人气套装</a>
+                            <a href="#" class="hover_list">新款靴子</a>
+                            <a href="#" class="hover_list">单肩包</a>
+                            <a href="#" class="hover_list">暖冬美裤 </a>
+                            <a href="#" class="hover_list">活力运动鞋</a>
+                            <a href="#" class="hover_list">唯美累死</a>
+                            <a href="#" class="hover_list">外套</a>
+                        </li>
+                        <li class="hover_li clearfix">
+                        	<h2 class="hover_litit">本季最IN风尚</h2>
+                        	<a href="#" class="hover_list">冬季新品</a>
+                            <a href="#" class="hover_list">毛衣</a>
+                            <a href="#" class="hover_list">连衣裙</a>
+                            <a href="#" class="hover_list">时髦牛仔裤</a>
+                            <a href="#" class="hover_list">卫衣</a>
+                            <a href="#" class="hover_list">超人气套装</a>
+                            <a href="#" class="hover_list">新款靴子</a>
+                        </li>
+                        <li class="hover_li clearfix">
+                        	<h2 class="hover_litit">本季最IN风尚</h2>
+                        	<a href="#" class="hover_list">冬季新品</a>
+                            <a href="#" class="hover_list">毛衣</a>
+                            <a href="#" class="hover_list">连衣裙</a>
+                            <a href="#" class="hover_list">时髦牛仔裤</a>
+                            <a href="#" class="hover_list">卫衣</a>
+                            <a href="#" class="hover_list">超人气套装</a>
+                            <a href="#" class="hover_list">新款靴子</a>
+                            <a href="#" class="hover_list">单肩包</a>
+                            <a href="#" class="hover_list">暖冬美裤 </a>
+                            <a href="#" class="hover_list">活力运动鞋</a>
+                            <a href="#" class="hover_list">唯美累死</a>
+                            <a href="#" class="hover_list">外套</a>
+                        </li>
+                    </ul>
+                <h3 class="page1_lh3">最热</h3>
+                <a href="#" class="page1_a copink">冬季新品</a>
+                <a href="#" class="page1_a">毛衣</a>
+                <a href="#" class="page1_a">活力运动鞋</a>
+                <a href="#" class="page1_a copink">连衣裙</a>
+                <a href="#" class="page1_a copink">新款鞋子</a>
+                <a href="#" class="page1_a">单肩包</a>
+                <a href="#" class="page1_a copink">外套</a>
+                <a href="#" class="page1_a">入冬打底裤</a>
+                <a href="#" class="page1_a">暖冬美裤</a>
+            </li> 
+               <li class="page1_li"> 
+                <a href="#"  class="jiantou">&gt;</a> 
+                	<ul class="hovera_box">
+                    	<li class="hover_li clearfix">
+                        	<h2 class="hover_litit">本季最IN风尚</h2>
+                        	<a href="#" class="hover_list">冬季新品</a>
+                            <a href="#" class="hover_list">毛衣</a>
+                            <a href="#" class="hover_list">连衣裙</a>
+                            <a href="#" class="hover_list">时髦牛仔裤</a>
+                            <a href="#" class="hover_list">卫衣</a>
+                            <a href="#" class="hover_list">超人气套装</a>
+                            <a href="#" class="hover_list">新款靴子</a>
+                            <a href="#" class="hover_list">单肩包</a>
+                            <a href="#" class="hover_list">暖冬美裤 </a>
+                            <a href="#" class="hover_list">活力运动鞋</a>
+                            <a href="#" class="hover_list">唯美累死</a>
+                            <a href="#" class="hover_list">外套</a>
+                        </li>
+                        <li class="hover_li clearfix">
+                        	<h2 class="hover_litit">本季最IN风尚</h2>
+                        	<a href="#" class="hover_list">冬季新品</a>
+                            <a href="#" class="hover_list">毛衣</a>
+                            <a href="#" class="hover_list">连衣裙</a>
+                            <a href="#" class="hover_list">时髦牛仔裤</a>
+                            <a href="#" class="hover_list">卫衣</a>
+                            <a href="#" class="hover_list">超人气套装</a>
+                            <a href="#" class="hover_list">新款靴子</a>
+                        </li>
+                        <li class="hover_li clearfix">
+                        	<h2 class="hover_litit">本季最IN风尚</h2>
+                        	<a href="#" class="hover_list">冬季新品</a>
+                            <a href="#" class="hover_list">毛衣</a>
+                            <a href="#" class="hover_list">连衣裙</a>
+                            <a href="#" class="hover_list">时髦牛仔裤</a>
+                            <a href="#" class="hover_list">卫衣</a>
+                            <a href="#" class="hover_list">超人气套装</a>
+                            <a href="#" class="hover_list">新款靴子</a>
+                            <a href="#" class="hover_list">单肩包</a>
+                            <a href="#" class="hover_list">暖冬美裤 </a>
+                            <a href="#" class="hover_list">活力运动鞋</a>
+                            <a href="#" class="hover_list">唯美累死</a>
+                            <a href="#" class="hover_list">外套</a>
+                        </li>
+                    </ul>
+                <h3 class="page1_lh3">最热</h3>
+                <a href="#" class="page1_a copink">冬季新品</a>
+                <a href="#" class="page1_a">毛衣</a>
+                <a href="#" class="page1_a">活力运动鞋</a>
+                <a href="#" class="page1_a copink">连衣裙</a>
+                <a href="#" class="page1_a copink">新款鞋子</a>
+                <a href="#" class="page1_a">单肩包</a>
+                <a href="#" class="page1_a copink">外套</a>
+                <a href="#" class="page1_a">入冬打底裤</a>
+                <a href="#" class="page1_a">暖冬美裤</a>
+            </li> 
+               <li class="page1_li"> 
+                <a href="#"  class="jiantou">&gt;</a> 
+                	<ul class="hovera_box">
+                    	<li class="hover_li clearfix">
+                        	<h2 class="hover_litit">本季最IN风尚</h2>
+                        	<a href="#" class="hover_list">冬季新品</a>
+                            <a href="#" class="hover_list">毛衣</a>
+                            <a href="#" class="hover_list">连衣裙</a>
+                            <a href="#" class="hover_list">时髦牛仔裤</a>
+                            <a href="#" class="hover_list">卫衣</a>
+                            <a href="#" class="hover_list">超人气套装</a>
+                            <a href="#" class="hover_list">新款靴子</a>
+                            <a href="#" class="hover_list">单肩包</a>
+                            <a href="#" class="hover_list">暖冬美裤 </a>
+                            <a href="#" class="hover_list">活力运动鞋</a>
+                            <a href="#" class="hover_list">唯美累死</a>
+                            <a href="#" class="hover_list">外套</a>
+                        </li>
+                        <li class="hover_li clearfix">
+                        	<h2 class="hover_litit">本季最IN风尚</h2>
+                        	<a href="#" class="hover_list">冬季新品</a>
+                            <a href="#" class="hover_list">毛衣</a>
+                            <a href="#" class="hover_list">连衣裙</a>
+                            <a href="#" class="hover_list">时髦牛仔裤</a>
+                            <a href="#" class="hover_list">卫衣</a>
+                            <a href="#" class="hover_list">超人气套装</a>
+                            <a href="#" class="hover_list">新款靴子</a>
+                        </li>
+                        <li class="hover_li clearfix">
+                        	<h2 class="hover_litit">本季最IN风尚</h2>
+                        	<a href="#" class="hover_list">冬季新品</a>
+                            <a href="#" class="hover_list">毛衣</a>
+                            <a href="#" class="hover_list">连衣裙</a>
+                            <a href="#" class="hover_list">时髦牛仔裤</a>
+                            <a href="#" class="hover_list">卫衣</a>
+                            <a href="#" class="hover_list">超人气套装</a>
+                            <a href="#" class="hover_list">新款靴子</a>
+                            <a href="#" class="hover_list">单肩包</a>
+                            <a href="#" class="hover_list">暖冬美裤 </a>
+                            <a href="#" class="hover_list">活力运动鞋</a>
+                            <a href="#" class="hover_list">唯美累死</a>
+                            <a href="#" class="hover_list">外套</a>
+                        </li>
+                    </ul>
+                <h3 class="page1_lh3">最热</h3>
+                <a href="#" class="page1_a copink">冬季新品</a>
+                <a href="#" class="page1_a">毛衣</a>
+                <a href="#" class="page1_a">活力运动鞋</a>
+                <a href="#" class="page1_a copink">连衣裙</a>
+                <a href="#" class="page1_a copink">新款鞋子</a>
+                <a href="#" class="page1_a">单肩包</a>
+                <a href="#" class="page1_a copink">外套</a>
+                <a href="#" class="page1_a">入冬打底裤</a>
+                <a href="#" class="page1_a">暖冬美裤</a>
+            </li> 
+               <li class="page1_li"> 
+                <a href="#"  class="jiantou">&gt;</a> 
+                	<ul class="hovera_box">
+                    	<li class="hover_li clearfix">
+                        	<h2 class="hover_litit">本季最IN风尚</h2>
+                        	<a href="#" class="hover_list">冬季新品</a>
+                            <a href="#" class="hover_list">毛衣</a>
+                            <a href="#" class="hover_list">连衣裙</a>
+                            <a href="#" class="hover_list">时髦牛仔裤</a>
+                            <a href="#" class="hover_list">卫衣</a>
+                            <a href="#" class="hover_list">超人气套装</a>
+                            <a href="#" class="hover_list">新款靴子</a>
+                            <a href="#" class="hover_list">单肩包</a>
+                            <a href="#" class="hover_list">暖冬美裤 </a>
+                            <a href="#" class="hover_list">活力运动鞋</a>
+                            <a href="#" class="hover_list">唯美累死</a>
+                            <a href="#" class="hover_list">外套</a>
+                        </li>
+                        <li class="hover_li clearfix">
+                        	<h2 class="hover_litit">本季最IN风尚</h2>
+                        	<a href="#" class="hover_list">冬季新品</a>
+                            <a href="#" class="hover_list">毛衣</a>
+                            <a href="#" class="hover_list">连衣裙</a>
+                            <a href="#" class="hover_list">时髦牛仔裤</a>
+                            <a href="#" class="hover_list">卫衣</a>
+                            <a href="#" class="hover_list">超人气套装</a>
+                            <a href="#" class="hover_list">新款靴子</a>
+                        </li>
+                        <li class="hover_li clearfix">
+                        	<h2 class="hover_litit">本季最IN风尚</h2>
+                        	<a href="#" class="hover_list">冬季新品</a>
+                            <a href="#" class="hover_list">毛衣</a>
+                            <a href="#" class="hover_list">连衣裙</a>
+                            <a href="#" class="hover_list">时髦牛仔裤</a>
+                            <a href="#" class="hover_list">卫衣</a>
+                            <a href="#" class="hover_list">超人气套装</a>
+                            <a href="#" class="hover_list">新款靴子</a>
+                            <a href="#" class="hover_list">单肩包</a>
+                            <a href="#" class="hover_list">暖冬美裤 </a>
+                            <a href="#" class="hover_list">活力运动鞋</a>
+                            <a href="#" class="hover_list">唯美累死</a>
+                            <a href="#" class="hover_list">外套</a>
+                        </li>
+                    </ul>
+                <h3 class="page1_lh3">最热</h3>
+                <a href="#" class="page1_a copink">冬季新品</a>
+                <a href="#" class="page1_a">毛衣</a>
+                <a href="#" class="page1_a">活力运动鞋</a>
+                <a href="#" class="page1_a copink">连衣裙</a>
+                <a href="#" class="page1_a copink">新款鞋子</a>
+                <a href="#" class="page1_a">单肩包</a>
+                <a href="#" class="page1_a copink">外套</a>
+                <a href="#" class="page1_a">入冬打底裤</a>
+                <a href="#" class="page1_a">暖冬美裤</a>
+            </li> 
+               <li class="page1_lilast"> 
+                <a href="#"  class="jiantou">&gt;</a> 
+                	<ul class="hovera_box">
+                    	<li class="hover_li clearfix">
+                        	<h2 class="hover_litit">本季最IN风尚</h2>
+                        	<a href="#" class="hover_list">冬季新品</a>
+                            <a href="#" class="hover_list">毛衣</a>
+                            <a href="#" class="hover_list">连衣裙</a>
+                            <a href="#" class="hover_list">时髦牛仔裤</a>
+                            <a href="#" class="hover_list">卫衣</a>
+                            <a href="#" class="hover_list">超人气套装</a>
+                            <a href="#" class="hover_list">新款靴子</a>
+                            <a href="#" class="hover_list">单肩包</a>
+                            <a href="#" class="hover_list">暖冬美裤 </a>
+                            <a href="#" class="hover_list">活力运动鞋</a>
+                            <a href="#" class="hover_list">唯美累死</a>
+                            <a href="#" class="hover_list">外套</a>
+                        </li>
+                        <li class="hover_li clearfix">
+                        	<h2 class="hover_litit">本季最IN风尚</h2>
+                        	<a href="#" class="hover_list">冬季新品</a>
+                            <a href="#" class="hover_list">毛衣</a>
+                            <a href="#" class="hover_list">连衣裙</a>
+                            <a href="#" class="hover_list">时髦牛仔裤</a>
+                            <a href="#" class="hover_list">卫衣</a>
+                            <a href="#" class="hover_list">超人气套装</a>
+                            <a href="#" class="hover_list">新款靴子</a>
+                        </li>
+                        <li class="hover_li clearfix">
+                        	<h2 class="hover_litit">本季最IN风尚</h2>
+                        	<a href="#" class="hover_list">冬季新品</a>
+                            <a href="#" class="hover_list">毛衣</a>
+                            <a href="#" class="hover_list">连衣裙</a>
+                            <a href="#" class="hover_list">时髦牛仔裤</a>
+                            <a href="#" class="hover_list">卫衣</a>
+                            <a href="#" class="hover_list">超人气套装</a>
+                            <a href="#" class="hover_list">新款靴子</a>
+                            <a href="#" class="hover_list">单肩包</a>
+                            <a href="#" class="hover_list">暖冬美裤 </a>
+                            <a href="#" class="hover_list">活力运动鞋</a>
+                            <a href="#" class="hover_list">唯美累死</a>
+                            <a href="#" class="hover_list">外套</a>
+                        </li>
+                    </ul>
+                <h3 class="page1_lh3">最热</h3>
+                <a href="#" class="page1_a">冬季新品</a>
+                <a href="#" class="page1_a copink">毛衣</a>
+                <a href="#" class="page1_a">活力运动鞋</a>
+                <a href="#" class="page1_a copink">连衣裙</a>
+                <a href="#" class="page1_a copink">新款鞋子</a>
+                <a href="#" class="page1_a">单肩包</a>
+            </li> 
+        </ul>
+<!--page_1右-->
+	   <ul class="page1_rul">
+       		<li><a href="#"><img src="img/jinrituangou.png" alt="美丽说" class="page1_ra" /></a></li>
+            <li><a href="#"><img src="img/jinrituangou.png" alt="美丽说" class="page1_ra" /></a></li>
+            <li><a href="#"><img src="img/jinrituangou.png" alt="美丽说" class="page1_ra" /></a></li>
+       </ul>
+<!--page_1右下-->
+	  <ul class="page1_rbul clearfix">
+      	<li  class="page1_rbli"><a href="#" ><img src="img/jizhongying.png" class="jizhongyin" /></a></li>
+        <li  class="page1_rbli"><a href="#" ><img src="img/jizhongying.png" class="jizhongyin" /></a></li>
+        <li  class="page1_rbli"><a href="#" ><img src="img/jizhongying.png" class="jizhongyin" /></a></li>
+        <li  class="page1_rbli"><a href="#" ><img src="img/jizhongying.png" class="jizhongyin" /></a></li>
+        <li  class="page1_rbli"><a href="#" ><img src="img/2zhe.png" class="jizhongyin" /></a></li>
+      </ul>
+    </div>
+</div>
+<!--page2-->
+	<div class="page2_box">
+    	<h2 class="page2_ttitle"><span class="page2_tpic">人气推荐<span class="copink">单品</span></h2>
+        <ul class="page2_tul clearfix">
+        	<li class="page2_tli">
+            	<img src="img/meinv.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>
+            <li class="page2_tli">
+            	<img src="img/meinv.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>
+            <li class="page2_tli">
+            	<img src="img/meinv.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>
+            <li class="page2_tli">
+            	<img src="img/meinv.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>
+            <li class="page2_tli">
+            	<img src="img/meinv.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>
+             <li class="page2_tli_last">
+            	<img src="img/meinv.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>
+            <li class="page2_tli">
+            	<img src="img/meinv.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>
+            <li class="page2_tli">
+            	<img src="img/meinv.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>
+            <li class="page2_tli">
+            	<img src="img/meinv.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>
+            <li class="page2_tli">
+            	<img src="img/meinv.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>
+            <li class="page2_tli">
+            	<img src="img/meinv.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>
+            <li class="page2_tli_last">
+            	<img src="img/meinv.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>
+        </ul>
+        <h2 class="page2_ttitle"><span class="page2_tpic">每日超值<span class="copink">团购</span><a href="#" class="look">查看所有团购&gt;&gt;</a></h2>
+         <ul class="page2_tul clearfix">
+         	<li class="page2_tli">
+            	<img src="img/shoes.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>
+            <li class="page2_tli">
+            	<img src="img/shoes.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>
+            <li class="page2_tli">
+            	<img src="img/shoes.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>
+            <li class="page2_tli">
+            	<img src="img/shoes.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>
+            <li class="page2_tli">
+            	<img src="img/shoes.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>   
+               <li class="page2_tli_last">
+            	<img src="img/shoes.png" alt="热卖单品" class="meinv" />
+                <a href="#" class="page2_ta">美丽无上限不到50</a>
+                <p class="price_now">￥49.00<span class="price_before">￥189.00</span></p>
+                <p class="buy_num">1885人购买</p>  
+            </li>
+          </ul>
+    </div>
+<!--page_3-->
+<div class="page3_box">
+	<img src="img/page3_pic.png" />
+    <h2 class="page3_title">衣服&nbsp;<span class="new_play">今日上新4098件</span><a href="#" class="look">查看所有衣服&gt;&gt;</a></h2>
+    <div class="clearfix">
+       <div class="page3_lul">
+        <ul class="page3_ltul" >
+        	<li class="page3_lli"><a href="#" ><img src="img/taozhuang.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/taozhuang.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/taozhuang.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/taozhuang.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/taozhuang.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/taozhuang.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/taozhuang.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/taozhuang.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/taozhuang.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/taozhuang.png" /></a></li>
+        </ul>
+<!--page_3左下-->       
+         <ul class="page3_lbul" >
+         	<li class="page3_lbli clearfix">
+            	<a href="#" class="lbli_la">上衣</a>
+                <ul class="lbli_div">
+                	<li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+               </ul>
+            </li>
+            <li class="page3_lbli clearfix">
+            	<a href="#" class="lbli_la">上衣</a>
+                <ul class="lbli_div">
+                	<li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+               </ul>
+            </li>
+            <li class="page3_lblilast clearfix">
+            	<a href="#" class="lbli_la">上衣</a>
+                <ul class="lbli_div">
+                	<li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+               </ul>
+            </li>	
+        </ul>
+        
+		</div>
+        <ul class="page3_rul">
+        	<h3 class="page3_rh3">最热衣服好店<a href="#" class="look">更多好店</a></h3>
+        	<li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rlilast clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>   
+        </ul>
+       
+    </div>
+
+</div>
+<div class="page3_box">
+    <h2 class="page3_title">鞋子&nbsp;<span class="new_play">今日上新4098件</span><a href="#" class="look">查看所有衣服&gt;&gt;</a></h2>
+    <div class="clearfix">
+       <div class="page3_lul">
+        <ul class="page3_ltul" >
+        	<li class="page3_lli"><a href="#" ><img src="img/xiezi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/xiezi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/xiezi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/xiezi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/xiezi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/xiezi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/xiezi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/xiezi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/xiezi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/xiezi.png" /></a></li>
+        </ul>
+<!--page_3左下-->       
+         <ul class="page3_lbul" >
+         	<li class="page3_lbli clearfix">
+            	<a href="#" class="lbli_la">上衣</a>
+                <ul class="lbli_div">
+                	<li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+               </ul>
+            </li>
+            <li class="page3_lbli clearfix">
+            	<a href="#" class="lbli_la">上衣</a>
+                <ul class="lbli_div">
+                	<li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+               </ul>
+            </li>
+            <li class="page3_lblilast clearfix">
+            	<a href="#" class="lbli_la">上衣</a>
+                <ul class="lbli_div">
+                	<li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+               </ul>
+            </li>	
+        </ul>
+		</div>
+        <ul class="page3_rul">
+        	<h3 class="page3_rh3">最热衣服好店<a href="#" class="look">更多好店</a></h3>
+        	<li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rlilast clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>   
+        </ul>
+       
+    </div>
+
+</div>
+<div class="page3_box">
+    <h2 class="page3_title">包包&nbsp;<span class="new_play">今日上新4098件</span><a href="#" class="look">查看所有衣服&gt;&gt;</a></h2>
+    <div class="clearfix">
+       <div class="page3_lul">
+        <ul class="page3_ltul" >
+        	<li class="page3_lli"><a href="#" ><img src="img/baobao.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/baobao.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/baobao.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/baobao.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/baobao.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/baobao.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/baobao.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/baobao.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/baobao.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/baobao.png" /></a></li>
+        </ul>
+<!--page_3左下-->       
+         <ul class="page3_lbul" >
+         	<li class="page3_lbli clearfix">
+            	<a href="#" class="lbli_la">上衣</a>
+                <ul class="lbli_div">
+                	<li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+               </ul>
+            </li>
+            <li class="page3_lbli clearfix">
+            	<a href="#" class="lbli_la">上衣</a>
+                <ul class="lbli_div">
+                	<li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+               </ul>
+            </li>
+            <li class="page3_lblilast clearfix">
+            	<a href="#" class="lbli_la">上衣</a>
+                <ul class="lbli_div">
+                	<li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+               </ul>
+            </li>	
+        </ul>
+		</div>
+        <ul class="page3_rul">
+        	<h3 class="page3_rh3">最热衣服好店<a href="#" class="look">更多好店</a></h3>
+        	<li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rlilast clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>   
+        </ul>
+       
+    </div>
+
+</div>
+<div class="page3_box">
+    <h2 class="page3_title">配饰&nbsp;<span class="new_play">今日上新4098件</span><a href="#" class="look">查看所有衣服&gt;&gt;</a></h2>
+    <div class="clearfix">
+       <div class="page3_lul">
+        <ul class="page3_ltul" >
+        	<li class="page3_lli"><a href="#" ><img src="img/peishi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/peishi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/peishi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/peishi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/peishi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/peishi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/peishi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/peishi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/peishi.png" /></a></li>
+            <li class="page3_lli"><a href="#" ><img src="img/peishi.png" /></a></li>
+        </ul>
+<!--page_3左下-->       
+         <ul class="page3_lbul" >
+         	<li class="page3_lbli clearfix">
+            	<a href="#" class="lbli_la">上衣</a>
+                <ul class="lbli_div">
+                	<li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+               </ul>
+            </li>
+            <li class="page3_lbli clearfix">
+            	<a href="#" class="lbli_la">上衣</a>
+                <ul class="lbli_div">
+                	<li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+               </ul>
+            </li>
+            <li class="page3_lblilast clearfix">
+            	<a href="#" class="lbli_la">上衣</a>
+                <ul class="lbli_div">
+                	<li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+                    <li class="fl"><a href="#" class="lbli_diva">连义务</a><li>
+               </ul>
+            </li>	
+        </ul>
+		</div>
+        <ul class="page3_rul">
+        	<h3 class="page3_rh3">最热衣服好店<a href="#" class="look">更多好店</a></h3>
+        	<li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rli clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>
+            <li class="page3_rlilast clearfix">
+            	<a href="#" class="page3_lipic"><img src="img/yaojingdeyichu.png" /></a>
+                <div class="li_div">
+                	<a href="#" class="rli_a">妖精的衣橱</a>
+                    <p class="xiaoliang">235件商/品总销量84572</p>
+                </div>
+            </li>   
+        </ul>
+       
+    </div>
+
+</div>
+
+<!--page4-->
+<div class="page4_box">
+	<div class="clearfix">
+	<h3 class="page4_title">热门杂志</h3>
+     <ul class="fr">
+    	<li class="fl"><a href="#" class="page4_tita">欧美</a></li>
+        <li class="fl"><a href="#" class="page4_tita">甜美</a></li>
+        <li class="fl"><a href="#" class="page4_tita">甜美</a></li>
+        <li class="fl"><a href="#" class="page4_tita">甜美</a></li>
+        <li class="fl"><a href="#" class="page4_tita">甜美</a></li>
+        <li class="fl"><a href="#" class="page4_tita brnone">更多杂志&nbsp;&gt;</a></li>
+    </ul>
+    </div>
+   	<div class="page4_div">
+    	<h3 class="page4_h3">小女人有恋物癖</h3>
+        <ul class="page4_ul">
+        	<li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+        </ul>
+        <p class="share">886个分享</p>
+        <a href="#" class="go_look">去看看</a>
+    </div>
+    <div class="page4_div">
+    	<h3 class="page4_h3">小女人有恋物癖</h3>
+        <ul class="page4_ul">
+        	<li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+        </ul>
+        <p class="share">886个分享</p>
+        <a href="#" class="go_look">去看看</a>
+    </div>
+    <div class="page4_div">
+    	<h3 class="page4_h3">小女人有恋物癖</h3>
+        <ul class="page4_ul">
+        	<li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+        </ul>
+        <p class="share">886个分享</p>
+        <a href="#" class="go_look">去看看</a>
+    </div>
+    <div class="page4_div">
+    	<h3 class="page4_h3">小女人有恋物癖</h3>
+        <ul class="page4_ul">
+        	<li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+        </ul>
+        <p class="share">886个分享</p>
+        <a href="#" class="go_look">去看看</a>
+    </div>
+    <div class="page4_divlast">
+    	<h3 class="page4_h3">小女人有恋物癖</h3>
+        <ul class="page4_ul">
+        	<li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+            <li class="page4_li"><a href="#"><img src="img/pagge4.png" /></a></li>
+        </ul>
+        <p class="share">886个分享</p>
+        <a href="#" class="go_look">去看看</a>
+    </div>
+</div>
+<!--尾部-->
+<div class="footer">
+	<div class="foot_t">
+    	<ul>
+        	<li class="foot_li">
+            	<p class="tel_pic"></p>
+            	<p class="tel">4000-800-577</p>
+                <p class="rexian">美丽说客服热线</p>
+                <p class="rexian">周一至周日:8:00-24:00</p>
+            </li>
+             <li class="foot_li">
+            <p class="help">用户帮助</p>
+            <a href="#" class="new_use">新手指南</a>
+            <a href="#" class="new_use">新手指南</a>
+            <a href="#" class="new_use">新手指南</a> 
+            </li>
+                <li class="foot_li">
+            <p class="help">用户帮助</p>
+            <a href="#" class="new_use">新手指南</a>
+            <a href="#" class="new_use">新手指南</a>
+            <a href="#" class="new_use">新手指南</a> 
+            <a href="#" class="new_use">新手指南指南</a>
+            <a href="#" class="new_use">新手指南</a>
+            </li>
+            <li class="foot_li">
+            <p class="help">用户帮助</p>
+            <a href="#" class="new_use"><span class="weixin_pic"></span>新手指南</a>
+            <a href="#" class="new_use"><span class="qq_pic"></span>新手指南</a>
+            <a href="#" class="new_use"><span class="weibo_pic"></span>新手指南</a> 
+            </li> 
+               <li class="foot_li">
+            <p class="help">美丽说微信服务号</p>
+            <img src="img/saoma.png" />
+            </li>
+                 <li class="foot_lilast">
+            <p class="help">美丽说客户端下载</p>
+           	<p class="down_pic"></p>
+            </li>
+        </ul>
+    </div>
+    <div class="foot_link clearfix">
+    	<p class="fl">友情链接:</p>
+        <p class="fl"><a href="#" class="linklist">腾讯女性</a><a href="#" class="linklist">腾讯女性</a><a href="#" class="linklist">腾讯女性</a><a href="#" class="linklist">腾讯女性</a><a href="#" class="linklist">腾讯女性</a><a href="#" class="linklist">腾讯女性</a><a href="#" class="linklist">腾讯女性</a></p>
+        <a href="#" class="linklist fr">还有更多</a>
+    </div>
+	<div class="foot_b">
+    <p class="foot_p">Copyright ©2015 Meilishuo.com</p> <a href="#" class="foot_a">电信与信息服务业务经营许可证100798号</a>
+    <a href="#" class="foot_a">企业法人营业执照</a><p class="foot_p">京ICP备11031139号 </p><p class="foot_p">京ICP备11031139号</p>
+    <br /> <p class="foot_p">客服邮箱：kf@meilishuo.com  客服电话：4000-800-577  文明办网文明上网举报电话：010-82615762 </p> <a href="#" class="foot_a">违法不良信息举报中心</a>
+    <a href="#" class="foot_a">我最喜爱的人民警察评选>></a>
+   </div>
+</div>
+
+</body>
+</html>

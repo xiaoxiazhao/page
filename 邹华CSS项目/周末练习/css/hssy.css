@@ -1,0 +1,70 @@
+@charset "utf-8";
+/*婚纱摄影*/
+
+
+/*头部开始*/
+.toubu1{ background:url(../img/27.png) repeat-x; height:40px;}
+.toubu1 li{ width:959px; margin:0 auto;}
+.toubu1 .dh .a3{ margin-left:190px;}
+.toubu1 .dh .a1{ color:#FFF; line-height:40px; text-align:center; float:left; padding-left:20px; padding-right:20px;}
+.toubu1 .dh .a1:hover{ background:#000;}
+.toubu1 .dh i{ color:#74472d; font-size:20px; font-weight:bold; float:left; line-height:40px;}
+.toubu1 .dh .a2{ float:left; margin-left:70px; width:44px; height:20px; background:#1a0902; color:#FFF; text-align:center; line-height:20px; margin-top:8px; border-radius:10px}
+.dh1 a img{ box-shadow:0px 6px 5px #CCC; }
+.dh2 div .p1{ width:10px; height:10px; border-radius:10px; float:left; border:1px solid #000; margin-top:10px; margin-left:430px;}
+.dh2 div p{ width:10px; height:10px; border-radius:10px; float:left; border:1px solid #000; margin-top:10px; margin-left:10px;box-shadow:2px 2px 2px #666 inset; margin-bottom:20px;}
+.dh2 div p:hover{ background:#83471d; box-shadow:none;}
+.toubu2{ width:959px; margin:0 auto;}
+.box{ margin-top:15px; margin-bottom:15px;}
+.box .box_1{ margin-right:8px;}
+
+/*内容开始*/
+.box1_1{ width:961px; margin:0 auto; margin-top:20px; border-bottom:2px solid #dbdbdb;}
+.box1_2{ width:961px; overflow:hidden;}
+.zfd{ float:left}
+.yfd{ float:right; margin-top:-36px; color:#787878;}
+.yfd a:hover{ color:#F00;}
+
+.box2{ margin-top:15px; overflow:hidden;}
+.box2_1{ float:left;}
+.box2_2{ width:308px; border:1px solid #e5e5e5;float:left; margin-left:15px; position:relative;}
+.box2_2 a img{margin:4px;}
+.box2_2 .a2{ margin-top:10px; margin-bottom:10px; margin-left:5px; display:inline-block; color:#787878}
+.box2_2:hover{box-shadow:0px 0px 8px #999 inset;}
+.yinyin1{ position:absolute; top:238px; left:0px;}
+.box2_3{ margin-top:17px;}
+
+
+.box3{ margin-top:15px; overflow:hidden;}
+.box3_1{ float:left;}
+.box3_2{ width:222px; border:1px solid #e5e5e5;float:left; margin-left:15px; position:relative;}
+.box3_2 a img{margin:4px;}
+.box3_2 .a2{ margin-top:10px; margin-bottom:10px; margin-left:5px; display:inline-block; color:#787878}
+.box3_2:hover{box-shadow:0px 0px 8px #999 inset;}
+.yinyin{ position:absolute; top:402px; left:0px;}
+.box3_3{ margin-top:17px;}
+.box2_4{ margin-left:-0px;}
+.jieshao{ color:#964763; margin-left:580px; font-size:14px;}
+.jg{ float:left;}
+.pingfd .rmb{ color:#F00;float:right; margin-right:5px;}
+.pingfd{ overflow:hidden;}
+.box2_5{ margin-right:15px;}
+.zfd{ margin-top:10px;}
+.yinyin2{ position:absolute; top:235px; left:0px;}
+.lianjie1{ overflow:hidden; margin-bottom:20px;}
+.lianjie1 a{ float:left; color:#83471d; margin-top:19px;}
+.lianjie1 .a1{ margin-right:27px;}
+
+
+/*底部开始*/
+.dibu{ background:#eee;}
+.dibu1{ width:959px; margin:0 auto; padding-top:20px;}
+.dibu1_1{ float:left; margin-right:20px; height:155px;}
+.dibu1_1 h2{ border-bottom:1px solid #705c51;color:#787878; font-weight:bold; padding-bottom:14px; width:118px;}
+.dibu1_1 a{ display:inline-block; line-height:25px; color:#787878;}
+.dibu1_2 a img{ margin-top:-20px;}
+
+.dibu2{ background:#3c2112; color:#FFF; padding-top:20px;padding-bottom:20px;}
+.dibu2_1{ width:959px; margin:0 auto;}
+.dibu2_2{ text-align:center; }
+.dibu2_2 a{ color:#FFF; line-height:23px;}

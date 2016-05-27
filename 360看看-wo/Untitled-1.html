@@ -1,0 +1,428 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+html{background:#FFF;color:#000;}
+body{ font-size:12px; margin:0;line-height:100%;}
+h1,h2,h3,h4,h5,h6{ margin:0; font-weight:normal; font-size:12px;}
+a{ color:#000; text-decoration:none;}
+ol,ul,li{ list-style:none; padding:0; margin:0;}
+p{ margin:0;}
+i,em{ font-style:normal;}
+b,strong{ font-weight:normal;}
+a img{ border:none;}
+table{border-collapse:collapse;}
+.clearfix:after{ display:block; content:""; clear:both;}
+.clearfix{ zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+body{
+	background:#F4F4F4;
+}
+.hot_box{
+	width:1238px;
+	margin:0 auto;
+	margin-top:44px;
+}
+.hot_left{
+	width:1000px;
+	float:left;
+}
+.hot_nav h2{
+	font-size:31px;
+	font-weight:bold;
+	float:left;
+}
+.hot_child{
+	float:left;
+	margin-left:17px;
+}
+.hot_child a{
+	float:left;
+	font-size:12px;
+	height:20px;
+	line-height:20px;
+	padding:0 14px 0 18px;
+	border-right:1px solid #CCCCCC;
+}	
+.hot_nav a{
+	float:left;
+	line-height:20px;
+	padding-left:18px;
+}
+.hot_nav .more:hover{
+	color:#FA994E;
+	}
+.hot_child .on{
+	color:#FA994E;
+}
+.hot_list_box{
+	margin-top:20px;
+}
+.hot_big_left{
+	width:380px;
+	float:left;
+}
+.hot_big_left .pic{
+	display:block;
+	position:relative;
+	width:380px;
+}
+.hot_big_left .details{
+	display:block;
+	width:363px;
+	height:22px;
+	line-height:22px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:22px;
+	background:rgba(0,0,0,0.3);
+	padding-left:17px;
+	}
+.pic img{
+	display:block;
+}
+.details span{
+	width:12px;
+	height:10px;
+	background:url(img/433.png) no-repeat;
+	margin:6px 0 0 10px;
+}
+.hot_big_left p{
+	width:380px;
+	height:34px;
+	background:#fff;
+
+}
+.hot_big_left .new_tltle{
+	line-height:34px;
+	margin-left:10px;
+	}
+.new_tltle:hover{
+	color:#FD8D4E;
+}
+.hot_big_right{
+	width:600px;
+	margin-left:20px;
+	float:left;
+}
+.small_new_box{
+	width:180px;
+	float:left;
+	margin:0 20px 20px 0;
+}
+.small_new_box .pic{
+	width:180px;
+	display:block;
+	position:relative;
+}
+.small_new_box .details{
+	width:180px;
+	display:block;
+	position:absolute;
+	left:0;
+	bottom:0;
+	background:rgba(0,0,0,0.5);
+	height:22px;
+	line-height:22px;
+	}
+.small_new_box p{
+	height:34px;
+	background:#FFF;
+	line-height:34px;
+}
+.small_new_box .new_tltle{
+	margin-left:10px;
+}
+.hot_list_box li{
+	display:none;
+}
+.hot_list_box .show{
+	display:block;
+}
+.hot_right{
+	width:238px;
+	float:left;
+}
+.hot_right h2{
+	font-size:22px;
+	font-weight:bold;
+	margin-top:6px;
+}
+.hot_search{
+	margin-top:22px;
+}
+.hot_search a{
+	text-align:center;
+	color:#9A5A4A;
+	font-size:14px;
+	display:inline-block;
+}
+.hot_search .one{
+	width:118px;
+	height:70px;
+	background:#FBE8E3;
+	line-height:70px;
+	
+}
+.hot_search .two{
+	width:118px;
+	height:142px;
+	background:#FAD9D0;
+	line-height:142px;
+	margin-left:2px;
+	float:right;
+}
+.hot_search .three{
+	width:58px;
+	height:142px;
+	background:#FBE8E3;
+	line-height:26px;
+	float:left;
+	margin-top:2px;
+}
+.hot_search .four{
+	width:58px;
+	height:70px;
+	background:#FAD9D0;	
+	line-height:26px;
+	float:right;
+	margin-top:2px;	
+}
+.hot_search .five{
+	width:178px;
+	height:70px;
+	background:#FBE8E3;	
+	line-height:70px;
+	float:right;
+	margin-top:2px;
+}
+.hot_search .six{
+	width:118px;
+	height:70px;
+	background:#FBE8E3;	
+	line-height:70px;
+	float:left;
+	margin-top:2px;
+}
+.hot_search .seven{
+	width:118px;
+	height:70px;
+	background:#FAD9D0;	
+	line-height:70px;
+	float:right;
+	margin-top:2px;
+}
+.hot_search a:hover{
+	background:#B3D895;
+	color:#fff;
+}
+
+.plan_left{
+	width:203px;
+	height:409px;
+	border:1px solid #C0C0C0;
+	border-bottom:none;
+	float:left;
+	position:relative;
+	top:0;
+	left:0;
+	margin-right:2px;
+}
+.plan_left img{
+	width:203px;
+	height:409px;
+	display:block;
+}
+.shadow2{
+	width:190px;
+	height:409px;
+	background:rgba(0,0,0,0.5);
+	position:absolute;
+	top:0;
+	left:0;
+	color:#fff;
+	padding-left:13px;
+	display:none;
+}
+.shadow2 h3{
+	margin:30px 0 30px 0;
+	font-size:26px;
+	font-family:'微软雅黑'；
+	
+}
+.shadow2 p{
+	font-size:14px;
+	line-height:30px;
+}
+.plan_top_left{
+	width:203px;
+	height:203px;
+	border:1px solid #C0C0C0;
+	float:left;
+	position:relative;
+	top:0;
+	left:0;
+	margin-right:2px;
+}
+.plan_top_left img{
+	width:100%;
+	height:100%;
+}
+.plan_top_left .shadow2{
+	width:190px;
+	height:203px;
+	background:rgba(0,0,0,0.5);
+	position:absolute;
+	top:0;
+	left:0;
+	color:#fff;
+	padding-left:13px;
+	display:none;
+}
+.plan_top_right{
+	width:410px;
+	height:203px;
+	border:1px solid #C0C0C0;
+	float:left;
+	position:relative;
+	top:0;
+	left:0;
+	margin-right:2px;
+	}
+.plan_top_right img{
+	width:100%;
+	height:100%;
+	}
+.plan_top_right .shadow2{
+	width:400px;
+	height:203px;
+	background:rgba(0,0,0,0.5);
+	position:absolute;
+	top:0;
+	left:0;
+	color:#fff;
+	padding-left:10px;
+	display:none;
+}
+.plan_bottom{
+	margin-top:10px;
+}
+.plan_right{
+	width:409px;
+	height:409px;
+	border:1px solid #C0C0C0;
+	border-bottom:none;
+	float:left;
+	position:relative;
+	top:0;
+	left:0;
+}
+.plan_right img{
+	width:100%;
+	height:100%;
+	}
+</style>
+
+</head>
+
+<body>
+<div class="hot_box" id="dayHot">
+	
+            <div class="hot_nav clearfix">
+                <h2>独家策划</h2>
+                <div class="hot_child" id="hot4">
+                    <a href="javascript:;" class="on">明星剧场</a>
+                    <a href="javascript:;">音乐会</a>
+                    <a href="javascript:;">体坛荷尔蒙</a>
+                    <a href="javascript:;">搞笑联播台</a>
+                    <a href="javascript:;">美女时尚</a>
+                </div>
+                
+            </div>
+        	<ul class="hot_list_box" id="ulbox4">
+            		<li class="show clearfix">
+                        <a href="javascript:;" class="plan_left">
+                        	<img src="img/t01c4de1988252984a4.jpg" />
+                            <div class="shadow2">
+                            	<h3>范冰冰</h3>
+                                <p>《武媚娘传奇》</p>
+                                <p>《一夜惊喜》</p>
+                                <p>《武媚娘传奇》</p>
+                                <p>《一夜惊喜》</p>
+                            	
+                            </div>
+                        </a>
+                    	<div class="plan_center">
+                        	<div class="plan_top clearfix">
+                            	 <a href="javascript:;" class="plan_top_left">
+                                        <img src="img/t01c4de1988252984a4.jpg" />
+                                        <div class="shadow2">
+                                            <h3>范冰冰</h3>
+                                            <p>《武媚娘传奇》</p>
+                                            <p>《一夜惊喜》</p>
+                                        </div>
+                           		 </a>
+                               
+                            	<a href="javascript:;" class="plan_top_right">
+                                	<img src="img/t01c4de1988252984a4.jpg" />
+                                    <div class="shadow2">
+                                        <h3>范冰冰</h3>
+                                        <p>《武媚娘传奇》</p>
+                                        <p>《一夜惊喜》</p>
+                                    </div>
+                           		</a>
+                           
+                           <div class="plan_bottom clearfix">
+                              
+                               <a href="javascript:;" class="plan_top_right">
+                               			<img src="img/t01c4de1988252984a4.jpg" />
+                                        <div class="shadow2">
+                                            <h3>范冰冰</h3>
+                                            <p>《武媚娘传奇》</p>
+                                            <p>《一夜惊喜》</p>
+                                        </div>
+                               </a>   
+                           	  <a href="javascript:;" class="plan_top_left">
+                            		<img src="img/t01c4de1988252984a4.jpg" />
+                                    <div class="shadow2">
+                                        <h3>范冰冰</h3>
+                                        <p>《武媚娘传奇》</p>
+                                        <p>《一夜惊喜》</p>
+                                    </div>
+                           		 </div>
+                            </a>
+                        
+                       </div>                    	
+                        <a href="javascript:;"  class="plan_right">
+                        	<img src="img/t01c4de1988252984a4.jpg" />
+                            <div class="shadow2">
+                            	<h3>范冰冰</h3>
+                                <p>《武媚娘传奇》</p>
+                                <p>《一夜惊喜》</p>
+                                <p>《武媚娘传奇》</p>
+                                <p>《一夜惊喜》</p>	
+                            </div>
+                        </a>
+                        
+                    </li>
+                    		
+                                
+                                
+                                
+                                
+                
+                    
+                    
+                    
+                 
+            </ul>    
+    
+</div>    
+               
+
+</body>
+</html>

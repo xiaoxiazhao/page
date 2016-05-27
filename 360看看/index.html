@@ -1,0 +1,2200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>360影视-全球第一网络院线-提供更快更便捷更有趣的观影服务-最新最全最受欢迎的影视网站-在线观看</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mb.css">
+	<style>
+	</style>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script>
+		window.onload = function (){
+			// header 事件
+			showHideNav('column_tv','subnav1');
+			showHideNav('column_movie','subnav2');
+			 oMover();
+			 // 
+			showHide('sec8box','li');
+			showHide('sec7box','li');
+			showHide('sec6box1','li');
+			showHide('sec4box','li');
+			showHide('sec3box','li');
+			showHide('sec2box','li');
+			showHide('sec1box','li');
+			// 选项卡
+			xxk('sec6box2','li');
+			xxk('sec4box2','li');
+			xxk('sec3box2','li');
+			xxk('sec1box2','li');
+			//以下是单独一个的事件
+			var oBox = document.getElementById('m9other');
+			oBox.onmouseover = function(){
+				this.className = 'btn';
+			};
+			oBox.onmouseout = function(){
+				this.className = '';
+			};
+			// banner选项卡
+			var oBbBox = document.getElementById('bannerbtnbox');
+			var oBnBox = document.getElementById('bannerbox');
+			var oDiv = document.getElementById('imgbox');
+			var aLi_btn = oBbBox.getElementsByTagName('li');
+			var aLi_bn = oBnBox.getElementsByTagName('li');
+			for (var i = 0; i < aLi_btn.length; i++) {
+				aLi_btn[i].index = i;
+				aLi_btn[i].onmouseover = function(){
+					for (var i = 0; i < aLi_bn.length; i++) {
+						aLi_bn[i].className = '';
+					};
+					aLi_bn[this.index].className = 'active';
+					oDiv.style.backgroundImage = 'url(img/banner'+(this.index+1)+'.jpg)';
+				}
+			};
+		};
+	</script>
+</head>
+<body>
+	<div class="ffbox">
+		<div class="top clearfix">
+			<h1 class="fl"><a href="javascript:;">360影音</a></h1>
+			<div class="top_logo2 fl"></div>
+			<div class="searchbox fl" id="searchbox">
+				<!-- js -->
+				<input type="text" class="fl" placeholder="横冲直撞好莱坞">
+				<div class="searchbtn fr" ><a href="javascript:;">搜索</a></div>
+				<ul class="searchmain">
+					<li>
+						<em>1</em>
+						<span>横冲直撞好莱坞</span>
+					</li>
+					<li>
+						<em>2</em>
+						<span>横冲直撞好莱坞</span>
+					</li>
+					<li>
+						<em>3</em>
+						<span>横冲直撞好莱坞</span>
+					</li>
+					<li>
+						<em>4</em>
+						<span>横冲直撞好莱坞</span>
+					</li>
+					<li>
+						<em>5</em>
+						<span>横冲直撞好莱坞</span>
+					</li>
+					<li>
+						<em>6</em>
+						<span>横冲直撞好莱坞</span>
+					</li>
+					<li>
+						<em>7</em>
+						<span>横冲直撞好莱坞</span>
+					</li>
+				</ul>
+			</div>
+			<ul class="ucenter fr">
+				<li class="fl"><a href="" class="uc-my">我的影视</a></li>
+				<li class="fl"><a href="" class="uc-item">观看记录</a></li>
+				<li class="fl"><a href="" class="uc-app">APP下载</a></li>
+			</ul>
+		</div>
+		<div class="header">
+			<div class="h-navbox clearfix">
+				<dl class="h-nav-l fl">
+					<dt class="fl"><a href="javascript:;">首页</a></dt>
+					<dd class="fl"><a href="javascript:;">网络院线</a></dd>
+					<dd class="fl" id="column_tv">
+						<a href="javascript:;">电视剧</a>
+						<div id="subnav1" class="subnav">
+							<ul>
+								<li><a href="javascript:;">电视剧首页</a><i></i></li>
+								<li><a href="javascript:;">内地</a></li>
+								<li><a href="javascript:;">美剧</a></li>
+								<li><a href="javascript:;">韩剧</a></li>
+								<li><a href="javascript:;">TVB</a></li>
+								<li><a href="javascript:;">台剧</a></li>
+								<li><a href="javascript:;">泰剧</a></li>
+							</ul>
+						</div>
+					</dd>
+					<dd class="fl">
+						<div class="column_movie"  id="column_movie">
+							<a href="javascript:;">电影</a>
+							<div id="subnav2" class="subnav">
+								<ul>
+									<li><a href="javascript:;">电影首页</a><i></i></li>
+									<li><a href="javascript:;">电影馆</a></li>
+									<li><a href="javascript:;">付费电影</a></li>
+									<li><a href="javascript:;">微电影</a></li>
+									<li><a href="javascript:;">排行榜</a></li>
+									<li><a href="javascript:;">台剧</a></li>
+								</ul>
+							</div>
+						</div>
+						<span>●</span>
+						<a href="javascript:;">预告</a>
+					</dd>
+					<dd class="fl"><a href="javascript:;">综艺</a></dd>
+					<dd class="fl"><a href="javascript:;">动漫</a></dd>
+					<dd class="fl"><a href="javascript:;">资讯</a></dd>
+					<dd class="fl"><a href="javascript:;">娱乐</a></dd>
+					<dd class="fl"><a href="javascript:;">直播</a></dd>
+					<dd class="fl"><a href="javascript:;">广场</a></dd>
+				</dl>
+				<ul class="h-nav-r fr">
+					<li class="fl"><a href="javascript:;">秀场</a></li>
+					<li class="fl"><a href="javascript:;">体育</a></li>
+					<li class="fl"><a href="javascript:;">搞笑</a></li>
+					<li class="fl"><a href="javascript:;">舞蹈</a></li>
+					<li class="fl"><a href="javascript:;">音乐</a></li>
+					<li class="fl"><a href="javascript:;">游戏</a></li>
+					<li class="fl"><a href="javascript:;">专题</a></li>
+				</ul>
+			</div>
+			<div class="bannerbox">
+				<div class="imgbox" id="imgbox"></div>
+				<div class="opabox0">
+				</div>
+				<ul class="clearfix bb-small"id="bannerbox">
+					<li class="active">
+						<a href="javascript:;"><img src="img/banner1.jpg"alt=""></a>
+						<i></i>
+						<b></b>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="img/banner2.jpg"alt=""></a>
+						<i></i>
+						<b></b>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="img/banner3.jpg"alt=""></a>
+						<i></i>
+						<b></b>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="img/banner4.jpg"alt=""></a>
+						<i></i>
+						<b></b>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="img/banner5.jpg"alt=""></a>
+						<i></i>
+						<b></b>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="img/banner6.jpg"alt=""></a>
+						<i></i>
+						<b></b>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="img/banner7.jpg"alt=""></a>
+						<i></i>
+						<b></b>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="img/banner8.jpg"alt=""></a>
+						<i></i>
+						<b></b>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="img/banner9.jpg"alt=""></a>
+						<i></i>
+						<b></b>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="sec1 clearfix">
+			<div class="sec-left fl">
+				<div class="sec-tit-l clearfix">
+					<h2>360网络院线</h2>
+					<span><a href="" class="btn">更多&gt;&gt;</a></span>
+				</div>
+				<div class="sec1-mainl-box" id="sec1box">
+					<ul class="clearfix sec1-mainl">
+						<li>
+							<div id="m0box">
+								<div class="imgbox">
+									<img src="img/m0.jpg" alt="">
+									<div class="m0box_img-tit">
+										当前有
+										<strong>1572</strong>
+										位影迷在同时观看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m0box-tit">
+									<p class="m0box-tit1">横冲直撞好莱坞</p>
+									<p class="m0box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<i class="sec1-l"></i>
+					<i class="sec1-r"></i>
+				</div>
+			</div>
+			<div class="sec-right fr">
+				<div class="sec-tit-r clearfix">
+					<h2>影片特别推荐</h2>
+				</div>
+				<div class="sec1-mainr-box">
+					<ul id="sec1box2">
+						<li class="btn">
+							<p class="sec-r-tit">左耳<span>316万</span></p>
+							<div class="sec-r-imgbox">
+								<img src="img/sec-r1.jpg" height="138" width="240" alt="">
+								<h5>左耳<span>316万</span></h5>
+							</div>
+						</li>
+						<li>
+							<p class="sec-r-tit">左耳<span>316万</span></p>
+							<div class="sec-r-imgbox">
+								<img src="img/sec-r1.jpg" height="138" width="240" alt="">
+								<h5>左耳<span>316万</span></h5>
+							</div>
+						</li>
+						<li>
+							<p class="sec-r-tit">左耳<span>316万</span></p>
+							<div class="sec-r-imgbox">
+								<img src="img/sec-r1.jpg" height="138" width="240" alt="">
+								<h5>左耳<span>316万</span></h5>
+							</div>
+						</li>
+						<li>
+							<p class="sec-r-tit">左耳<span>316万</span></p>
+							<div class="sec-r-imgbox">
+								<img src="img/sec-r1.jpg" height="138" width="240" alt="">
+								<h5>左耳<span>316万</span></h5>
+							</div>
+						</li>
+						<li>
+							<p class="sec-r-tit">左耳<span>316万</span></p>
+							<div class="sec-r-imgbox">
+								<img src="img/sec-r1.jpg" height="138" width="240" alt="">
+								<h5>左耳<span>316万</span></h5>
+							</div>
+						</li>
+						<li>
+							<p class="sec-r-tit">左耳<span>316万</span></p>
+							<div class="sec-r-imgbox">
+								<img src="img/sec-r1.jpg" height="138" width="240" alt="">
+								<h5>左耳<span>316万</span></h5>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="sec2 clearfix">
+			<div class="sec-left fl">
+				<div class="sec-tit-l clearfix">
+					<h2>今日热门</h2>
+					<ul>
+						<li><a href="" class="btn">热点</a></li>
+						<li><a href="javascript:;">美女</a></li>
+						<li><a href="javascript:;">游戏</a></li>
+						<li><a href="javascript:;">搞笑</a></li>
+					</ul>
+					<span><a href="javascript:;">更多&gt;&gt;</a></span>
+				</div>
+				<div class="sec2-mainl-box" id="sec2box">
+					<ul class="clearfix sec2-mainl">
+						<li>
+							<div id="m3box">
+								<div class="imgbox">
+									<img src="img/mb3.jpg" alt="">
+									<div class="m3box_img-tit">
+										<p>有强盗isdHI阿松的人在看</p>
+									</div>
+									<div class="opabox">
+										<i></i>
+									</div>
+								</div>
+								<div class="m3box-tit">
+									<p class="m3box-tit2">黄晓明赵薇突如其来的爱情</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m4box">
+								<div class="imgbox">
+									<img src="img/mb4.jpg" alt="">
+									<div class="m4box_img-tit">
+										<p>有强盗isdHI阿松的人在看</p>
+									</div>
+									<div class="opabox">
+										<i></i>
+									</div>
+								</div>
+								<div class="m4box-tit">
+									<p class="m4box-tit2">黄晓明赵薇突如其来的爱情</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m4box">
+								<div class="imgbox">
+									<img src="img/mb4.jpg" alt="">
+									<div class="m4box_img-tit">
+										<p>有强盗isdHI阿松的人在看</p>
+									</div>
+									<div class="opabox">
+										<i></i>
+									</div>
+								</div>
+								<div class="m4box-tit">
+									<p class="m4box-tit2">黄晓明赵薇突如其来的爱情</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m4box">
+								<div class="imgbox">
+									<img src="img/mb4.jpg" alt="">
+									<div class="m4box_img-tit">
+										<p>有强盗isdHI阿松的人在看</p>
+									</div>
+									<div class="opabox">
+										<i></i>
+									</div>
+								</div>
+								<div class="m4box-tit">
+									<p class="m4box-tit2">黄晓明赵薇突如其来的爱情</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m4box">
+								<div class="imgbox">
+									<img src="img/mb4.jpg" alt="">
+									<div class="m4box_img-tit">
+										<p>有强盗isdHI阿松的人在看</p>
+									</div>
+									<div class="opabox">
+										<i></i>
+									</div>
+								</div>
+								<div class="m4box-tit">
+									<p class="m4box-tit2">黄晓明赵薇突如其来的爱情</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m4box">
+								<div class="imgbox">
+									<img src="img/mb4.jpg" alt="">
+									<div class="m4box_img-tit">
+										<p>有强盗isdHI阿松的人在看</p>
+									</div>
+									<div class="opabox">
+										<i></i>
+									</div>
+								</div>
+								<div class="m4box-tit">
+									<p class="m4box-tit2">黄晓明赵薇突如其来的爱情</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m4box">
+								<div class="imgbox">
+									<img src="img/mb4.jpg" alt="">
+									<div class="m4box_img-tit">
+										<p>有强盗isdHI阿松的人在看</p>
+									</div>
+									<div class="opabox">
+										<i></i>
+									</div>
+								</div>
+								<div class="m4box-tit">
+									<p class="m4box-tit2">黄晓明赵薇突如其来的爱情</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="sec-right fr">
+				<div class="sec-tit-r clearfix">
+					<h2>独家热门资讯</h2>
+				</div>
+				<dl>
+					<dt><img src="img/sec2-r.jpg" height="120" width="240" alt=""></dt>
+					<dd><a href="javascript:;">“校服女神”宋伊人触电“步步惊心”</a></dd>
+					<dd><a href="javascript:;">“校服女神”宋伊人触电“步步惊心”</a></dd>
+					<dd><a href="javascript:;">“校服女神”宋伊人触电“步步惊心”</a></dd>
+					<dd><a href="javascript:;">“校服女神”宋伊人触电“步步惊心”</a></dd>
+					<dd><a href="javascript:;">“校服女神”宋伊人触电“步步惊心”</a></dd>
+				</dl>
+			</div>
+		</div>
+		<div class="sec3 clearfix">
+			<div class="sec-left fl">
+				<div class="sec-tit-l clearfix">
+					<h2>电视剧</h2>
+					<ul>
+						<li><a href="" class="btn">热门</a></li>
+						<li><a href="javascript:;">最新</a></li>
+						<li><a href="javascript:;">内地</a></li>
+						<li><a href="javascript:;">港台</a></li>
+						<li><a href="javascript:;">韩剧</a></li>
+						<li><a href="javascript:;">美剧</a></li>
+						<li><a href="javascript:;">泰剧</a></li>
+					</ul>
+					<span><a href="javascript:;">更多&gt;&gt;</a></span>
+				</div>
+				<div class="sec2-mainl-box" id="sec3box">
+					<ul class="clearfix">
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="sec-right fr">
+				<div class="sec-tit-r clearfix">
+					<h2>本月最受关注电视剧</h2>
+				</div>
+				<ol id="sec3box2">
+					<li class="btn">
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">1</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">1</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">2</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">2</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">3</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">3</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">4</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">4</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">5</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">5</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">6</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">6</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">7</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">7</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">8</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">8</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">9</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">9</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">10</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">10</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+				</ol>
+				<div class="sec-tit-r clearfix mt0">
+					<h2>本月最受关注电视剧</h2>
+				</div>
+				<div class="sec3-r-mainbb">
+					<dl class="clearfix">
+						<dt>类型:</dt>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>地区:</dt>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>年份:</dt>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>演员:</dt>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="sec4 clearfix">
+			<div class="sec-left fl">
+				<div class="sec-tit-l clearfix">
+					<h2>电影</h2>
+					<ul>
+						<li><a href="" class="btn">热门</a></li>
+						<li><a href="javascript:;">最新</a></li>
+						<li><a href="javascript:;">喜剧</a></li>
+						<li><a href="javascript:;">爱情</a></li>
+						<li><a href="javascript:;">动作</a></li>
+						<li><a href="javascript:;">恐怖</a></li>
+						<li><a href="javascript:;">战争</a></li>
+						<li><a href="javascript:;">魔幻</a></li>
+					</ul>
+					<span><a href="javascript:;">更多&gt;&gt;</a></span>
+				</div>
+				<div class="sec2-mainl-box" id="sec4box">
+					<ul class="clearfix">
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m2box">
+								<div class="imgbox">
+									<img src="img/m2.jpg" alt="">
+									<div class="m2box_img-tit">
+										有
+										<strong>1572</strong>
+										人在看
+									</div>
+									<div class="pabox">
+										<div class="opabg"></div>
+										<div class="opacmain">
+											<dl>
+												<dt><div>横冲直撞好莱坞</div></dt>
+												<dd class="sbox"><div class="mb-star"><span></span></div>4.8分</dd>
+												<dd class="s-tit">2015年 大陆 喜剧</dd>
+												<dd class="s-tit">导游： 李敏深</dd>
+												<dd class="s-tit">大牌主演： blue，强哥，宝哥</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="m2box-tit">
+									<p class="m2box-tit1">横冲直撞好莱坞</p>
+									<p class="m2box-tit2">黄晓明赵薇突如其来的爱情</p>
+									<div class="pabox_b">
+										<span></span>
+										 <a href="javascript:;">大家一起看</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="sec-right fr">
+				<div class="sec-tit-r clearfix">
+					<h2>本月最受关注电电影</h2>
+				</div>
+				<ol id="sec4box2">
+					<li class="btn">
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">1</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">1</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">2</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">2</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">3</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">3</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">4</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">4</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">5</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">5</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">6</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">6</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">7</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">7</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">8</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">8</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">9</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">9</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">10</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">10</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+				</ol>
+				<div class="sec-tit-r clearfix mt0">
+					<h2>电影筛选</h2>
+				</div>
+				<div class="sec3-r-mainbb">
+					<dl class="clearfix">
+						<dt>类型:</dt>
+						<dd><a href="javascript:;">喜剧</a></dd>
+						<dd><a href="javascript:;">犯罪</a></dd>
+						<dd><a href="javascript:;">剧情</a></dd>
+						<dd><a href="javascript:;">伦理</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>地区:</dt>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>年份:</dt>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>演员:</dt>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+						<dd><a href="javascript:;">偶像</a></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="sec5 clearfix">
+			<div class="sec-left fl">
+				<div class="sec-tit-l clearfix">
+					<h2>电影</h2>
+					<span><a href="javascript:;">更多&gt;&gt;</a></span>
+				</div>
+				<div class="sec2-mainl-box2">
+					<ul class="clearfix">
+						<li>
+							<div id="m5box">
+								<div class="imgbox">
+									<img src="img/mb5.jpg" alt="">
+									<div class="m5box_img-tit">
+										<p>有强盗isdHI阿松的人在看</p>
+									</div>
+									<div class="opabox2"></div>
+								</div>
+								<div class="m5box-tit">
+									<p class="m5box-tit2"><a href="javascript:;">港囧</a></p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m5box">
+								<div class="imgbox">
+									<img src="img/mb5.jpg" alt="">
+									<div class="m5box_img-tit">
+										<p>有强盗isdHI阿松的人在看</p>
+									</div>
+									<div class="opabox2"></div>
+								</div>
+								<div class="m5box-tit">
+									<p class="m5box-tit2"><a href="javascript:;">港囧</a></p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m5box">
+								<div class="imgbox">
+									<img src="img/mb5.jpg" alt="">
+									<div class="m5box_img-tit">
+										<p>有强盗isdHI阿松的人在看</p>
+									</div>
+									<div class="opabox2"></div>
+								</div>
+								<div class="m5box-tit">
+									<p class="m5box-tit2"><a href="javascript:;">港囧</a></p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m5box">
+								<div class="imgbox">
+									<img src="img/mb5.jpg" alt="">
+									<div class="m5box_img-tit">
+										<p>有强盗isdHI阿松的人在看</p>
+									</div>
+									<div class="opabox2"></div>
+								</div>
+								<div class="m5box-tit">
+									<p class="m5box-tit2"><a href="javascript:;">港囧</a></p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m5box">
+								<div class="imgbox">
+									<img src="img/mb5.jpg" alt="">
+									<div class="m5box_img-tit">
+										<p>有强盗isdHI阿松的人在看</p>
+									</div>
+									<div class="opabox2"></div>
+								</div>
+								<div class="m5box-tit">
+									<p class="m5box-tit2"><a href="javascript:;">港囧</a></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="sec-right fr">
+				<div class="sec-tit-r clearfix">
+					<h2>电影.专题</h2>
+				</div>
+				<div class="sec5-r-main">
+					<div id="m6box">
+						<div class="imgbox">
+							<img src="img/sec5-r.jpg" alt="">
+							<div class="m6box_img-tit">
+								<p>有强盗isdHI阿松的人在看</p>
+							</div>
+						</div>
+						<div class="m6box-tit">
+							<p class="m6box-tit2"><a href="javascript:;">7月银幕最前线：大片云集燃爆暑假</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ad">
+			<iframe src="http://www.360kan.com/special/iframe/m1.html" frameborder="0" scrolling="no" style="width:610px;height:100px;margin-right:16px;"></iframe>
+			<iframe src="http://www.360kan.com/special/iframe/m1.html" frameborder="0" scrolling="no" style="width:610px;height:100px;"></iframe>
+		</div>
+		<div class="sec6 clearfix">
+			<div class="sec-left fl">
+				<div class="sec-tit-l clearfix">
+					<h2>综艺</h2>
+					<ul>
+						<li><a href="" class="btn">热门</a></li>
+						<li><a href="javascript:;">选秀</a></li>
+						<li><a href="javascript:;">情感</a></li>
+						<li><a href="javascript:;">访谈</a></li>
+					</ul>
+					<span><a href="javascript:;">更多&gt;&gt;</a></span>
+				</div>
+				<div class="sec2-mainl-box" id="sec6box1">
+					<ul class="clearfix">
+						<li>
+							<div id="m7box">
+								<div class="imgbox">
+									<img src="img/mb6.jpg" height="254" width="380" alt="">
+									<div class="m7box_img-tit">
+										<p><span class="howmany">225万</span></p>
+									</div>
+									<div class="opabox1"><i></i></div>
+								</div>
+								<div class="m7box-tit">
+									<p class="m7box-tit1"><a href="javascript:;">非常静距离</a></p>
+									<p class="m7box-tit2"><a href="javascript:;">洪剑涛拍悬崖戏险被吓尿 述与妻子甜蜜往事</a></p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m8box">
+								<div class="imgbox">
+									<img src="img/mb8.jpg" height="100" width="180" alt="">
+									<div class="m8box_img-tit">
+										<p><span class="howmany">225万</span></p>
+									</div>
+									<div class="opabox1"><i></i></div>
+								</div>
+								<div class="m8box-tit">
+									<p class="m8box-tit1"><a href="javascript:;">鲁豫有约</a></p>
+									<p class="m8box-tit2">周韦彤分享好身材秘诀</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m8box">
+								<div class="imgbox">
+									<img src="img/mb8.jpg" height="100" width="180" alt="">
+									<div class="m8box_img-tit">
+										<p><span class="howmany">225万</span></p>
+									</div>
+									<div class="opabox1"><i></i></div>
+								</div>
+								<div class="m8box-tit">
+									<p class="m8box-tit1"><a href="javascript:;">鲁豫有约</a></p>
+									<p class="m8box-tit2">周韦彤分享好身材秘诀</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m8box">
+								<div class="imgbox">
+									<img src="img/mb8.jpg" height="100" width="180" alt="">
+									<div class="m8box_img-tit">
+										<p><span class="howmany">225万</span></p>
+									</div>
+									<div class="opabox1"><i></i></div>
+								</div>
+								<div class="m8box-tit">
+									<p class="m8box-tit1"><a href="javascript:;">鲁豫有约</a></p>
+									<p class="m8box-tit2">周韦彤分享好身材秘诀</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m8box">
+								<div class="imgbox">
+									<img src="img/mb8.jpg" height="100" width="180" alt="">
+									<div class="m8box_img-tit">
+										<p><span class="howmany">225万</span></p>
+									</div>
+									<div class="opabox1"><i></i></div>
+								</div>
+								<div class="m8box-tit">
+									<p class="m8box-tit1"><a href="javascript:;">鲁豫有约</a></p>
+									<p class="m8box-tit2">周韦彤分享好身材秘诀</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m8box">
+								<div class="imgbox">
+									<img src="img/mb8.jpg" height="100" width="180" alt="">
+									<div class="m8box_img-tit">
+										<p><span class="howmany">225万</span></p>
+									</div>
+									<div class="opabox1"><i></i></div>
+								</div>
+								<div class="m8box-tit">
+									<p class="m8box-tit1"><a href="javascript:;">鲁豫有约</a></p>
+									<p class="m8box-tit2">周韦彤分享好身材秘诀</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m8box">
+								<div class="imgbox">
+									<img src="img/mb8.jpg" height="100" width="180" alt="">
+									<div class="m8box_img-tit">
+										<p><span class="howmany">225万</span></p>
+									</div>
+									<div class="opabox1"><i></i></div>
+								</div>
+								<div class="m8box-tit">
+									<p class="m8box-tit1"><a href="javascript:;">鲁豫有约</a></p>
+									<p class="m8box-tit2">周韦彤分享好身材秘诀</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="sec-right fr">
+				<div class="sec-tit-r clearfix">
+					<h2>人气榜</h2>
+				</div>
+				<ol id="sec6box2">
+					<li class="btn">
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">1</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">1</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">2</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">2</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">3</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">3</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">4</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">4</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">5</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">5</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">6</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">6</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+					<li>
+						<div class="sec3-imgbox">
+							<img src="img/sec3-r.jpg" height="120" width="240" alt="">
+							<div class="sec3-r-maintit">
+								花千骨
+								<span class="fr howmany">486.11万</span>
+							</div>
+							<span class="num1">7</span>
+						</div>
+						<div class="sec3-r-main clearfix">
+							<span class="num2 fl">7</span>
+							<a href="" class="fl">冰与火的青春</a>
+							<span class="fr howmany">486.11万</span>
+						</div>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div class="sec7 clearfix">
+			<div class="sec-left fl">
+				<div class="sec-tit-l clearfix">
+					<h2>动漫</h2>
+					<ul>
+						<li><a href="" class="btn">热门</a></li>
+						<li><a href="javascript:;">日韩</a></li>
+						<li><a href="javascript:;">国产</a></li>
+						<li><a href="javascript:;">欧美</a></li>
+					</ul>
+					<span><a href="javascript:;">更多&gt;&gt;</a></span>
+				</div>
+				<div class="sec2-mainl-box" id="sec7box">
+					<ul class="clearfix">
+						<li>
+							<div id="m7box">
+								<div class="imgbox">
+									<img src="img/mb6.jpg" height="254" width="380" alt="">
+									<div class="m7box_img-tit">
+										<p><span class="howmany">225万</span></p>
+									</div>
+									<div class="opabox1"><i></i></div>
+								</div>
+								<div class="m7box-tit">
+									<p class="m7box-tit1"><a href="javascript:;">非常静距离</a></p>
+									<p class="m7box-tit2"><a href="javascript:;">洪剑涛拍悬崖戏险被吓尿 述与妻子甜蜜往事</a></p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m8box">
+								<div class="imgbox">
+									<img src="img/mb8.jpg" height="100" width="180" alt="">
+									<div class="m8box_img-tit">
+										<p><span class="howmany">225万</span></p>
+									</div>
+									<div class="opabox1"><i></i></div>
+								</div>
+								<div class="m8box-tit">
+									<p class="m8box-tit1"><a href="javascript:;">鲁豫有约</a></p>
+									<p class="m8box-tit2">周韦彤分享好身材秘诀</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m8box">
+								<div class="imgbox">
+									<img src="img/mb8.jpg" height="100" width="180" alt="">
+									<div class="m8box_img-tit">
+										<p><span class="howmany">225万</span></p>
+									</div>
+									<div class="opabox1"><i></i></div>
+								</div>
+								<div class="m8box-tit">
+									<p class="m8box-tit1"><a href="javascript:;">鲁豫有约</a></p>
+									<p class="m8box-tit2">周韦彤分享好身材秘诀</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m8box">
+								<div class="imgbox">
+									<img src="img/mb8.jpg" height="100" width="180" alt="">
+									<div class="m8box_img-tit">
+										<p><span class="howmany">225万</span></p>
+									</div>
+									<div class="opabox1"><i></i></div>
+								</div>
+								<div class="m8box-tit">
+									<p class="m8box-tit1"><a href="javascript:;">鲁豫有约</a></p>
+									<p class="m8box-tit2">周韦彤分享好身材秘诀</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m8box">
+								<div class="imgbox">
+									<img src="img/mb8.jpg" height="100" width="180" alt="">
+									<div class="m8box_img-tit">
+										<p><span class="howmany">225万</span></p>
+									</div>
+									<div class="opabox1"><i></i></div>
+								</div>
+								<div class="m8box-tit">
+									<p class="m8box-tit1"><a href="javascript:;">鲁豫有约</a></p>
+									<p class="m8box-tit2">周韦彤分享好身材秘诀</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m8box">
+								<div class="imgbox">
+									<img src="img/mb8.jpg" height="100" width="180" alt="">
+									<div class="m8box_img-tit">
+										<p><span class="howmany">225万</span></p>
+									</div>
+									<div class="opabox1"><i></i></div>
+								</div>
+								<div class="m8box-tit">
+									<p class="m8box-tit1"><a href="javascript:;">鲁豫有约</a></p>
+									<p class="m8box-tit2">周韦彤分享好身材秘诀</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="m8box">
+								<div class="imgbox">
+									<img src="img/mb8.jpg" height="100" width="180" alt="">
+									<div class="m8box_img-tit">
+										<p><span class="howmany">225万</span></p>
+									</div>
+									<div class="opabox1"><i></i></div>
+								</div>
+								<div class="m8box-tit">
+									<p class="m8box-tit1"><a href="javascript:;">鲁豫有约</a></p>
+									<p class="m8box-tit2">周韦彤分享好身材秘诀</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="sec-right fr">
+				<div class="sec-tit-r clearfix">
+					<h2>每日更新</h2>
+				</div>
+				<div class="sec-tit-mainrbox">
+					<ul class="clearfix">
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="sec8 clearfix">
+			<div class="sec-left fl">
+				<div class="sec-tit-l clearfix">
+					<h2>独家策划</h2>
+					<ul>
+						<li><a href="" class="btn">明星剧场</a></li>
+						<li><a href="javascript:;">音乐汇</a></li>
+						<li><a href="javascript:;">体坛荷尔蒙</a></li>
+						<li><a href="javascript:;">搞笑联播台</a></li>
+						<li><a href="javascript:;">美女时尚</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sec8-main" id="sec8box">
+				<ul class="clearfix">
+					<li>
+						<div id="m9box">
+							<div class="imgbox">
+								<img src="img/sec8-1.jpg"alt="">
+								<div class="opabox1">
+									<h5>北体大校花私照变长腿公主</h5>
+									<p>性感蜂腰仍清新</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div id="m9box">
+							<div class="imgbox">
+								<img src="img/sec8-2.jpg"alt="">
+								<div class="opabox1">
+									<h5>北体大校花私照变长腿公主</h5>
+									<p>性感蜂腰仍清新</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div id="m9box">
+							<div class="imgbox">
+								<img src="img/sec8-3.jpg"alt="">
+								<div class="opabox1">
+									<h5>北体大校花私照变长腿公主</h5>
+									<p>性感蜂腰仍清新</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div id="m9box">
+							<div class="imgbox">
+								<img src="img/sec8-4.jpg"alt="">
+								<div class="opabox1">
+									<h5>北体大校花私照变长腿公主</h5>
+									<p>性感蜂腰仍清新</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div id="m9box">
+							<div class="imgbox">
+								<img src="img/sec8-5.jpg"alt="">
+								<div class="opabox1">
+									<h5>北体大校花私照变长腿公主</h5>
+									<p>性感蜂腰仍清新</p>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="bigbox" id="m9other">
+					<div id="m9box">
+						<div class="imgbox">
+							<img src="img/sec8-6.jpg"alt="">
+							<div class="opabox1">
+								<h5>北体大校花私照变长腿公主</h5>
+								<p>性感蜂腰仍清新</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ad">
+			<iframe src="http://www.360kan.com/special/iframe/m1.html" frameborder="0" scrolling="no" style="width:610px;height:100px;margin-right:16px;"></iframe>
+			<iframe src="http://www.360kan.com/special/iframe/m1.html" frameborder="0" scrolling="no" style="width:610px;height:100px;"></iframe>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="link">
+			<a href="javascript:;">意见反馈</a>
+			<span>|</span>
+			<a href="javascript:;">官方微博</a>
+			<span>|</span>
+			<a href="javascript:;">加入收藏</a>
+			<span>|</span>
+			<a href="javascript:;">版权声明</a>
+			<span>|</span>
+			<a href="javascript:;">关于我们</a>
+			<span>|</span>
+			<a href="javascript:;">联系方式</a>
+		</div>
+		<div class="copyright">
+			<span>Copyright © 360安全网址. All Rights Reserved.</span>
+			<span>浙ICP证B2-20090064号</span>
+			<span>信息网络传播视听节目许可证1109357号</span>
+		</div>
+	</div>
+</body>
+</html>

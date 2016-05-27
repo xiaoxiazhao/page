@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+.Sidebar_right{
+	position:fixed;top:0;right:0;
+	z-index:1}
+.Sidebar{
+	width:34px;
+	height:35px;
+	display:block;
+	background-color:#919191;
+	border-radius:5px;
+	margin-bottom:1px;
+	cursor:pointer;
+	}
+.Sidebar_p{
+	width:62px;
+	height:35px;
+	background-color:#919191;
+	position:relative; top:-35px;
+	font-size:12px;
+	font-family:"Microsoft YaHei";
+	color:#FFF;
+	line-height:35px;
+	padding-left:15px; 
+	-webkit-transition:all .4s ease-in-out .1s;
+	border-radius:5px;
+	}
+.Sidebar i{
+	width:34px;
+	height:35px;
+	background-color:#919191;
+	position:relative;
+	z-index:2;
+	display:block;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	background-image:url(../img/Thesidebar.png);
+	background-repeat:no-repeat;
+	padding-left:5px;
+	}
+.Sidebar:hover .Sidebar_p{
+	background:#08ac29;
+	transform: translate(-62px,0);}
+.Sidebar:hover .Sidebar_i,
+.Sidebar:hover .Sidebar_i1,
+.Sidebar:hover .Sidebar_i2,
+.Sidebar:hover .Sidebar_i3,
+.Sidebar:hover .Sidebar_i4,
+.Sidebar:hover .Sidebar_i5{
+	background-color:#08ac29;}
+.Sidebar .Sidebar_i{
+	background-position:0 -105px;}
+.Sidebar .Sidebar_i1{
+	background-position:0 0;}	
+.Sidebar .Sidebar_i2{
+	background-position:0 -35px;}	
+.Sidebar .Sidebar_i3{
+	background-position:0 -70px;}
+.Sidebar .Sidebar_i4{
+	background-position:0 -140px;}
+.Sidebar .Sidebar_i5{
+	background-position:0 -175px;}	
+	
+.Sidebar_right1{
+	position:fixed; right:0px; bottom:0;
+	z-index:1}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

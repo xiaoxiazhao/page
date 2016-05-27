@@ -1,0 +1,362 @@
+// JavaScript Document
+var YKSPACE = {}
+
+YKSPACE.namespace = function(str) {
+    var arr = str.split("."),o = YKSPACE;
+         for (i=(arr[0] == "YKSPACE") ? 1 : 0; i<arr.length; i++) {
+                 o[arr[i]]=o[arr[i]] || {};
+                 o=o[arr[i]];
+    }
+}
+
+YKSPACE.namespace("Dom");
+
+YKSPACE.Dom.getScript_cds = function(src,callback){
+	var head=document.getElementsByTagName("head")[0];
+	var js=document.createElement("script");
+	js.type = "text/javascript";
+	js.setAttribute("src",src);
+	js.onload=js.onreadystatechange=function(){
+		if(!this.readyState||this.readyState=="loaded"||this.readyState=="complete"){
+			head.removeChild(js);
+			if(callback) callback();
+		}
+	}
+	head.appendChild(js);
+}
+
+var YKRANK ={
+	//variable
+	str         : '',
+	str2        : '',
+	ykBoxNew    : '',
+	ykTabHot1   : '',
+	ykTabHot2   : '',
+	ykTabHot3   : '',
+	ykTabHot4   : '',
+	ykBoxHot1   : '',
+	ykBoxHot2   : '',
+	ykBoxHot3   : '',
+	ykBoxHot4   : '',
+	ykBoxGenius : '',
+	
+	//flag
+	flaghuayu   : true,
+	flagoumei   : true,
+	flagrihan   : true,
+
+	//get interface
+	getMusicNew:'http://vq.youku.com/video/AppTop.json?cate=95&listtype=1&userid=234523452&pl=6&period=day&callback=YKRANK.getRank',
+	getMusicAll:'http://vq.youku.com/video/AppTop.json?cate=95&listtype=2&userid=234523452&pl=8&period=day&subtype1=all&callback=YKRANK.getAll',
+	getMusicHot1:'http://vq.youku.com/video/AppTop.json?cate=95&listtype=2&userid=234523452&pl=8&period=day&subtype1=huayu&callback=YKRANK.getHot1',
+	getMusicHot2:'http://vq.youku.com/video/AppTop.json?cate=95&listtype=2&userid=234523452&pl=8&period=day&subtype1=oumei&callback=YKRANK.getHot2',
+	getMusicHot3:'http://vq.youku.com/video/AppTop.json?cate=95&listtype=2&userid=234523452&pl=8&period=day&subtype1=rihan&callback=YKRANK.getHot3',
+	getMusicGenius:'http://vq.youku.com/video/AppTop.json?cate=95&listtype=3&userid=234523452&pl=6&period=day&callback=YKRANK.getGenius',
+
+    // loadString
+    strLoading : '<div class="my-loading"><div class="ico__loading_32"></div></div>',
+
+    init : function() {
+        var _this = this;
+        _this.ykBoxNew = document.getElementById('yk-box-new');
+        _this.ykTabHot1 = document.getElementById('thtab_87092_1');
+        _this.ykTabHot2 = document.getElementById('thtab_87092_2');
+        _this.ykTabHot3 = document.getElementById('thtab_87092_3');
+        _this.ykTabHot4 = document.getElementById('thtab_87092_4');
+        _this.ykBoxHot1 = document.getElementById('yk-box-hot1');
+        _this.ykBoxHot2 = document.getElementById('yk-box-hot2');
+        _this.ykBoxHot3 = document.getElementById('yk-box-hot3');
+        _this.ykBoxHot4 = document.getElementById('yk-box-hot4');
+        _this.ykBoxGenius = document.getElementById('yk-box-genius');
+
+        // getJson
+		YKSPACE.Dom.getScript_cds(_this.getMusicNew);
+		YKSPACE.Dom.getScript_cds(_this.getMusicAll);	
+		YKSPACE.Dom.getScript_cds(_this.getMusicGenius);
+		_this.ykTabHot2.onmouseover = function(){
+			if(_this.flaghuayu){
+				YKSPACE.Dom.getScript_cds(_this.getMusicHot1);
+				_this.flaghuayu = false;
+			}
+		};			
+		_this.ykTabHot3.onmouseover = function(){
+			if(_this.flagoumei){
+				YKSPACE.Dom.getScript_cds(_this.getMusicHot2);
+				_this.flagoumei = false;
+			}
+		};
+		_this.ykTabHot4.onmouseover = function(){
+			if(_this.flagrihan){
+				YKSPACE.Dom.getScript_cds(_this.getMusicHot3);
+				_this.flagrihan = false;
+			}
+		};
+    },
+
+	getRank : function(datas){
+		var _this = this;
+		
+		if(datas){
+			var obj =datas.data, length = obj.length, len;
+			len = Math.min(5, length);
+			_this.str = '<div class="yk-rank yk-rank-long">';
+			for(var i=0; i<len; i++){
+				if(i < 3){
+					_this.str += '<div class="item item-thumb"><label class="hot">'+ (i+1) +'</label>';
+				}else{
+					_this.str += '<div class="item item-thumb"><label>'+ (i+1) +'</label>';
+				}
+				_this.str += '<span class="thumb"><a href="' + obj[i].playUrl + '" target="video" title="' + obj[i].title + '">';
+				_this.str += '<img src="' + obj[i].cutUrl + '" alt="Running Away" width="90" height="68" /></a></span>';
+				_this.str += '<a href="' + obj[i].playUrl + '" target="_blank" class="name">' + obj[i].title.substring(0,10) + '</a>';
+				_this.str += '<span class="extend">歌手: <a  target="_blank" href="'+ obj[i].actorSpaceUrl +'">' + obj[i].actorName + '</a></span><span class="rating">' + obj[i].score + '分</span></div>';
+				singerName = '';
+			}
+			_this.str += '<div class="yk-rank-link"><a href="http://music.youku.com/top10">更多榜单>></a></div>';
+			_this.str += '</div>';
+		}else{
+			_this.str = '<div class="yk-rank yk-rank-long">';
+			_this.str += '<div class="item item-thumb">暂无数据</div>';
+			_this.str += '</div>';
+		};
+		_this.ykBoxNew.innerHTML = _this.str;
+	},
+
+	//getHot1
+	 getAll:function(datas){
+		var _this = this;
+		if(datas){
+			var obj =datas.data, len = obj.length, str1='';
+			len = Math.min(8, len);
+			for(var i=0; i<len; i++){
+				if(i%2 ==0){
+					if(i != 6){
+						str1 += '<div class="yk-col4">';
+					}else{
+						str1 += '<div class="yk-col4 yk-w970-hide">';
+					}
+				}
+				str1 += '<div class="yk-mv-video"><div class="yk-mvcompany">';
+				str1 += '<div class="avatar"><a target="_blank" href="' + obj[i].actorSpaceUrl + '"><img title="' + obj[i].title + '" src="' + obj[i].actorCutUrl + '" /></a></div>';
+				str1 += '<div class="name"><a target="_blank" href="' + obj[i].actorSpaceUrl + '">' + obj[i].actorName + '</a></div>';
+				str1 += '</div>';
+				str1 += '<div class="v"><div class="v-thumb">';	
+				str1 += '<img src="' + obj[i].cutUrl + '" alt="' + obj[i].title + '" /></div>';	
+				str1 += '<div class="v-link"><a href="' + obj[i].playUrl + '" target="video" title="' + obj[i].title + '"></a></div>';	
+				str1 += '<div class="v-meta va"><div class="v-meta-title"><a href="' + obj[i].playUrl + '" target="_blank">' + _this.subStrLen(obj[i].title,22,true) + '</a></div>';	
+				str1 += '<div class="v-meta-entry"><i class="ico-statplay" title="播放"></i><span class="v-num">' + _this.formatnum(obj[i].totalVv)+ '</span>&nbsp;<i title="评论" class="ico-statcomment"></i><span class="v-num">' + _this.formatnum(obj[i].comments) + '</span></div>';	
+				str1 += '<div class="v-meta-overlay"></div>';
+				str1 += '</div></div></div>';
+				if(i != 0 && i%2 ==1){
+					str1 += '</div>';
+				}			
+			}
+		}else{
+			str1 = '<div class="yk-col4">';
+			str1 += '<div class="yk-mv-video">暂无数据</div>';
+			str1 += '</div>';
+		};
+		_this.ykBoxHot1.innerHTML = str1;
+	},
+
+	//getHot1
+	 getHot1:function(datas){
+		var _this = this;
+		if(datas){
+			var obj =datas.data, len = obj.length, str1='';
+			len = Math.min(8, len);
+			for(var i=0; i<len; i++){
+				if(i%2 ==0){
+					if(i != 6){
+						str1 += '<div class="yk-col4">';
+					}else{
+						str1 += '<div class="yk-col4 yk-w970-hide">';
+					}
+				}
+				str1 += '<div class="yk-mv-video"><div class="yk-mvcompany">';
+				str1 += '<div class="avatar"><a target="_blank" href="' + obj[i].actorSpaceUrl + '"><img title="' + obj[i].title + '" src="' + obj[i].actorCutUrl + '" /></a></div>';
+				str1 += '<div class="name"><a target="_blank" href="' + obj[i].actorSpaceUrl + '">' + obj[i].actorName + '</a></div>';
+				str1 += '</div>';
+				str1 += '<div class="v"><div class="v-thumb">';	
+				str1 += '<img src="' + obj[i].cutUrl + '" alt="' + obj[i].title + '" /></div>';	
+				str1 += '<div class="v-link"><a href="' + obj[i].playUrl + '" target="video" title="' + obj[i].title + '"></a></div>';	
+				str1 += '<div class="v-meta va"><div class="v-meta-title"><a href="' + obj[i].playUrl + '" target="_blank">' + _this.subStrLen(obj[i].title,22,true) + '</a></div>';	
+				str1 += '<div class="v-meta-entry"><i class="ico-statplay" title="播放"></i><span class="v-num">' + _this.formatnum(obj[i].totalVv)+ '</span>&nbsp;<i title="评论" class="ico-statcomment"></i><span class="v-num">' + _this.formatnum(obj[i].comments) + '</span></div>';	
+				str1 += '<div class="v-meta-overlay"></div>';
+				str1 += '</div></div></div>';
+				if(i != 0 && i%2 ==1){
+					str1 += '</div>';
+				}			
+			}
+		}else{
+			str1 = '<div class="yk-col4">';
+
+			str1 += '<div class="yk-mv-video">暂无数据</div>';
+			str1 += '</div>';
+		};
+		_this.ykBoxHot2.innerHTML = str1;
+	},
+
+	//getHot2
+	 getHot2:function(datas){
+		var _this = this;
+		if(datas){
+			var obj =datas.data, len = obj.length, str1='';
+			len = Math.min(8, len);
+			for(var i=0; i<len; i++){
+				if(i%2 ==0){
+					if(i != 6){
+						str1 += '<div class="yk-col4">';
+					}else{
+						str1 += '<div class="yk-col4 yk-w970-hide">';
+					}
+				}
+				str1 += '<div class="yk-mv-video"><div class="yk-mvcompany">';
+				str1 += '<div class="avatar"><a target="_blank" href="' + obj[i].actorSpaceUrl + '"><img title="' + obj[i].title + '" src="' + obj[i].actorCutUrl + '" /></a></div>';
+				str1 += '<div class="name"><a target="_blank" href="' + obj[i].actorSpaceUrl + '">' + obj[i].actorName + '</a></div>';
+				str1 += '</div>';
+				str1 += '<div class="v"><div class="v-thumb">';	
+				str1 += '<img src="' + obj[i].cutUrl + '" alt="' + obj[i].title + '" /></div>';	
+				str1 += '<div class="v-link"><a href="' + obj[i].playUrl + '" target="video" title="' + obj[i].title + '"></a></div>';	
+				str1 += '<div class="v-meta va"><div class="v-meta-title"><a href="' + obj[i].playUrl + '" target="_blank">' + _this.subStrLen(obj[i].title,22,true) + '</a></div>';	
+				str1 += '<div class="v-meta-entry"><i class="ico-statplay" title="播放"></i><span class="v-num">' + _this.formatnum(obj[i].totalVv)+ '</span>&nbsp;<i title="评论" class="ico-statcomment"></i><span class="v-num">' + _this.formatnum(obj[i].comments) + '</span></div>';	
+				str1 += '<div class="v-meta-overlay"></div>';
+				str1 += '</div></div></div>';
+				if(i != 0 && i%2 ==1){
+					str1 += '</div>';
+				}			
+			}
+		}else{
+			str1 = '<div class="yk-col4">';
+			str1 += '<div class="yk-mv-video">暂无数据</div>';
+			str1 += '</div>';
+		};
+		_this.ykBoxHot3.innerHTML = str1;
+	},
+
+	//getHot3
+	 getHot3:function(datas){
+		var _this = this;
+		if(datas){
+			var obj =datas.data, len = obj.length, str1='';
+			len = Math.min(8, len);
+			for(var i=0; i<len; i++){
+				if(i%2 ==0){
+					if(i != 6){
+						str1 += '<div class="yk-col4">';
+					}else{
+						str1 += '<div class="yk-col4 yk-w970-hide">';
+					}
+				}
+				str1 += '<div class="yk-mv-video"><div class="yk-mvcompany">';
+				str1 += '<div class="avatar"><a target="_blank" href="' + obj[i].actorSpaceUrl + '"><img title="' + obj[i].title + '" src="' + obj[i].actorCutUrl + '" /></a></div>';
+				str1 += '<div class="name"><a target="_blank" href="' + obj[i].actorSpaceUrl + '">' + obj[i].actorName + '</a></div>';
+				str1 += '</div>';
+				str1 += '<div class="v"><div class="v-thumb">';	
+				str1 += '<img src="' + obj[i].cutUrl + '" alt="' + obj[i].title + '" /></div>';	
+				str1 += '<div class="v-link"><a href="' + obj[i].playUrl + '" target="video" title="' + obj[i].title + '"></a></div>';	
+				str1 += '<div class="v-meta va"><div class="v-meta-title"><a href="' + obj[i].playUrl + '" target="_blank">' + _this.subStrLen(obj[i].title,22,true) + '</a></div>';	
+				str1 += '<div class="v-meta-entry"><i class="ico-statplay" title="播放"></i><span class="v-num">' + _this.formatnum(obj[i].totalVv)+ '</span>&nbsp;<i title="评论" class="ico-statcomment"></i><span class="v-num">' + _this.formatnum(obj[i].comments) + '</span></div>';	
+				str1 += '<div class="v-meta-overlay"></div>';
+				str1 += '</div></div></div>';
+				if(i != 0 && i%2 ==1){
+					str1 += '</div>';
+				}			
+			}
+		}else{
+			str1 = '<div class="yk-col4">';
+			str1 += '<div class="yk-mv-video">暂无数据</div>';
+			str1 += '</div>';
+		};
+		_this.ykBoxHot4.innerHTML = str1;
+	},
+
+	//getGenius
+	 getGenius : function(datas){
+		var _this = this;
+		if(datas){
+			var obj =datas.data, length = obj.length, len;
+			len = Math.min(5, length);
+			_this.str2 += '<div class="yk-rank yk-rank-long">';
+			for(var i=0; i<len; i++){
+				if(i < 3){
+					_this.str2 += '<div class="item"><label class="hot">'+ (i+1) +'</label>';
+				}else{
+					_this.str2 += '<div class="item"><label>'+ (i+1) +'</label>';
+				}
+				_this.str2 += '<a href="' + obj[i].playUrl + '" target="_blank" class="name">' + obj[i].title.substring(0,12) + '</a>';
+				_this.str2 += '<span class="extend"><a  target="_blank" href="'+ obj[i].actorSpaceUrl +'">' + obj[i].actorName + '</a></span></div>';
+			}
+			_this.str2 += '<div class="yk-rank-link"><a href="http://music.youku.com/niuren/index">更多榜单&gt;&gt;</a></div>';
+			_this.str2 += '</div>';
+		}else{
+			_this.str2 = '<div class="yk-rank yk-rank-long">';
+			_this.str2 += '<div class="item">暂无数据</div>';
+			_this.str2 += '</div>';
+		};
+		
+		_this.ykBoxGenius.innerHTML = _this.str2;
+	},
+
+	subStrLen:function(str, len, hasDot){  
+	    var newLength = 0;  
+	    var newStr = "";  
+	    var chineseRegex = /[^\x00-\xff]/g;  
+	    var singleChar = "";  
+	    var strLength = str.replace(chineseRegex,"**").length;  
+	    for(var i = 0;i < strLength;i++)  
+	    {  
+	        singleChar = str.charAt(i).toString();  
+	        if(singleChar.match(chineseRegex) != null){  
+	            newLength += 2;  
+	        }else{
+	            newLength++;  
+	        }  
+	        if(newLength > len){  
+	            break;  
+	        }  
+	        newStr += singleChar;  
+	    }
+	    if(hasDot && strLength > len){  
+	        newStr += "...";
+	    }  
+	    return newStr;  
+	},
+	
+	// Format Number
+	 formatnum:function(n){
+		n  =  n+''; 
+
+		if(n.indexOf(',')>0){n = n.replace(/,/gi,'') + '';};
+		
+		if(n.length <6){
+			if(n.length<3){
+				return n;
+			}else{
+				var re=/(-?\d+)(\d{3})/;
+				while(re.test(n)){n = n.replace(re,'$1,$2')}
+				return n; 
+			}
+		}else{
+			n=n/10000;
+			n = n+'';
+			if(n.indexOf(".") != -1){
+				var nArr = n.split(".");
+				if(nArr[0].length >=3){
+					return nArr[0].toString().substring(0,3)+'万';
+				}else{
+					var arr = nArr[1].toString().substring(0,1)+'万';
+					return nArr[0]+"."+arr;
+				}
+			}else{
+				if(n<=3){
+					return n;
+				}else{
+					return n.toString().substring(0,3)+'万';	
+				}
+			}
+	
+		}  
+	}
+}
+YKRANK.init();

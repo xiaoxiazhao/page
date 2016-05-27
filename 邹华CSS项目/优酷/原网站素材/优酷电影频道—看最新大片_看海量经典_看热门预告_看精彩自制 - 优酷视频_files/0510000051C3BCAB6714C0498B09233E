@@ -1,0 +1,236 @@
+/**************************************************
+    Cloud for You v2.0
+***************************************************/
+var CloudRecords = {
+    GAP : 1,
+    MARGIN : 10,
+    MAXHEIGHT : 240,
+    cloudDom : null,
+    cloudData : [], 
+    currentNumber : 0,
+    TITLELENGTH : 14, 
+	token : '',
+	category : '电视剧',
+    getCloudJson : 'http://www.youku.com/index_cookielist/s/jsonp?callback=CloudRecords.getRecordsData&timestamp=',
+
+    init : function(config) {
+        this.cloudDom = document.getElementById('Cloud-Records');
+		if(!!this.cloudDom && !!config) {
+            this.category = config.category;     
+            this.GAP = config.gap;     
+            this.MARGIN = config.margin;
+            if(!!config.height) {
+                this.MAXHEIGHT = config.height;     
+            }
+            this.getJson(this.getCloudJson);
+		} 
+        else 
+        {
+            return false;     
+        }
+    },
+
+    bind : function() {
+        var _this = this;
+    },
+
+    requestImg : function(url) {
+        var imgReq = new Image();
+        imgReq.src = url;   
+        imgReq = null;
+    },
+
+    initCloudDom : function(data,type) {
+		if(!type) {
+			type = 'all';
+		}
+        var len = total = data.length;
+        var num = this.theNumber - 1;
+		var pages = Math.ceil(total/num);
+        this.cloudListShow(data, 0 , num ,type);
+    },
+	
+    cloudListShow : function(data, start, end, type) {
+        var _this = this;
+        var len = data.length;
+		var str = '';
+        var marginB = 0;
+        var vtitle = '';
+        var folderid = '';
+        var vname = '';
+
+        for(var i = 0; i < len; i++) {
+            if(data[i].category == _this.category) {
+                vname = data[i].showname;
+                if(!vname) {
+                    vname = data[i].title     
+                }
+
+                if(vname.length >= _this.TITLELENGTH) {
+                    vtitle = vname.substring(0,_this.TITLELENGTH) + '... ';     
+                } else {
+                    vtitle = vname;     
+                }
+
+                if(data[i].folderid != 0) {
+                    folderid = '&f=' + data[i].folderid;
+                }
+                if(_this.currentNumber == _this.GAP && _this.GAP !== 0 || _this.category == '电视剧') { 
+                    str += '<div class="v v-mini v-horiz b20">';
+                }
+                else {
+                    str += '<div class="v v-mini v-horiz">';
+                }
+                str += '<div class="v-thumb">';
+                str += '<img src="' + data[i].thumburl + '" title="' + vname + '" />';
+                str += '<div class="v-thumb-tagrb"><div class="v-process">';
+                str += '<span class="v-time">' + _this.secondTofMinute(data[i].seconds) + '</span><span class="bg"></span><span class="bg-fill" style="width:' + data[i].percent + ';"></span>';
+                str += '</div></div>';
+                str += '<div class="v-link"><a href="http://v.youku.com/v_show/id_' + data[i].vidEncoded + '.html?firsttime=' + data[i].sec + folderid + '" title="' + vname + '" target="video"></a></div>';
+                str += '</div>';
+                str += '<div class="v-meta">';
+                str += '<div class="v-meta-title"><a href="http://v.youku.com/v_show/id_' + data[i].vidEncoded + '.html?firsttime=' + data[i].sec + folderid + '" title="' + vname + '" target="video">' + vtitle + '</a></div>';
+                str += '<div class="v-meta-entry"><span>看到' + data[i].percent + '</span></div>';
+                //str += '<div class="v-meta-extend"><span>还有23小时过期</span></div>';
+                str += '</div>';
+                str += '<div class="v-action"><a href="javascript:;" title="删除" class="v-action-del" onclick="CloudRecords.deleteList(\'' + _this.token + '\',\'' + data[i].videoid + '\',\'' + data[i].folderid + '\',\'' + data[i].showid + '\',\'' + data[i].videoid  + '\',\'Cloud-Records\');">X</a></div>';
+                str += '</div>';
+                _this.currentNumber++;
+            }
+        }
+		if(str !== '') {
+            str = '<div class="v-mini-group">' + str + '</div>';    
+        }
+        else {
+            str += '<div class="yk-cloud-null"><span>暂无' + _this.category + '播放记录</span></div>';
+        }
+        this.cloudDom.style.height = this.MAXHEIGHT + 'px';
+        this.cloudDom.innerHTML = str;
+    },
+
+    getRecordsData : function(data) {
+        this.initData(data.playtag,this.cloudData);
+        this.token = data.token;
+        this.initCloudDom(this.cloudData);
+    },
+
+    initData : function(data,o) {
+        var ptlen = data.length; 
+        for(var i = 0; i < ptlen; i++) {
+            o.push(data[i]);
+        };
+    },
+
+    formatnum : function(n){
+        n  =  n+'';   
+        if(n.indexOf(',')>0){  
+            n = n.replace(/,/gi,'') + '';   
+        }  
+        var re=/(-?\d+)(\d{3})/; 
+        while(re.test(n)){    
+            n = n.replace(re,'$1,$2')    
+        }
+        return n;  
+    },
+
+    secondTofMinute : function(t) {
+        var m = parseInt(t/60); 
+        var s = parseInt(t%60); 
+        if(m < 10) {
+            m = '0' + m;    
+        } else {
+            m = m.toString();
+        }
+        if(s < 10) {
+            s = '0' + s;    
+        } else {
+            s = s.toString();
+        }
+        return m + ':' +s;
+    },
+
+    deleteList : function(tk, vid, fid, shid, lild, list) {
+        var e = window.event || arguments.callee.caller.arguments[0];
+        var obj = e.target || e.srcElement;
+        if(!tk || !vid || !lild) return;
+        if(fid == undefined) fid = 0;
+        if(shid == undefined) shid = 0;
+        var delUrl = "http://yus.navi.youku.com/playlog/delete.json?token="+tk+"&v="+vid+"&fid="+fid+"&shid="+shid+"&"+Math.random();
+        var lists = $(list).select('.v');
+        lists.each(function(el,i){
+            el.removeClassName('b20'); 
+        });
+        if(lists.length == 1) {
+            if(list == 'Cloud-Records') {
+                str = '<div class="yk-cloud-null"><span>您最近没有观看过' + this.category + '</span><a href="http://tv.youku.com" target="_blank">更多精彩内容</a></div>';
+            }
+            $(list).update(str); 
+        }
+        else {
+            obj.parentNode.parentNode.remove();
+        }
+        if($(list).select('.v')[this.GAP]) {
+            $(list).select('.v')[this.GAP].addClassName('b20');
+        }
+        var img = new Image();
+        img.src = delUrl;    
+        img = null;
+    },
+
+    submitVideoCommend : function(o){
+        var req = o.parentNode.parentNode.getAttribute('logdata');
+        req = decodeURIComponent(req);
+        var d = eval('('+req+')');
+        if(d) {
+            var logstr = 'uid=' + d.uid  + '&cookie_id=' + d.cookie_id + '&apptype=1&page=8&module=' + d.module + '&dvid=' + d.dvid + '&abver=' + d.abver + '&dma=' + d.dma + '&pos=' + d.pos + '&ord=0&dct=0';
+            var url = 'http://e.stat.youku.com/personalization/log?';
+            var imgReq = new Image();
+            imgReq.src = url + logstr;  
+            imgReq = null;
+        }   
+    },
+
+    randomChar : function(l)  {
+        var  x="0123456789qwertyuioplkjhgfdsazxcvbnm";
+        var  tmp="";
+        var timestamp = new Date().getTime();
+        for(var i=0;i<l;i++)  {
+            tmp  +=  x.charAt(Math.ceil(Math.random()*100000000)%x.length);
+        }
+        return  timestamp+tmp;
+    },
+
+    refresh : function () {
+        MYYOUKU.requestImg(MYYOUKU.hzLinks.returnHzUrl('4007350'));
+        window.location.reload();
+    },
+
+    easeOut : function(t,b,c,d) {
+        return -c *(t/=d)*(t-2) + b;
+    },
+
+    callBackScript : function(){
+        if(this.parentNode){
+            this.parentNode.removeChild(this);
+        }
+    },
+
+    getJson : function(url){
+        var _this = this;
+        var _script = document.createElement("script");
+        _script.type = "text/javascript";
+        _script.src = url + _this.randomChar(10);
+        if (!/*@cc_on!@*/0) {
+            _script.onload = _this.callBackScript;
+        } else {
+            _script.onreadystatechange = function () { 
+                if (_script.readyState == 'loaded' || _script.readyState == 'complete') { 
+                    _this.callBackScript();
+                } 
+            }
+        }
+        document.getElementsByTagName("head")[0].appendChild(_script);
+    }
+}
+
+

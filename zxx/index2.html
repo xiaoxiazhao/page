@@ -1,0 +1,383 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<link href="css/base.css" rel="stylesheet" />
+<style>
+
+/*导航*/
+#nav{
+	width:100%;
+	height:100px;
+	position:absolute;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,0.5);
+	z-index:4;
+}
+.nav_ul{
+	margin-left:100px;}
+.nav_ul li{
+	width:80px;
+	height:60px;
+	border-radius:20px;
+	float:left;
+	margin:10px 20px;
+	color:#C3F;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+	line-height:60px;
+	color:red;
+}
+.nav_ul li a{
+	width:80px;
+	height:60px;
+	display:block;
+	color:#C3F;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+	line-height:60px;
+}
+.nav_ul a:hover{
+	color:#F36;
+}
+.clock{
+	height:37px;
+	width:300px;
+	float:right;
+	margin:25px 100px 0 0;
+}
+.clock img{
+	width:30px;
+	height:37px;
+}
+.clock span{
+	width:10px;
+	height:37px;
+	font-size:37px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+/*简历*/
+.resume_back{
+	width:100%;
+	height:900px;
+	background:url(Sample%20Pictures/back1.jpg) no-repeat;
+}
+.resume_box{
+	width:1200px;
+	height:900px;
+	margin:0 auto;
+	position:relative;
+}
+.resume_box h2{
+	width:600px;
+	height:100px;
+	font-size:50px;
+	font-weight:bold;
+	line-height:100px;
+	padding:200px 0 0 50px;
+}
+.resume_ul{
+	width:600px;
+	margin:20px 0 0 50px;
+}
+.resume_ul li{
+	height:50px;
+	width:100%;
+}
+.resume_ul li span{
+	width:300px;
+	float:left;
+	color:#8A727C;
+	font-size:25px;
+	font-weight:bold;
+}
+.resume_ul li i{
+	float:left;
+	font-size:20px;
+	color:#903;
+}
+.bar{
+	width:900px;
+	margin:50px auto;
+}
+.bar li{
+	width:150px;
+	height:20px;
+	background:#0F0;
+	float:left;
+	margin:15px;
+	border-radius:5px;
+}
+.bar li span{
+	height:20px;
+	display:inline-block;
+	background:#3FF;
+	border-radius:5px;
+}
+/*技能*/
+.skill_back{
+	width:100%;
+	height:1200px;
+	background:url(Sample%20Pictures/12307724_1342056568641.jpg) no-repeat;
+}
+.skill_box{
+	width:1200px;
+	margin:0 auto;
+	position:relative;
+	height:1200px;
+}
+.skill_box h2{
+	width:600px;
+	height:100px;
+	font-size:50px;
+	font-weight:bold;
+	line-height:100px;
+	padding:50px 0 0 50px;
+	color:#93C;
+}
+#box{
+	margin-top:150px;
+	width:500px; 
+	height:500px;
+	border:2px solid #E3B993; 
+	border-radius:50%;
+	position:absolute; top:100px; left:200px;
+}
+#box a{
+	width:100px;
+	height:100px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-50px;
+	margin-top:-50px;
+	background:#F96;
+	border-radius:50%;
+	text-align:center;
+	line-height:100px;
+	font-size:20px;
+	font-weight:bold;
+}
+#box span{
+	width:100px; height:100px; 
+	border-radius:50%; 
+	position:absolute; left:50%; top:0; 
+	margin-left:-50px; margin-top:-50px;
+	text-align:center;
+	line-height:100px;
+	font-size:20px;
+	font-weight:bold;
+	color:#F36;;
+}
+.skill_ep{
+	width:800px;
+	margin:100px auto;
+	position:absolute;
+	left:100px;
+	bottom:10px;;
+}
+.skill_ep li{
+	width:160px;
+	height:160px;
+	margin:20px;
+	float:left;
+	background:#E7C796;
+	border-radius:20px;
+	transition:1s;
+}
+.skill_ep a{
+	width:100%;
+	height:100%;
+	display:block;
+	line-height:160px;
+	font-size:20px;
+	font-weight:bold;
+	color:#fff;
+	text-align:center;
+}
+.skill_ep li:hover{
+	transform:scale(1.2);
+	box-shadow:10px 10px 10px rgba(0,0,0,0.1) inset;
+}
+
+/*作品*/
+.works_back{
+	width:100%;
+	height:900px;
+	background:url(Sample%20Pictures/t01842feed58b16436d.jpg) no-repeat;
+}
+.works_box{
+	width:1200px;
+	margin:0 auto;
+}
+.works_box h2{
+	width:600px;
+	height:100px;
+	font-size:50px;
+	font-weight:bold;
+	line-height:100px;
+	padding:50px 0 0 50px;
+	}
+.works_ul{
+	overflow:hidden; 
+	width:660px;
+	margin-top:200px;
+}
+.works_ul li{
+	float:left; 
+	width:200px; height:150px;
+	margin:10px; 
+	position:relative; top:0; left:0; 
+	overflow:hidden;
+}
+.works_ul li a{
+	position:absolute; 
+	width:100%; height:100%; 
+	background:rgba(0,0,0,0.2); 
+	top:0; 
+	left:-200px; 
+	text-align:center;
+	line-height:150px;
+	color:#fff;
+	font-weight:bold;
+	font-size:30px;
+}
+.call{
+	width:500px;
+	height:500px;
+	background:red;
+}
+
+.call{
+	width:50px; 
+	height:100px; 
+	background:red; 
+	position:fixed;
+	_position:absolute;	left:0; 
+	bottom:0; 
+}
+
+</style>
+<script src="js/move.js"></script>
+<script src="js/skill.js"></script>
+<script src="js/works.js"></script>
+<script src="js/resume.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/clock.js"></script>
+<script>
+window.onload=function(){
+	skill('box','skill');
+	resume('resume','bar');
+	nav('nav');
+	works('works');
+	clock('clock');
+	backColor('skill_small');
+}
+</script>
+</head>
+
+<body>
+<!--简历-->
+<div class="resume_back" id="resume">
+	<div class="resume_box" >
+    	<!--导航-->
+        <div  id="nav">
+            <ul class="nav_ul">
+                <li>导航</li>
+                <li><a href="javascript:;">简历</a></li>
+                <li><a href="javascript:;">技能</a></li>
+                <li><a href="javascript:;">作品</a></li>
+                <li><a href="javascript:;">联系我</a></li>
+            </ul>
+            <div class="clock" id="clock">
+                <img src="Sample Pictures/clock/0.png">
+                <img src="Sample Pictures/clock/0.png" />
+                <span>:</span>
+                <img src="Sample Pictures/clock/0.png" />
+                <img src="Sample Pictures/clock/0.png" />
+                <span>:</span>
+                <img src="Sample Pictures/clock/0.png" />
+                <img src="Sample Pictures/clock/0.png"/>
+            </div>
+        </div>
+    	<h2>简历</h2>
+        <ul class="resume_ul">
+                    <li><span>姓名：</span><i>赵小霞</i></li>
+                    <li><span>出生年月：</span><i>1992-11-25</i></li>
+                    <li><span>籍贯:</span><i>山西大同</i></li>
+                    <li><span>专业:</span><i>光信息科学与技术</i></li>
+                    <li><span>学历:</span><i>一类本科</i></li>
+                    <li><span>证书:</span><i>英语六级   计算机二级</i></li>
+                    <li><span>职业：</span><i>web前端工程师</i></li>
+                    <li><span>毕业院校:</span><i>中北大学</i></li>
+                    <li><span>培训机构：</span><i>智能社</i></li>
+         </ul>
+         <ol class="bar" id="bar">
+         	<li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+        </ol>
+     </div>
+</div>
+
+<!--技能-->
+<div class="skill_back">
+	<div class="skill_box">
+    	<h2>技能</h2>
+        <div id="box">
+        	<a href="javascript:;" id="skill">技能</a>
+		</div>
+        <ul class="skill_ep" id="skill_small">
+            <li><a href="javascript:;">jsonp实现搜索</a></li>
+            <li><a href="javascript:;">自制日历组件</a></li>
+            <li><a href="javascript:;">seajs应用</a></li>
+            <li><a href="javascript:;"></a></li>
+    	</ul>
+    </div>
+    
+</div>
+
+<!--作品-->
+<div class="works_back">
+	<div class="works_box">
+    	<h2>作品集</h2>
+        <ul class="works_ul" id="works"> 
+           <li>
+                <a href="works/360/index.html">360看看</a>
+                <img src="Sample Pictures/works/360.jpg" alt="360看看">
+           </li>
+           <li> 
+            <a href="http://1.xueyingren.sinaapp.com/jd/index.html">京东</a>
+            <img src="Sample Pictures/works/jd .gif" alt="京东">
+           </li>
+            <li>
+                <a href="works/xm/index.html">小米</a>
+                <img src="Sample Pictures/works/xiaomi.png"  alt="小米">
+           </li>
+            <li>
+                <a href="works/oppo/index.html">OPPO手机</a>
+                <img src="Sample Pictures/works/oppo.jpg"  alt="oppo手机">
+           </li>
+           <li>
+                <a href="works/meilishuo/index.html">美丽说</a>
+                <img src="Sample Pictures/works/mls.gif"  alt="美丽说">
+           </li>
+            <li>
+                <a href="works/baidunuomi/index.html">百度糯米</a>
+                <img src="Sample Pictures/works/nm.gif" alt="百度糯米">
+           </li>
+        </ul>
+    </div>
+</div>
+
+<!--联系我-->
+
+</body>
+</html>

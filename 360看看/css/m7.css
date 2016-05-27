@@ -1,0 +1,74 @@
+#m7box{
+	display:inline-block;
+	position: relative;
+}
+.imgbox{
+	position: relative;
+}
+.imgbox .m7box_img-tit{
+	position: absolute;
+	width: 100%;
+	height:17px;
+	padding-top:5px;
+	background:rgba(0,0,0,.4);
+	text-align: left;
+	bottom:0;
+	left:0;
+	color:#fff;
+}
+.imgbox .m7box_img-tit p{
+	padding-left:5px;
+	text-align: left;
+}
+#m7box .btnbox .btn:hover{
+	background-position:0 -240px;
+}
+#m7box .m7box_img-tit strong{
+	color:#ff5d31;
+	font-size:14px;
+	padding:0 3px;
+	font-weight: bold;
+}
+.m7box-tit{
+	padding:20px 0 5px 10px;
+	background:#fff;
+	position: relative;
+	border-bottom:1px solid transparent;
+}
+.m7box-tit p{
+	text-align: left;
+	margin-bottom: 14px;
+}
+.m7box-tit a:hover{
+	color:#fd8d4e;
+}
+.m7box-tit1{
+	color:#333;
+}
+.m7box-tit2{
+	color:#999;
+}
+.howmany{
+	width: 52px;
+	height:14px;
+	background:url(../img/sec-r-movie.png) no-repeat left center;
+	padding-left:16px;
+}
+.btn .opabox1{
+	position:absolute;
+	width: 100%;
+	height:100%;
+	background:rgba(0,0,0,.5);
+	top: 0;
+	left: 0;
+}
+.btn .opabox1 i{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -30px;
+	margin-left: -30px;
+	width:60px;
+	height:60px;
+	background:url(../img/mb4-movie.png);
+}

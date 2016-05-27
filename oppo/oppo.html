@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css" />
+<style>
+.header{ height:35px; background:#2B2B2B; border-top:3px solid #00925F;}
+.header_box{ width:1184px;height:35px; margin:0 auto;}
+.wb_pic{ width:24px; height:24px; background:url(img/icons.png) no-repeat 0 -880px; float:left; margin-top:7px;}
+.wx_pic{width:24px; height:24px; background:url(img/icons.png) no-repeat 0 -910px; float:left;margin:7px 0 0 10px;}
+.tel{ font-size:18px; font-weight:bold; color:#066133; line-height:35px; margin-left:20px; float:left;}
+.nav_box{float:right; border:1px solid red;}
+.login{ color:#B2B2B2; float:left; margin-top:10px;}
+.buy_car{padding:3px 25px 3px; border-right:1px solid #474747;}
+.buy_pic{ width:10px; height:10px; background:url(img/icons.png) no-repeat 0 -1010px; border:1px solid red;}
+.register{ padding:3px 15px 3px; border-right:1px solid #474747;}
+.register:hover{ color:#409F73;}
+
+.logo_box{ width:1184px; margin:0 auto;}
+.logo_pic{ width:170px; height:65px;background:url(img/20141103155741_RL4uKj.png) no-repeat; text-indent:-1000em; float:left;}
+.logo_ul{ float:right; margin-right:-20px;}
+.logo_list{ padding:38px 40px 0;float:left;}
+.logo_list{ font-size:14px; font-weight:bold;}
+.logo_lista:hover{color:red;}
+
+
+
+.main{ height:630px; border-top:3px solid #DDDDDD; background:url(img/20150202100021_PPLCdk.jpg) center 0; position:relative;}
+.buy{ text-align:center;}
+.zhezhao{ height:71px; background:#FFF; position:absolute; bottom:0; left:0; width:100%;opacity:0.6; filter:alapha(opacity:60);}
+
+.phone_typebox{background:#F2F2F2; height:796px;}
+.all_phone{ width:290px; height:94px; background:url(img/icons.png) no-repeat 0 -715px; margin:0 auto;}
+.phone_type{width:1184px;margin:0 auto; }
+.phone_type_li{ width:280px; height:560px; float:left; border-bottom:5px solid #DFDFDF;-webkit-transition:all 1s 1s; }
+.phone_name{ font-size:20px; font-weight:bold; text-align:center;margin-top:40px;}
+.selling_point{  color:#B4B4B4; margin:13px 0 13px 0; text-align:center;}
+.price{ color:#71A175; margin-left:84px; position:relative;}
+.buy_pic{ width:13px; height:13px; background:url(img/icons.png) no-repeat -177px -1014px; display:inline-block; position:absolute; top:0; right:-23px;}
+.spacer{ width:0; height:560px; border:1px solid #EAEAEA; margin:0 9px 0 10px; float:left;}
+.phone_type_li:hover{-webkit-transform:translate(0,-10px);	}
+.phone_type_li:hover{ border-bottom:5px solid #00925F;}
+
+.peijian_box{height:1070px; background:#F6F6F6;}
+.peijian_ltl{ width:279px; height:573px; background:#FFF; border-bottom:5px solid #E1E1E1; float:left; margin-right:20px; display:block;}
+.peijian_l{ float:left;}
+.phone_name1{ font-size:20px; font-weight:bold; text-align:center;  margin-top:11px;}
+.selling_point1{  color:#B4B4B4;text-align:center;margin-top:30px;}
+.price1{ color:#71A175; margin-top:15px; text-align:center;}
+.peijian_ltrt{ width:270px; height:271px; border:5px solid #EAEAEA;}
+.guanpei{ font-weight:bold; text-align:center; margin:23px 0 23px 0 ;}
+.peijian_ltrtul{ width:211px; height:85px; margin:0 0 23px 30px; border-top:1px solid #E6E6E6; border-bottom:1px solid #E6E6E6; padding:28px 0 37px 0; }
+.erjili{ width:105px; float:left; margin-bottom:18px;}
+.erji_pic{ width:20px; height:18px; background:url(img/icons.png) no-repeat -133px -355px; display:inline-block;}
+.erji{ margin-left:8px; display:inline-block;}
+.erji:hover{ color:#00925F;}
+.peijian_ltrb{ width:280px; height:270px; border-bottom:5px solid #E1E1E1;-webkit-transition:all 1s; margin-top:20px;}
+.peijian_ltrb:hover{border-bottom:5px solid #00925F;}
+.peijian_ltrb:hover{-webkit-transform:translate(0,-10px);}
+.peijian_lb:hover{border-bottom:5px solid #00925F;}
+.peijian_lb:hover{-webkit-transform:translate(0,-10px);}
+.peijian_lb{ width:582px; height:270px; border-bottom:5px solid #E1E1E1;-webkit-transition:all 1s; margin-top:20px; display:block;}
+.shanchong{ height:277px; border-bottom:5px solid #E1E1E1;-webkit-transition:all 1s;  display:block; margin-bottom:15px; }
+.shanchong:hover{border-bottom:5px solid #00925F;}
+.shanchong:hover{-webkit-transform:translate(0,-10px);}
+.peijian_r{ float:left; margin-left:17px;}
+
+
+
+.box_l{ float:left; width:798px;}
+.jifen_box{ width:379px; height:264px; border-bottom:5px solid #E1E1E1;-webkit-transition:all 1s; display:block; margin:0 20px 20px 0; float:left;}
+.jifen_box:hover{-webkit-transform:translate(0,-10px);}
+.jifen_box:hover{border-bottom:5px solid #00925F;}
+.box_r{ float:right; width:380px; background:#FFF; padding-bottom:36px;}
+.news{ width:190px; height:50px; float:left; background:pink; font-size:18px; display:block; text-align:center; line-height:50px; margin-bottom:46px;}
+.word{ float:left; line-height:25px; margin:11px 15px 0; width:190px; color:#999;}
+.box_a{ background:#ccc; width:320px; height:90px; display:block; margin:0 0 16px 30px;}
+.word:hover{ color:#000;}
+
+.foot_pic{ width:1182px; height:120px; background:url(img/icons.png) no-repeat -294px -540px; margin:0 auto;}
+.foot_link{width:1184px;margin:0 auto;}
+.foot_link li{ width:188px; float:left;}
+.we{ font-size:14px; font-weight:bold;}
+.about{ display:block;}
+</style> 
+</head>
+
+<body>
+<div class="header">
+	<div class="header_box clearfix">
+    	<span class="wb_pic"></span>
+        <span class="wx_pic"></span>
+        <p class="tel">4001-666-888</p>
+        <ul class="nav_box">
+        	<li class="login"><a href="#" class="register" >登陆</a></li>
+            <li class="login"><a href="#" class="register" >注册</a></li>
+            <li class="login"><a href="#" class="register" >积分兑换</a></li>
+            <li class="login"><a href="#" class="register">帮助中心</a></li>
+            <li class="login"><a href="#" class="buy_car"><span class="buy_pic"></span>购物车</a></li>
+       </ul>
+    </div>
+</div>    
+    <div class="logo_box clearfix">
+     	<h1><a href="#" class="logo_pic">oppo</a></h1>
+    	<ul class="logo_ul">
+        	<li class="logo_list"><a href="#" id="logo_lista">首页</a></li>
+            <li class="logo_list"><a href="#" id="logo_lista">手机</a></li>
+            <li class="logo_list"><a href="#" id="logo_lista">配件</a></li>
+            <li class="logo_list"><a href="#" id="logo_lista">体验店</a></li>
+            <li class="logo_list"><a href="#" id="logo_lista">服务</a></li>
+            <li class="logo_list"><a href="#" id="logo_lista">软件商店</a></li>
+            <li class="logo_list"><a href="#" id="logo_lista">社区</a></li>
+            <li class="logo_list"><a href="#" id="logo_lista">首页首</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <a href="#" class="buy"><img src="img/20150202100021_TgEOkp.png" /></a>
+        <div class="zhezhao"></div>
+    </div>
+<div class="phone_typebox">
+    <h2 class="all_phone"></h2>
+    	<ul class="phone_type clearfix">
+        	<li class="phone_type_li">
+            	<a href="#"><img src="img/20140319154524jUOVBkgi1v.jpg" alt="N3" /></a>
+               <p class="phone_name">N3</p>
+               <p class="selling_point">1600万电动旋转摄像头</p>
+               <a href="#" class="price">￥3990 立即购买 <span class="buy_pic"></span></a>
+           </li>
+           <li class="spacer"></li>
+            <li class="phone_type_li">
+            	<a href="#"><img src="img/20140319154524jUOVBkgi1v.jpg" alt="N3" /></a>
+               <p class="phone_name">N3</p>
+               <p class="selling_point">1600万电动旋转摄像头</p>
+               <a href="#" class="price">￥3990 立即购买 <span class="buy_pic"></span></a>
+           </li>
+           <li class="spacer"></li>
+            <li class="phone_type_li">
+            	<a href="#"><img src="img/20140319154524jUOVBkgi1v.jpg" alt="N3" /></a>
+               <p class="phone_name">N3</p>
+               <p class="selling_point">1600万电动旋转摄像头</p>
+               <a href="#" class="price">￥3990 立即购买 <span class="buy_pic"></span></a>
+           </li>
+           <li class="spacer"></li>
+            <li class="phone_type_li">
+            	<a href="#"><img src="img/20140319154524jUOVBkgi1v.jpg" alt="N3" /></a>
+               <p class="phone_name">N3</p>
+               <p class="selling_point">1600万电动旋转摄像头</p>
+               <a href="#" class="price">￥3990 立即购买 <span class="buy_pic"></span></a>
+           </li>
+        </ul>
+</div>
+<div class="peijian_box">
+    <h2 class="all_phone"></h2>
+    <div class="phone_type clearfix">
+    	<div class="peijian_l">
+        	<div class="peijian_lt clearfix">
+            	<a href="#" class="peijian_ltl">
+                	<img src="img/phone.png" />
+                    <p class="selling_point1">可触摸天窗，世界触手可及</p>
+                    <p class="phone_name1">OPPO FIND7视窗保护皮套</p>
+                    <p class="price1">￥198.00</p>
+                </a>
+                <div class="fl">
+                	<div class="peijian_ltrt">
+                    	<p class="guanpei">0pp0手机官网配件</p>
+                        <ul class="peijian_ltrtul clearfix">
+                        	<li class="erjili"><span class="erji_pic"></span><a href="#" class="erji">耳机</a></li>
+                            <li class="erjili"><span class="erji_pic"></span><a href="#" class="erji">移动电源</a></li>
+                            <li class="erjili"><span class="erji_pic"></span><a href="#" class="erji">耳机</a></li>
+                            <li class="erjili"><span class="erji_pic"></span><a href="#" class="erji">移动电源</a></li>
+                            <li class="erjili"><span class="erji_pic"></span><a href="#" class="erji">耳机</a></li>
+                            <li class="erjili"><span class="erji_pic"></span><a href="#" class="erji">移动电源</a></li> 
+                        </ul>
+                        <a href="#" class="price">全部配件<span class="buy_pic"></span></a>
+                    </div>
+                    <div class="peijian_ltrb">
+                    	<a href="#"><img src="img/shipeiqi.png" /></a>
+                    </div>
+                </div>
+            </div>
+        <a href="#" class="peijian_lb"><img src="img/shujuxian.png" /></a>   
+        </div>
+        <div class="peijian_r">
+        	<a href="#" class="shanchong"><img src="img/shanchong.png" /></a>
+            <div class="peijian_b">
+            	<a href="#" class="peijian_ltl">
+                	<img src="img/phone.png" />
+                    <p class="selling_point1">可触摸天窗，世界触手可及</p>
+                    <p class="phone_name1">OPPO FIND7视窗保护皮套</p>
+                    <p class="price1">￥198.00</p>
+                </a>
+                    <div class="fl">
+                        <div class="peijian_ltrb">
+                            <a href="#"><img src="img/shipeiqi.png" /></a>
+                        </div>	
+                        <div class="peijian_ltrb">
+                            <a href="#"><img src="img/shipeiqi.png" /></a>
+                        </div>	
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>   
+    
+ <div class="phone_typebox">   
+ 	<a href="#"><h2 class="all_phone"></h2></a>
+    <div class="phone_type clearfix">
+    	<div class="box_l ">
+        	<a href="#" class="jifen_box"><img src="img/jifen.png" /></a>
+            <a href="#" class="jifen_box"><img src="img/jifen.png" /></a>
+            <a href="#" class="jifen_box"><img src="img/jifen.png" /></a>
+            <a href="#" class="jifen_box"><img src="img/jifen.png" /></a>
+        </div>
+        <div class="box_r">
+        	<div class="clearfix">
+                <a href="#" class="news">新闻</a>
+                <a href="#" class="news">微博</a>
+            </div>
+            <ul>
+                <li>
+                	<a href="#" class="box_a clearfix">
+                    	<img src="img/erji2.png"  class="fl" />
+                        <p class="word">我是一个好姑娘好孩子好同学我是一个好姑娘好孩子</p>
+                    </a>
+               </li>
+                <li>
+                	<a href="#" class="box_a clearfix">
+                    	<img src="img/erji2.png"  class="fl" />
+                        <p class="word">我是一个好姑娘好孩子好同学我是一个好姑娘好孩子</p>
+                    </a>
+               </li>
+                <li>
+                	<a href="#" class="box_a clearfix">
+                    	<img src="img/erji2.png"  class="fl" />
+                        <p class="word">我是一个好姑娘好孩子好同学我是一个好姑娘好孩子</p>
+                    </a>
+               </li>
+                <li>
+                	<a href="#" class="box_a clearfix">
+                    	<img src="img/erji2.png"  class="fl" />
+                        <p class="word">我是一个好姑娘好孩子好同学我是一个好姑娘好孩子</p>
+                    </a>
+               </li>
+            </ul>
+        </div>
+        
+    </div>
+ </div>   
+ 
+ <div class="foot_pic"></div>
+ <ul class="foot_link">
+ 	<li>
+    	<div class="we">关于我们</div>
+        	<a href="#" class="about">关于oppo</a>
+            <a href="#" class="about">关于oppo</a>
+            <a href="#" class="about">关于oppo</a>
+    </li>
+ </ul>
+    
+
+
+
+</body>
+</html>

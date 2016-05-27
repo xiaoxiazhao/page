@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+html{background:#FFF;color:#000;}
+body{ font-size:12px; margin:0;line-height:100%;}
+h1,h2,h3,h4,h5,h6{ margin:0; font-weight:normal; font-size:12px;}
+a{ color:#000; text-decoration:none;}
+ol,ul,li{ list-style:none; padding:0; margin:0;}
+p{ margin:0;}
+i,em{ font-style:normal;}
+b,strong{ font-weight:normal;}
+a img{ border:none;}
+table{border-collapse:collapse;}
+.clearfix:after{ display:block; content:""; clear:both;}
+.clearfix{ zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+body{
+	background:#F4F4F4;
+}
+.top{
+	}
+.body{
+	width:100%;
+	height:1000px;
+	background:url(../Sample%20Pictures/back2.jpg) repeat;
+}
+.welcome{
+	width:500px;
+	height:200px;
+	background:url(../Sample%20Pictures/welcome.gif) no-repeat;
+	margin:0 auto;
+}

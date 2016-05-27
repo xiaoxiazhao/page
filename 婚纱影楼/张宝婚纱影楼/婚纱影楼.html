@@ -1,0 +1,509 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+*{ padding:0; margin:0;}
+li{ list-style:none;}
+.logo{ height:120px; width:1344px; margin:0 auto;}
+.logo_1 h1{ text-indent:-999em; background:url(img/logo.jpg) no-repeat; height:120px; transition:1s;}
+.logo_1 h1:hover{ transform:rotate(360deg);}
+.nav{ width:1344px; height:40px; background:url(img/beijing.jpg) repeat-x; margin:0 auto;}
+.nav_1{ overflow:hidden;line-height:40px; margin-left:208px; font-size:14px; color:#fff;}
+.nav_1 li{ float:left; padding-right:37px;}
+.yuan{ border:1px solid #200c06; border-radius:20px; width:44px; height:24px; float:right; text-align:center; line-height:24px; background:#1e0c05; margin-right:192px; margin-top:-33px; font-size:12px; color:#ad7f5e;}
+.main{ margin:0 auto; width:1344px; height:450px; position:relative;} 
+.mian_1{ width:958px; height:62px; margin:0 auto; background:#f2f2f2; margin-top:42px; overflow:hidden;}
+.main_1_1{ background:url(img/2.jpg) no-repeat 290px 10px; height:51px;}
+.mian_1 .list{ background:url(img/1.jpg) no-repeat 20px 10px; height:54px; float:left;}
+.list p{ color:#9c9c9c; margin-left:100px; position:relative; margin-top:10px;}
+.list .span{ color:#a36836; margin-left:100px; margin-top:0; position:relative; font-size:18px;}
+.list span{ font-size:12px;}
+.main_2{ width:100%; margin:0 auto; margin-left:192px;}
+.list_2{ margin-top:14px; float:left; margin-right:16px; transition:1s;}
+.list_2:hover{transform: translate(0,100px);}
+.main_3{ width:960px; height:100%; margin:0 auto;}
+.main_3 img{margin-top:15px; transition:1s;}
+.main_3 img:hover{ transform:scale(2);}
+.main_4{ border-bottom:1px solid #ccc; width:960px; margin:0 auto; margin-top:74px; position:relative;}
+.main_4 i{ padding-top:5px; position:absolute; bottom:-8px; left:-1px;}
+.main_4 a{ border-right:1px solid #ba9bba; font-size:12px; text-decoration:none; color:#787878; padding-right:11px; padding-left:11px;}
+.main_4 .no{ border-right:none;}
+.a{ float:right; margin-top:-37px;}
+.main_4_1 img{ width:311px; height:496px; margin-left:196px; margin-top:17px; position:relative;}
+{ width:311px; height:496px; border:1px solid red;}
+.opa{ width:31px; height:61px; opacity:0.8; background:#716f6e; position:absolute; top:205px; left:220px; text-align:center; line-height:61px; color:#fff; font-size:20px; cursor:pointer;}
+.main_4_2{ position:relative; width:311px; height:496px;}
+.opa_1{ width:31px; height:61px; opacity:0.8; background:#716f6e; position:absolute; top:207px; left:450px; text-align:center; line-height:61px; color:#fff; font-size:20px;cursor:pointer;}
+.opa_2{ width:311px; height:40px; background:#716f6e; position:absolute; bottom:-17px; left:196px; opacity:0.8; text-align:right; color:#fff; line-height:40px; font-size:15px;cursor:pointer; display:none;}
+.main_4_1:hover .opa_2{ display:block;}
+.pic_1{ width:308px; height:236px; border:1px solid #ccc; float:left; margin-left:520px; margin-top:-479px; position:relative; transition:1s;}
+.pic_1:hover{ transform:skew(45deg);}
+.pic_1 img{ width:300px; height:195px; padding-left:5px; padding-top:5px;}
+.pic_1 P{ font-size:11px; color:#ccc; padding-top:8px; padding-left:7px;}
+.bor{ background:url(img/beijingbiankuang.jpg) no-repeat; width:309px; height:6px; position:absolute; bottom:-7px;}
+.pic_2{ width:308px; height:236px; border:1px solid #ccc; float:left; margin-left:840px; margin-top:-479px; position:relative;transition:1s}
+.pic_2:hover{ transform:skew(45deg);}
+.pic_2 img{ width:300px; height:195px; padding-left:5px; padding-top:5px;}
+.pic_2 P{ font-size:11px; color:#ccc; padding-top:8px; padding-left:7px;}
+.pic_3{ width:308px; height:236px; border:1px solid #ccc; float:left; margin-left:520px; margin-top:-221px; position:relative; transition:1s;}
+.pic_3:hover{ transform:skew(45deg);}
+.pic_3 img{ width:300px; height:195px; padding-left:5px; padding-top:5px;}
+.pic_3 P{ font-size:11px; color:#ccc; padding-top:8px; padding-left:7px;}
+.pic_4{ width:308px; height:236px; border:1px solid #ccc; float:left; margin-left:840px; margin-top:-238px; position:relative; transition:1s;}
+.pic_4:hover{ transform:skew(45deg);}
+.pic_4 img{ width:300px; height:195px; padding-left:5px; padding-top:5px;}
+.pic_4 P{ font-size:11px; color:#ccc; padding-top:8px; padding-left:7px;}
+.main_5{ width:957px; height:840px; margin:0 auto; overflow:hidden;}
+.list_3{ width:227px; height:397px; border:1px solid #ccc; margin-top:18px; position:relative; float:left; margin-left:10px;transition:1s;}
+.list_3:hover{transform: translate(100px,100px); transform:scale(-2);}
+.list_3 img{ width:216px; height:360px; padding-top:6px; padding-left:6px;}
+
+.list_3 p{ font-size:12px; color:#787878; padding-top:7px; padding-left:9px;}
+.bor_1{ position:absolute; background:url(img/biankuang.jpg) no-repeat; width:227px; height:4px; bottom:-5px;}
+.main_6{width:966px; margin:0 auto; height:524px; overflow:hidden;}
+.list_4{ width:308px; height:235px; border:1px solid #e5e5e5; margin-top:4px; float:left; margin-left:12px; position:relative;}
+.list_4 img{ padding-top:5px; padding-left:5px;}
+.list_4 p{ font-size:11px; color:#787878; padding-left:7px; padding-top:10px;}
+.list_4 span{ color:red; font-weight:bold; font-size:15px;}
+.text{ float:left; width:621px; padding-top:20px; padding-left:20px;}
+.a1{ font-size:12px; color:#83471d; text-decoration:none; float:right;}
+.bor_2{ position:absolute; background:url(img/beijingbiankuang.jpg) no-repeat; width:308px; height:4px; bottom:-5px; left:-2px;}
+
+h2{ position:relative; margin-top:-33px; float:left; font-size:21px; color:#7e726d;}
+h2:hover .bor_3{ display:block;}
+.bor_3{ position:absolute; background:url(img/bian1.jpg) no-repeat; width:98px; height:7px; bottom:-13px; left:2px; display:none;}
+.h3{ float:left; margin-top:-33px; padding-left:493px; position:relative; font-size:16px; color:#705c51;}
+.h3:hover .bor_3_1{ display:block;}
+.bor_3_1{ position:absolute; background:url(img/bian1.jpg) no-repeat; width:98px; height:7px; bottom:-15px; left:489px; display:none;}
+ .h4{ float:left; margin-top:-33px; padding-left:736px; position:relative; font-size:18px; color:#630;}
+ .h4:hover .bor_3_2{ display:block;}
+.bor_3_2{ position:absolute; background:url(img/bian1.jpg) no-repeat; width:98px; height:7px; bottom:-16px; left:730px; display:none;}
+.main_7{ width:960px; margin:0 auto;}
+.main_7_1{ width:477px; overflow:hidden; margin-left:-10px;}
+.list_5{ width:147px; height:133px; border:1px solid #ccc; margin-top:16px; float:left; margin-left:10px;}
+.list_5 img{ padding-top:6px; padding-left:26px;}
+.list_5 p{ font-size:12px; color:#ccc; text-align:center;}
+.box{ width:218px; height:282px; border:1px solid #ccc; float:left; margin-left:673px; margin-top:-285px;}
+.box_1{ width:223px; height:270px; overflow:hidden; margin-left:911px; margin-top:-280px;}
+.list_6{ float:left; width:223px; height:40px;}
+.list_6 p{ width:200px;text-overflow:ellipsis; overflow:hidden;white-space:nowrap; background:url(img/dian.jpg) no-repeat center left; padding-left:15px; font-size:12px; color:#787878;}
+a:hover{ color:red;}
+.list_6:hover p{ color:red;}
+li:hover{ color:red;}
+.box_2{ width:960px; margin:0 auto; padding-top:10px;}
+.box_2 a{padding-left:30px; padding-right:30px; text-decoration:none; color:#83471d; font-size:11px;}
+.box_3{ width:100%; height:175px; background:#eeeeee; margin-top:20px; border-top:1px solid #ccc;}
+.box_3_1{ width:960px; margin:0 auto;}
+.box_3_2{ margin-top:50px; float:left; padding-left:20px; padding-right:20px;}
+.box_3_2 h2{ border-bottom:1px solid #705c51; width:118px; height:28px; line-height:28px; text-align:left;}
+.box_3_2 p{ font-size:12px; color:#787878; padding-top:14px;}
+.foot{ width:100%; height:123px; background:#3c2112;}
+.foot p{ text-align:center; color:#fff; padding-top:12px;}
+</style>
+<script>
+	window.onload = function(){
+		var oBody  = document.getElementsByTagName('body')[0];
+		var oInp  = document.getElementsByTagName('input');
+		oInp[0].onclick = function(){
+			oBody.style.background ="url(img/bg1.jpg)";				
+		}
+		oInp[1].onclick = function(){
+			oBody.style.background = "url(img/bg.jpg)";	
+		}
+		
+	}
+</script>
+</head>
+
+<body>
+    <input type="button" value="换肤1"/>
+    <input type="button" value="换肤2"/>
+   <div class="logo">
+    <div class="logo_1">
+     <a href="#">
+      <h1>蒙娜丽莎</h1>
+      </a>
+    </div>
+   </div>
+   <div class="nav">
+      <a href="#">
+       <ul class="nav_1">
+         <li>首页</li>
+         <li>影楼报价</li>
+         <li>作品展示</li>
+         <li>场馆介绍</li>
+         <li>客片欣赏</li>
+         <li>积分商城</li>
+         <li>官方汇款</li>
+         <li>网络预约</li>
+         <li>官方微博</li>
+       </ul>
+       </a>
+     <a href="#">
+     <div class="yuan">收藏</div>
+     </a>
+   </div>
+    <div class="main">
+     <a href="#">
+      <img class="pic" src="img/tupian.jpg"/>
+      </a>
+    </div>
+    <div class="mian_1">
+      <ul class="main_1_1">
+       <a href="#">
+        <li class="list">
+           <p>ifyouareagile</p>
+           <p class="span">400-0905-520<span>(周六日不休)</span>
+           </p>
+        </li>
+        </a>
+        <a href="#">
+         <li class="list">
+           <p>ifyouareagile</p>
+           <p class="span">400-0905-520<span>(周六日不休)</span>
+           </p>
+        </li>
+        </a>
+        <a href="#">
+         <li class="list">
+           <p>ifyouareagile</p>
+           <p class="span">400-0905-520<span>(周六日不休)</span>
+           </p>
+        </li>
+        </a>
+      </ul>
+    </div>
+    <div class="main_2">
+    <a href="#">
+      <ul>
+        <li class="list_2">
+          <img src="img/3jpg.jpg"/>
+        </li>
+        <li class="list_2">
+          <img src="img/3jpg.jpg"/>
+        </li>
+        <li class="list_2">
+          <img src="img/3jpg.jpg"/>
+        </li>
+      </ul>
+      </a>
+    </div>
+    <div class="main_3">
+      <img src="img/4.jpg"/>
+    </div>
+    <div class="main_4">
+       <i>
+       <img src="img/v.jpg"/>
+       </i>
+      <div class="a">
+       <a href="#">北京</a> 
+       <a href="#">洛阳</a> 
+       <a href="#">西安</a> 
+       <a  class="no"href="#">唐山</a> 
+       </div>
+    </div>
+   <div class="main_4_2">
+    <div class="main_4_1">
+    <img src="img/2014-11-01-17-36-10.jpg"/>
+    <div class="opa_2">婚礼纪实风</div>
+    </div>
+    <div class="opa"> < </div>
+    <div class="opa_1"> > </div>
+    </div>
+    <div class="pic_1">
+       <img src="img/2014-08-13-20-09-36.jpg"/>
+       <p>印象风</p>
+       <span class="bor"></span>
+    </div>
+    <div class="pic_2">
+       <img src="img/2014-07-18-11-47-06.jpg"/>
+       <p>曼谷乐园</p>
+       <span class="bor"></span>
+    </div>
+    <div class="pic_3">
+       <img src="img/2014-08-09-13-39-59.jpg"/>
+       <p>浪漫花海</p>
+       <span class="bor"></span>
+    </div>
+    <div class="pic_4">
+       <img src="img/2014-08-15-14-00-32.jpg"/>
+       <p>婚礼纪实</p>
+       <span class="bor"></span>
+    </div>
+     <div class="main_4">
+       <i>
+       <img src="img/v.jpg"/>
+       </i>
+      <div class="a">
+       <a href="#">北京</a> 
+       <a href="#">洛阳</a> 
+       <a href="#">西安</a> 
+       <a  class="no"href="#">唐山</a> 
+       </div>
+    </div>
+    <div class="main_5">
+        <ul>
+           <li class="list_3">
+             <img src="img/2014-05-23-12-30-08.jpg"/>
+             <p>客片1</p>
+             <span class="bor_1"></span>
+           </li>
+           <li class="list_3">
+             <img src="img/2014-10-31-17-35-11.jpg"/>
+             <p>客片2</p>
+             <span class="bor_1"></span>
+           </li>
+           <li class="list_3">
+             <img src="img/2014-10-31-17-38-48.JPG"/>
+             <p>客片3</p>
+             <span class="bor_1"></span>
+           </li>
+           <li class="list_3">
+             <img src="img/2014-10-31-17-38-48.JPG"/>
+             <p>客片4</p>
+             <span class="bor_1"></span>
+           </li>
+           <li class="list_3">
+             <img src="img/2014-10-31-17-37-01.jpg"/>
+             <p>客片5</p>
+             <span class="bor_1"></span>
+           </li>
+           <li class="list_3">
+             <img src="img/2014-05-23-12-30-08.jpg"/>
+             <p>客片6</p>
+             <span class="bor_1"></span>
+           </li>
+           <li class="list_3">
+             <img src="img/2014-10-31-17-35-11.jpg"/>
+             <p>客片7</p>
+             <span class="bor_1"></span>
+           </li>
+           <li class="list_3">
+             <img src="img/2014-10-31-17-38-48.JPG"/>
+             <p>客片8</p>
+             <span class="bor_1"></span>
+           </li>
+        </ul>
+    </div>
+    <div class="main_4">
+       <i>
+       <img src="img/v.jpg"/>
+       </i>
+      <div class="a">
+        <a style="border-right:none;" href="#">
+       >> 更多
+       </a>
+       </div>
+    </div>
+    <div class="main_6">
+       <ul>
+          <li class="list_4">
+             <img src="img/meinv.jpg"/>
+             <p>
+             原价26666,网络特惠价10999
+               <span>RMB:10999</span>
+               <span class="bor_2"></span>
+             </p>
+          </li>
+       </ul>
+       <div class="text">
+          <h3>蒙娜丽莎"克里斯汀会所</h3>
+          <p>你好的撒红豆沙 阿訇地少级大赛电视剧埃及加到死后 和度搜啊哈行货的红豆沙好的撒到底撒
+             　中国经济景气监测中心副主任潘建成接受中新社记者采访时表示，这一系列项目以及官方缩减投资核准范围、放宽市场准入的做法，将能够在拉升民间投资为增长提供动力的同时，避免加剧债务危机和产能过剩。此外，更多投资机会的出现，将有望改变民间资本聚集于房地产市场并推高房价的现状。
+　　2014年一季度中国GDP增7.4%，创出近一年半新低。汇丰23日公布的4月中国制造业PMI初值虽然较上月回升，但仍位于荣枯线50之下。在经济下行压力不容忽视的情况下，中国如何确保经济行稳致远受到各方关注。
+　中国经济景气监测中心副主任潘建成接受中新社记者采访时表示，这一系列项目以及官方缩减投资核准范围、放宽市场准入的做法，将能够在拉升民间投资为增长提供动力的同时，避免加剧债务危机和产能过剩。此外，更多投资机会的出现，将有望改变民间资本聚集于房地产市场并推高房价的现状。
+　　2014年一季度中国GDP增7.4%，创出近一年半新低。汇丰23日公布的4月中国制造业PMI初
+          </p>
+          <a  class="a1"href="#"> >>详情介绍 </a>
+       </div>
+       <ul>
+          <li class="list_4">
+             <img src="img/meinv.jpg"/>
+             <p>
+             原价26666,网络特惠价10999
+               <span>RMB:10999</span>
+               <span class="bor_2"></span>
+             </p>
+          </li>
+          <li class="list_4">
+             <img src="img/meinv.jpg"/>
+             <p>
+             原价26666,网络特惠价10999
+               <span>RMB:10999</span>
+               <span class="bor_2"></span>
+             </p>
+          </li>
+          <li class="list_4">
+             <img src="img/meinv.jpg"/>
+             <p>
+             原价26666,网络特惠价10999
+               <span>RMB:10999</span>
+               <span class="bor_2"></span>
+             </p>
+          </li>
+       </ul>
+    </div>
+    <div class="main_4">
+       <h2>
+       积分商城
+        <span class="bor_3"></span>
+       </h2>
+      <h3 class="h3">
+      官方微博
+      <span class="bor_3_1"></span>
+      </h3>
+      <h4 class="h4">
+         服务小贴士
+        <span class="bor_3_2"></span>
+      </h4>
+    </div>
+    <div class="main_7">
+      <div class="main_7_1">
+       <ul>
+          <li class="list_5">
+             <img src="img/feilipu.jpg"/>
+             <p>飞利浦真难用</p>
+          </li>
+          <li class="list_5">
+             <img src="img/feilipu.jpg"/>
+             <p>飞利浦真难用飞利浦真难用</p>
+          </li>
+          <li class="list_5">
+             <img src="img/feilipu.jpg"/>
+             <p>飞利浦真难用</p>
+          </li>
+          <li class="list_5">
+             <img src="img/feilipu.jpg"/>
+             <p>飞利浦真难用</p>
+          </li>
+          <li class="list_5">
+             <img src="img/feilipu.jpg"/>
+             <p>飞利浦真难用</p>
+          </li>
+          <li class="list_5">
+             <img src="img/feilipu.jpg"/>
+             <p>飞利浦真难用</p>
+          </li>
+       </ul>
+       </div>
+    </div>
+    <div class="box"></div>
+    <div class="box_1">
+       <ul>
+         <a href="#">
+          <li class="list_6">
+            <p>北京婚纱摄影小编告诉你婚纱的后果...</p>
+          </li>
+          </a>
+          <a href="#">
+          <li class="list_6">
+            <p>北京婚纱摄影小编告诉你拍纱的后果...</p>
+          </li>
+          </a>
+          <a href="#">
+          <li class="list_6">
+            <p>北京婚纱摄影小编告诉你婚纱的后果...</p>
+          </li>
+          </a>
+          <a href="#">
+          <li class="list_6">
+            <p>北京婚纱摄影小编告诉你婚纱的后果...</p>
+          </li>
+          </a>
+          <li class="list_6">
+            <p>北京婚纱摄影小编告诉你婚纱的后果...</p>
+          </li>
+          <li class="list_6">
+            <p>北京婚纱摄影小编告诉你拍纱的后果...</p>
+          </li>
+          <li class="list_6">
+            <p>北京婚纱摄影小编告诉你拍纱的后果...</p>
+          </li>
+            <a href="#">
+          <li class="list_6">
+            <p>北京婚纱摄影小编告诉你拍纱的后果...</p>
+          </li>
+          </a>
+       </ul>
+    </div>
+    <div class="main_4">
+       <i>
+       <img src="img/v.jpg"/>
+       </i>
+      <div class="a">
+        <a style="border-right:none;" href="#">
+       友情链接:qq:1726470097
+       </a>
+       </div>
+    </div>
+    <div class="box_2">
+       <a href="#">北京儿童摄影</a>
+       <a href="#">北京儿童摄影</a>
+       <a href="#">北京儿童摄影</a>
+       <a href="#">北京儿童摄影</a>
+       <a href="#">北京儿童摄影</a>
+       <a href="#">北京儿童摄影</a>
+       <a href="#">北京儿童摄影</a>
+       <a href="#">北京儿童摄影</a>
+       <a href="#">北京儿童摄影</a>
+       <a href="#">北京儿童摄影</a>
+    </div>
+    <div class="box_3">
+       <div class="box_3_1">
+           <div class="box_3_2">
+            <h2>作品展示</h2>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            </div>
+           </div>
+           <div class="box_3_2">
+            <h2>作品展示</h2>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            </div>
+            <div class="box_3_2">
+            <h2>作品展示</h2>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            </div>
+            <div class="box_3_2">
+            <h2>作品展示</h2>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            </div>
+            <div class="box_3_2">
+            <h2>作品展示</h2>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            </div>
+            <div class="box_3_2">
+            <h2>作品展示</h2>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            <p>北京婚纱摄影</p>
+            </div>
+           </div>
+    </div>
+    <div class="foot">
+          <p>北京婚纱摄影 | 婚纱照展示 | 影楼报价 | 摄影动态 | 联系我们</p>
+          <p>版权所有:张宝先生!</p>
+          <p>切勿侵权!!!</p>
+          <p>谢谢</p>
+    </div>
+  <audio src="mp3/Super Junior - U.mp3" autoplay></audio>
+  
+</body>
+</html>

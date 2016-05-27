@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="base.css"/>
+<style>
+.box{width:128px;position:relative;top:0;margin:0 auto;}
+i{display:block;width:126px;height:40px;background:#FF0;
+text-align:center;line-height:40px;position:relative;}
+.che{background:url(img/v.png) no-repeat;padding-left:19px;
+}
+.kuai{width:332px;height:58px;border:1px solid #F0F;
+display:none;position:absolute;top:53px;right:0;z-index:-1;}
+</style>
+
+<script>
+	window.onload=function(){
+		document.getElementById('i').onmouseover=function(){
+			document.getElementById('kuai').style.display='block';
+			document.getElementById('kuai').style.border='1px solid pink';
+			document.getElementById('i').style.border='1px solid pink';
+			document.getElementById('i').style.height='51px';
+			document.getElementById('i').style.background='#fff';
+			document.getElementById('i').style.borderBottom='1px solid #fff';
+			document.getElementById('kuai').style.top='51px';};
+		
+		
+		document.getElementById('i').onmouseout=function(){
+			document.getElementById('kuai').style.display='none';
+			document.getElementById('i').style.height='126px';
+			document.getElementById('i').style.border='';
+			document.getElementById('i').style.height='40px';
+			document.getElementById('i').style.background='#FF0';}
+		
+		
+
+		}
+
+
+
+</script>
+</head>
+
+<body>
+<div class="box" id="box">
+	<i id="i">
+   	 <a href="#" class="che">
+    	
+   		 购物车
+   	 </a>
+    </i>
+	<div class="kuai" id="kuai">空</div>
+	
+	
+</div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+
+(function(){
+
+var random ={
+	current: -1,
+	groups:[
+		{
+			first:	10,
+			other:	8,
+			type:	'ad',
+			id:		22
+		},
+		{
+			first:	5,
+			other:	3,
+			type:	'ad',
+			id:		101555
+		},{
+			first:	5,
+			other:	3,
+			type:	'ad',
+			id:		101554
+		},{
+			first:	5,
+			other:	3,
+			type:	'ad',
+			id:		101627
+		}
+	],
+	//初始化
+	init:function(el){
+		//计算首次
+		this.initGroups('first');
+		this.bind(el);
+		this.next();
+		this.deal();
+		//重新准备后来
+		this.initGroups('other');
+	},
+	//初始化随机数比较值，更新比重总值
+	//param type 'first'首轮比重|'other'次轮概率
+	
+	initGroups:function(type){
+		var sum = min = 0;
+		for (var i = 0; i < this.groups.length; i++) {
+			var group = this.groups[i];
+				group.min = sum;
+				sum       += +group[type];
+				group.count = 0;
+		};
+		this.sum = sum;
+	},
+	//处理DOM相关绑定
+	bind:function(el){
+		var self= this;
+		this.el = el;
+		el.className+=" yk-AD-random";
+        el.style.cssText+=";position:relative;width:310px;height:110px;";
+        this.$wrap = document.getElementById("yk-AD-random-wrap");
+        this.$next = document.getElementById("yk-AD-random-next");
+        this.$next.onclick = function(){self.next();self.deal();};
+	},
+	//重设成下次抽取不考虑this.current
+	reset:function(){
+		this.current = -1; 
+	},
+	//按比重算出一个与this.current不同的下一个值
+	next:function(){
+		var rand, id;
+		do{
+			rand = Math.random() * this.sum;
+			for( var i = this.groups.length - 1 ; i >= 0 ; --i ){
+				if(this.groups[i].min <= rand){
+                	id = i;
+                	break;
+        	    }
+        	}
+		}while(id === this.current);
+		//save current
+		this.current = id;
+	},
+	//按this.current对应内容展现内容
+	deal:function(){
+		var group = this.groups[this.current],
+			func  = this[group.type],
+			html  = false;
+		func && ( html = this[group.type](group) );
+		html && ( this.$wrap.innerHTML = html );
+	},
+	//以下为处理函数
+	//-----------
+	//图片@params link, url, title
+	image: function(item){
+        var str='<a href="' + item.link + '" title="' +item.title+'">';
+           str+='<img src="' + item.url + '" alt="' + item.title  +'"/>';
+           str+='</a>';
+        return str;
+    },
+    //FLASH
+    //params data width height movie
+    flash: function(item){
+        return '<object type="application/x-shockwave-flash" data="' +item.data+'" width="'+item.width+'" height="'+item.height+'"><param name="allowscriptaccess" value="always"><param name="wmode" value="opaque"><param name="movie" value="'+item.movie+'" width="'+item.width+'" height="'+item.height+'"><embed src="'+item.movie+'" width="'+item.width+'" height="'+item.height+'" border="0" align="center" allowscriptaccess="always" wmode="opaque"></object>';
+
+    },
+    //直接显示抽中ID@params id
+    text: function(item){
+        //console.log(item.text);
+        return item.id;
+    },
+    //另一个广告位@params id
+    ad: function(item){
+    	//debugger;
+        this.$wrap.innerHTML = '<div id="ab_'+ item.id+'"  style="width: 310px; height: 110px;"></div>';
+        this.js = document.getElementById("randomJS");
+        this.js && this.js.parentNode.removeChild(this.js);
+        var js="http://html.atm.youku.com/html?p="+item.id+"&k=&seed"+ +(new Date());
+        var g=document.createElement("script");
+            g.type="text/javascript";
+            g.id="randomJS";
+            g.src=js;
+            document.getElementsByTagName('head')[0].appendChild(g)
+    }
+};
+setTimeout(function(){
+        random.init(document.getElementById("ab_101557"));
+},200);
+
+})();
+function ad_div_101557(){var adcontent = "";adcontent = adcontent + "<div class=\"yk-AD-310x110 b20\">	<div class=\"ad-wrap\">		<div class=\"ad-con\">			<div class=\"ad-inner\" id=\"ab_101557\">				<div id=\"yk-AD-random-wrap\">";
+adcontent = adcontent + "<\/div>				<a id=\"yk-AD-random-next\" href=\"javascript:void(0);\" style=\"position:absolute;right:0;bottom:0;color:#fff;background:#666;opacity:0.8;filter:alpha(opacity=80);font-weight:600;font-size:16px;padding:0 7px;width:20px;text-align:center;\" onmouseover=\"this.style.filter=\'\';this.style.opacity=\'\'\" onmouseout=\"this.style.filter=\'alpha(opacity=80);\';this.style.opacity=\'0.8\'\">>><\/a>			<\/div>		<\/div>	<\/div><\/div>";
+	var obj = document.getElementById('ab_101557');	if( !obj || typeof(obj) != 'object' || typeof(adcontent) != 'string') return;	if( null != adcontent && 0 == adcontent.length ){		obj.style.display = 'none';	}else{		obj.style.display = 'block';		if( null != adcontent ){			obj.innerHTML = adcontent;		}	}}ad_div_101557();

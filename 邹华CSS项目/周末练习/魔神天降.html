@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="css/base.css">
+        
+        <style>
+            .loog{background:url(img/79.png) repeat-x; height:1000px;}
+            .loog1{width: 1007px; margin:0 auto;overflow: hidden;}
+            .loog1_1{height:36px; border-right: 2px solid #cecece;width:98px; margin:5px;float: left; }
+            .loog1_2,.loog1_3{float:right;}
+            .loog1_2 .a1{background:url(img/81.png) no-repeat; float:left;height:24px;margin-right: 20px;padding-left: 30px;margin-top:11px;line-height: 24px;}
+            .loog1_2 .a2{background:url(img/82.png) no-repeat; float:left;margin-right: 20px;height:24px;padding-left: 30px;margin-top:11px;line-height: 24px;}
+            .loog1_2 .a3{background:url(img/83.png) no-repeat; float:left;height:24px;padding-left: 30px;margin-top:11px;line-height: 24px;margin-right: 9px;}
+            .loog1_3{padding-left: 30px;border-left: 1px solid #e1e1e1; border-right: 1px solid #e1e1e1;line-height:50px;float:right;}
+            .loog1_3 a{float:left;background:url(img/85.png) no-repeat 55% 50%;width:60px;}
+			 .loog1_3 a:hover{ color:#F00;}
+			
+			.loog2_1{margin-top:-6px;}
+			.loog2_2{ background:url(img/header_main.jpg) no-repeat; height:551px; margin-left:4px; margin-top:-3px; position:relative;}
+			.loog2_2 img,.loog2_2 .wenzi{ float:left; }	
+			.loog2_2 .wenzi{ padding-top:36px; font-size:8px; color:#8590bd; text-align:center;margin-right:28px;}
+			.loog2_2 .wenzi a{ color:#ced9ff; font-size:17px;  font-weight:bold;}
+			.weizhi{ margin-left:50px; }
+			.loog2_2 .wenzi a:hover{ transform:scale(2); transition:all 3s linear;text-shadow:2px 2px 5px #999;}
+			.fudong{ position:relative; overflow:hidden;}
+			.dingwei{ position:fixed; top:182px; left:175px;z-index: 5;}
+			.fudong .a1 img,.fudong .p1 img{ float:left;}
+			.fudong .a2 img{ margin-left:4px;}
+			.fudong .xingfu{ position:absolute;top:12px; left:730px; }
+			.fudong .xingfu a{font-size:14px; color:#adb9e0; line-height:22px;}
+			.xingfu a span{ color:#F00;}
+			.xingfu a span:hover{ color:#fff}
+			.xingfu a:hover{ color:#30F}
+			.fangwen{ position:absolute; top:76px; left:626px;}
+			.fangwen a,.fangwen h3{ float:left; color:#adb9e0;}
+			.fangwen a{ margin-left:5px; line-height:22px}
+			.fangwen h3{ margin-left:20px; }
+			.fangwen h3 a,.fangwen h3 p{ float:left;}
+			.fangwen h3 p{ line-height:22px}
+			.fangwen a:hover{ color:#CF0;}
+			
+			
+			.gonggao{ margin-left:4px;}
+			.gonggao a{ float:left;}
+			.gonggao .box{border:1px solid #433b4f; overflow:hidden; margin-top:-1px;}
+			.gonggao .box a{ background:url(img/92.png); float:left; width:96px; line-height:57px; text-align:center; border-bottom:1px solid #4b4e57; color:#FFF; font-size:14px;}
+			.gonggao .box a:hover{ background:url(img/93.png); float:left; width:96px; line-height:57px; text-align:center; margin-top:3px; height:55px; border:none; font-size:16px;}
+			
+			.gonggao .box_1 a{ background:url(img/95.png);border:1px solid #000;color:#Ff0; font-size:76px ; border:1px solid #433b4f; width:383px; height:244px; line-height:243px; text-align:center;display:none;}
+			.gonggao .box_1 .show{ display:block;}
+        </style>
+        <script>
+        	window.onload=function(){
+				var cba=document.getElementById('box');
+				var abc=cba.getElementsByTagName('a');
+				var zxc=document.getElementById('box_1');
+				var cxz=zxc.getElementsByTagName('a');
+				
+				for (var i=0;i<abc.length;i++){
+					abc[i].asd=i;
+					abc[i].onmouseover=function(){
+						var n=this.asd;
+					for (var j=0;j<abc.length;j++){
+							cxz[j].className='';
+					}
+							
+					cxz[n].className='show';
+					};
+				
+				}
+				
+			};
+        
+        </script>
+            
+ 
+    </head>
+    <body>
+        <div class="loog">
+            <ul class="loog1">
+                <li class="loog1_1">
+                    <a href="#">
+                        <img src="img/80.png" alt="">
+                    </a>
+                </li>
+                <li  class="loog1_3">
+                    <a href="#">客服</a>
+                </li>
+                <li  class="loog1_3">
+                    <a href="#">客服</a>
+                </li>
+                <li  class="loog1_3">
+                    <a href="#">客服</a>
+                </li>
+
+                <li class="loog1_2">
+                    <a href="#" class="a1">注册</a>
+                    <a href="#" class="a2">充值</a>
+                    <a href="#" class="a3">畅游+</a>
+                </li>
+            </ul>
+            <ul  class="loog1">
+                <li class="loog2_1">
+                    <img src="img/84.png">
+                </li>
+                <li class="loog2_2">
+                    <img src="img/logo1.gif">
+                    <div class="wenzi weizhi">
+                    	<a href="#">首页</a><br>
+						<p>HOME</p>
+                    </div>
+                    <div class="wenzi">
+                    	<a href="#">首页首页</a><br>
+						<p>HOME</p>
+                    </div>
+                    <div class="wenzi">
+                    	<a href="#">首页首页首</a><br>
+						<p>HOME</p>
+                    </div>
+                    <div class="wenzi">
+                    	<a href="#">首页首页</a><br>
+						<p>HOME</p>
+                    </div>
+                    <div class="wenzi">
+                    	<a href="#">首页首页</a><br>
+						<p>HOME</p>
+                    </div>
+                    <div class="wenzi">
+                    	<a href="#">首页首页</a><br>
+						<p>HOME</p>
+                    </div>
+                    <div class="wenzi">
+                    	<a href="#">首页首页</a><br>
+						<p>HOME</p>
+                    </div>
+                     <div class="wenzi">
+                    	<a href="#">首首页</a><br>
+						<p>HOME</p>
+                    </div>
+                </li>
+                <li class="dingwei">
+                	<img src="img/86.png">
+                
+                </li>
+                <li class="fudong">
+                	<a href="#" class="a1 a2"><img src="img/87.png"></a>
+                    <a href="#" class="a1"><img src="img/88.png"></a>
+                    <a href="#" class="a1"><img src="img/88.png"></a>
+                    <a href="#" class="a1"><img src="img/88.png"></a>
+                    <a href="#" class="a1"><img src="img/88.png"></a>
+					<p class="p1"><img src="img/89.png"></p>
+                    <div class="xingfu">
+                    	<a href="#">智能社一区<span>【三号楼】</span>六楼606</a>	<br>
+                        <a href="#">智能社二区<span>【三号楼】</span>六楼606</a>
+                    </div>
+                	<div class="fangwen">
+                    	 <a href="#">智能社每小时访问量<span>100000000</span>条更新</a>
+                    	<h3>
+                        	<p>关注:</p>
+                            <a href="#"><img src="img/90.png"></a><p>丨</p>
+                            <a href="#"><img src="img/90.png"></a><p>丨</p>
+                            <a href="#"><img src="img/90.png"></a>   
+                        </h3>
+                    </div>              
+                </li>
+                <li class="gonggao">
+                	<a href="#"><img src="img/91.png"></a>
+                    <div class="box" id="box">
+                    	<a href="#">综合</a>
+                        <a href="#">新闻</a>
+                        <a href="#">公告</a>
+                        <a href="#">媒体</a>
+					</div>
+                    <div class="box_1" id="box_1">	
+                    	<a href="#" class="show">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    <div>
+        <a href="#"><img src="img/" alt=""/></a>
+
+    </div>
+ 
+
+    </body>
+</html>

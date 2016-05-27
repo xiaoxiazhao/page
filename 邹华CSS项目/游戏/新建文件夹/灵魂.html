@@ -1,0 +1,446 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/w_style.css" />
+<style>
+	.lunbo_btn li{ width:15px; height:15px; float:left; margin-right:4px; background:url(../img/dot1.png) no-repeat; }
+
+	.btn i{ width:41px; height:41px; }
+
+	.gg_list li{ float:left; width:242px; height:130px; margin-right:8px;_margin-right:6px; border:1px solid #433b4f;}
+	input{ padding:0; margin:0; border:0 none; outline:none;}
+	.cf3ca90{color:#f3ca90;}
+	.c9587ab{color:#9587ab;}
+	img{display:block;}
+	.z_fastinbox{width:215px; height:189px; background:url(img/sprite.jpg) no-repeat left -555px; margin-bottom:22px;}
+	.z_fastin_h{ width:215px; height:42px; line-height:48px; text-align:center; font-size:16px;}
+	.z_fastinbox ul{margin-top:16px;}
+	.z_fastinbox li{ width:95px;}
+	.z_fastinbox a{ display:block; text-align:center; line-height:28px; color:#9587ab;}
+	
+	.z_hezuomeiti{width:215px;}
+	.z_hezuomeiti select{width:215px; height:46px; text-align:center; background:#18171c; border:5px solid #322b3c; color:#8c81b7;}
+	
+	.z_survey{ width:215px; height:268px; overflow:hidden;}
+	.z_survey:hover img{ transform:translate(-215px,0);}
+	
+	.z_content_box{width:1000px; background:#1b1a20; margin:0 auto;}
+	.content_l{float:left; margin-right:19px;}
+	.content_z{float:left;}
+	.wanjiajiaoliu h4{ width:425px; height:42px; line-height:30px; font-size:20px;}
+	.wanjiajiaoliu h4 i{width:49px; height:31px;background:url(img/sprite.jpg) no-repeat -607px -349px;}
+	.wanjiajiaoliu input{ background:#1a191f; width:106px; height:47px; float:left; border:0 none;}
+	.wanjiajiaoliu_gonglue{background:#1a191f; width:424px; height:47px;}
+	.z_gengduoxinxi_a{ float:left; margin-top:16px; color:#9587ab;}
+	.wanjiajiaoliu_ul{ width:284px; height:232px; background:url(img/1031.jpg) no-repeat 16px 24px #322b3c; padding-left:140px; padding-top:24px; margin-bottom:40px;}
+	.wanjiajiaoliu_ul p{ line-height:26px;}
+	
+	.youxiziliao h4{ width:322px; height:42px; line-height:30px; font-size:20px;}
+	.youxiziliao h4 i{width:49px; height:31px; background:url(img/sprite.jpg) no-repeat -607px -349px; overflow:hidden;}
+
+
+	.youxiziliao_xia{width:322px; overflow:hidden;}
+	.youxiziliao_xia h4{ width:322px; height:42px; line-height:30px; font-size:20px;}
+	.youxiziliao_xia h4 i{width:49px; height:31px; background:url(img/sprite.jpg) no-repeat -607px -349px;}
+	.youxiziliao_xia_inp input{ background:#1a191f; width:106px; height:46px; float:left;}
+	.z_youxiziliaoxia_a{ float:left; margin-top:16px; color:#9587ab;}
+	.youxiziliao_ul{width:322px; height:256px; background:#322b3c;}
+	.youxiziliao_ul li{ float:left; margin-top:24px; margin-left:12px; margin-right:12px;}
+	a:hover{ color:#f69; }
+	.z_content_box .z_active{ background:#322b3c;}
+	.ziliao{ width:322px; margin-bottom:20px; background:#1c1a25;}
+	.ziliao_h3{ height:42px; line-height:30px; font-size:20px; margin-bottom:10px; }
+	.ziliao_h3_bg{ width:28px; height:30px; background:url(img/ico02.png) no-repeat; margin-right:16px;  }
+	.ziliao_h3 a{ color:#f4cc91; }
+	.zl{ padding:0px 5px; height:26px; line-height:26px; background:#594f67; color:#fff; position:relative; left:0; top:0; margin:16px 18px 16px 0px; }
+	.zl_sj{ display:block; width:8px; height:10px; background:url(img/sj001.png) no-repeat; position:absolute; right:-8px; top:10px; }
+	.ziliao_list li{ line-height:58px; width:286px; border-bottom:1px dashed #594f67; }
+	.ziliao_list{ padding:0 17px;}
+	.zl_a{ width:210px; }
+	.zl_a a{ color:#9587ab; }
+	.join{ display:block; width:280px; height:39px; border:3px solid #4b3f5c; text-align:center; line-height:39px; font-size:22px; color:#b1a1ca; margin:5px auto; }
+	.ziliao_list .last{ border:none; }
+	.zl_con{ border:1px solid #4b3f5c; padding-bottom:13px; background:#26212d;}
+	.footer{ width:1000px; background:#1c1a25; text-align:center; margin:0 auto;}
+	.f_bt{ width:893px; height:30px; background:url(img/game_anc.jpg) no-repeat; color:#a6b2d8; padding-top:15px; margin:0 auto;}
+	.f_p2{ line-height:14px; color:#615770; font-size:14px;}
+	.mt15{ margin-top:15px;}
+	.f_end{ width:1000px; height:110px; background:url(img/end.png) no-repeat; margin-top:40px;}
+	.f_bg1{ width:110px; height:56px; background:url(img/logo_dark.png) no-repeat -4px -58px; display:inline-block; margin:30px 0 0 80px;}
+	.f_bg2{ width:32px; height:48px; background:url(img/cyou_copyright_sprite.png) no-repeat 0 0; margin:35px 0 0 10px;}
+	.end_2{ font-size:12px; color:#535353; margin:40px 0 0 15px; text-align:left;}
+	.c_end{ color:#767676; margin-top:10px;}
+	.ml0{ margin-left:0;}
+</style>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+	$(function (){
+		$('.w_top_left_top a').mouseover(function (){
+			$('.w_top_left_top a').removeClass('w_nav_active');
+			$('.w_nav_image').removeClass('w_show');
+			$(this).addClass('w_nav_active');
+			var n = $(this).index();
+			$('.w_nav_image:eq('+n+')').addClass('w_show');
+		});
+	});
+	$(function(){
+		$('.w_action li').mouseover(function(){
+			$('.w_action li').removeClass('w_show');
+			$(this).addClass('w_show');
+		})	
+	});
+	$(function (){
+		$('.input_top').mouseover(function (){
+			$('.input_top').removeClass('z_active');
+			$('.wanjiajiaoliu_li_top').removeClass('w_show');
+			$(this).addClass('z_active');
+			var n = $(this).index();
+			$('.wanjiajiaoliu_li_top:eq('+n+')').addClass('w_show');
+		});
+	});
+	$(function (){
+		$('.input_bottom').mouseover(function (){
+			$('.input_bottom').removeClass('z_active');
+			$('.wanjiajiaoliu_li_bottom').removeClass('w_show');
+			$(this).addClass('z_active');
+			var n = $(this).index();
+			$('.wanjiajiaoliu_li_bottom:eq('+n+')').addClass('w_show');
+		});
+	});
+	$(function (){
+		$('.input_right').mouseover(function (){
+			$('.input_right').removeClass('z_active');
+			$('.youxiziliao_ul_right').removeClass('w_show');
+			$(this).addClass('z_active');
+			var n = $(this).index();
+			$('.youxiziliao_ul_right:eq('+n+')').addClass('w_show');
+		});
+	});
+</script>
+</head>
+
+<body>
+
+	<div class="w_main">
+    	<div class="w_top clearfix">
+        	<div class="fl w_top_left">
+            	<p class="clearfix w_top_left_top">
+                	<a href="#" class="w_name fl">术士</a>
+                    <a href="#" class="w_name fl">神射手</a>
+                    <a href="#" class="w_name fl">守护者</a>
+                    <a href="#" class="w_name fl">魔法师</a>
+                    <a href="#" class="w_name fl w_nav_active">战士</a>
+                    <a href="#" class="w_name fl">刺客</a>
+                </p>
+                <div class="w_nav_image">
+                	<a href="#"><img src="img/cike.jpg" /></a>
+                </div>
+                <div class="w_nav_image">
+                	<a href="#"><img src="img/shenshe.jpg" /></a>
+                </div>
+                <div class="w_nav_image">
+                	<a href="#"><img src="img/zhanshi.jpg" /></a>
+                </div>
+                <div class="w_nav_image">
+                	<a href="#"><img src="img/cike.jpg" /></a>
+                </div>
+                <div class="w_show w_nav_image">
+                	<a href="#"><img src="img/zhanshi.jpg" /></a>
+                </div>
+                <div class="w_nav_image">
+                	<a href="#"><img src="img/shenshe.jpg" /></a>
+                </div>
+            </div>
+            <div class="fr w_top_right">
+            	<h3 class="w_active-center clearfix">
+                	<i class="fl"></i>
+                	<span class="fl">活动中心</span>
+                </h3>
+                <ul class="w_action">
+                	<li class="w_show">
+                    	<a href="#" class="w_text clearfix">
+                    		<i class="fl"></i>
+                            <span class="fl">女武神的秘宝</span>
+                            <b class="fr">进行中</b>
+                        </a>
+                        <a href="#" class="w_image">
+                        	<img src="img/1.jpg" />
+                        	<div class="w_shadow"></div>
+                            <p class="clearfix">
+                            	<i class="fl">女武神的秘宝</i>
+                            	<b class="fr">共7,294,712人关注</b>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#" class="w_text">
+                    		<i class="fl"></i>
+                            <span class="fl">女武神的秘宝</span>
+                            <b class="fr">进行中</b>
+                        </a>
+                        <a href="#" class="w_image">
+                        	<img src="img/1.jpg" />
+                        	<div class="w_shadow"></div>
+                            <p class="clearfix">
+                            	<i class="fl">女武神的秘宝</i>
+                            	<b class="fr">共7,294,712人关注</b>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#" class="w_text">
+                    		<i class="fl"></i>
+                            <span class="fl">女武神的秘宝</span>
+                            <b class="fr">进行中</b>
+                        </a>
+                        <a href="#" class="w_image">
+                        	<img src="img/1.jpg" />
+                        	<div class="w_shadow"></div>
+                            <p class="clearfix">
+                            	<i class="fl">女武神的秘宝</i>
+                            	<b class="fr">共7,294,712人关注</b>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#" class="w_text">
+                    		<i class="fl"></i>
+                            <span class="fl">女武神的秘宝</span>
+                            <b class="fr">进行中</b>
+                        </a>
+                        <a href="#" class="w_image">
+                        	<img src="img/1.jpg" />
+                        	<div class="w_shadow"></div>
+                            <p class="clearfix">
+                            	<i class="fl">女武神的秘宝</i>
+                            	<b class="fr">共7,294,712人关注</b>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#" class="w_text">
+                    		<i class="fl"></i>
+                            <span class="fl">女武神的秘宝</span>
+                            <b class="fr">进行中</b>
+                        </a>
+                        <a href="#" class="w_image">
+                        	<img src="img/1.jpg" />
+                        	<div class="w_shadow"></div>
+                            <p class="clearfix">
+                            	<i class="fl">女武神的秘宝</i>
+                            	<b class="fr">共7,294,712人关注</b>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#" class="w_text">
+                    		<i class="fl"></i>
+                            <span class="fl">女武神的秘宝</span>
+                            <b class="fr">进行中</b>
+                        </a>
+                        <a href="#" class="w_image">
+                        	<img src="img/1.jpg" />
+                        	<div class="w_shadow"></div>
+                            <p class="clearfix">
+                            	<i class="fl">女武神的秘宝</i>
+                            	<b class="fr">共7,294,712人关注</b>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="z_content_box clearfix">
+    	<div class="content_l">
+        	<div class="z_fastinbox">
+            	<h4 class="z_fastin_h cf3ca90">快速入口</h4>
+                <ul>
+                	<li class="fl"><a href="#">·账号管理</a></li>
+                    <li class="fl"><a href="#">·账号管理</a></li>
+                    <li class="fl"><a href="#">·账号管理</a></li>
+                    <li class="fl"><a href="#">·账号管理</a></li>
+                    <li class="fl"><a href="#">·账号管理</a></li>
+                    <li class="fl"><a href="#">·账号管理</a></li>
+                    <li class="fl"><a href="#">·账号管理</a></li>
+                    <li class="fl"><a href="#">·账号管理</a></li>
+                </ul>
+            </div>
+            <div class="z_hezuomeiti">
+            	<img src="img/main_a3_3.jpg" />
+                <select>
+                	<option>合作媒体专区</option>
+                    <option>承压飞专区</option>
+                </select>
+            </div>
+        	<div class="z_survey">
+            	<a href="#"><img src="img/examen.jpg" /></a>
+            </div>
+        </div>
+        <div class="content_z">
+   	  		<div class="wanjiajiaoliu">
+            	<h4><i class="fl"></i><span class="fl cf3ca90">玩家交流</span></h4>
+                <div class="clearfix wanjiajiaoliu_gonglue">
+                    <input type="submit" value="玩家攻略" class="c9587ab z_active input_top"/>
+                    <input type="submit" value="玩家攻略" class="c9587ab input_top"/>
+                    <input type="submit" value="玩家攻略" class="c9587ab input_top"/>
+                    <a href="#" class="z_gengduoxinxi_a">更多信息></a>
+                </div>
+				<ul class="wanjiajiaoliu_ul c9587ab">
+                	<li class="w_show wanjiajiaoliu_li_top wanjiajiaoliu_li">
+                    	<p>·生活技能值烹饪技能详解</p>
+                        <p>·生活技能值烹饪技能详解</p>
+                        <p>·生活技能值烹饪技能详解</p>
+                        <p>·生活技能值烹饪技能详解</p>
+                        <p>·生活技能值烹饪技能详解</p>
+                        <p>·生活技能值烹饪技能详解</p>
+                        <p>·生活技能值烹饪技能详解</p>
+                        <p>·生活技能值烹饪技能详解</p>
+                    </li>
+                    <li class="wanjiajiaoliu_li_top wanjiajiaoliu_li">
+                    	<p>·称号：发现森林之密 任务全程攻略</p>
+                        <p>·称号：发现森林之密 任务全程攻略</p>
+                        <p>·称号：发现森林之密 任务全程攻略</p>
+                        <p>·称号：发现森林之密 任务全程攻略</p>
+                        <p>·称号：发现森林之密 任务全程攻略</p>
+                        <p>·称号：发现森林之密 任务全程攻略</p>
+                        <p>·称号：发现森林之密 任务全程攻略</p>
+                        <p>·称号：发现森林之密 任务全程攻略</p>
+                    </li>
+                    <li class="wanjiajiaoliu_li_top wanjiajiaoliu_li">
+                    	<p>·灵魂回响生活技能玩法介绍一</p>
+                        <p>·灵魂回响生活技能玩法介绍一</p>
+                        <p>·灵魂回响生活技能玩法介绍一</p>
+                        <p>·灵魂回响生活技能玩法介绍一</p>
+                        <p>·灵魂回响生活技能玩法介绍一</p>
+                        <p>·灵魂回响生活技能玩法介绍一</p>
+                        <p>·灵魂回响生活技能玩法介绍一</p>
+                        <p>·灵魂回响生活技能玩法介绍一</p>
+                    </li>
+                </ul>
+        	</div>
+            <div class="wanjiajiaoliu">
+            	<h4><i class="fl"></i><span class="fl cf3ca90">玩家交流</span></h4>
+                <div class="clearfix wanjiajiaoliu_gonglue">
+                    <input type="submit" value="游戏视频" class="c9587ab z_active input_bottom"/>
+                    <input type="submit" value="游戏资料" class="c9587ab input_bottom"/>
+                    <input type="submit" value="玩家攻略" class="c9587ab input_bottom"/>
+                    <a href="#" class="z_gengduoxinxi_a">更多信息></a>
+                </div>
+				<ul class="wanjiajiaoliu_ul c9587ab">
+                	<li class="w_show wanjiajiaoliu_li wanjiajiaoliu_li_bottom">
+                    	<p>·生活技能值烹饪技能详解</p>
+                        <p>·生活技能值烹饪技能详解</p>
+                        <p>·生活技能值烹饪技能详解</p>
+                        <p>·生活技能值烹饪技能详解</p>
+                        <p>·生活技能值烹饪技能详解</p>
+                        <p>·生活技能值烹饪技能详解</p>
+                        <p>·生活技能值烹饪技能详解</p>
+                        <p>·生活技能值烹饪技能详解</p>
+                    </li>
+                    <li class="wanjiajiaoliu_li wanjiajiaoliu_li_bottom">
+                    	<p>·称号：发现森林之密 任务全程攻略</p>
+                        <p>·称号：发现森林之密 任务全程攻略</p>
+                        <p>·称号：发现森林之密 任务全程攻略</p>
+                        <p>·称号：发现森林之密 任务全程攻略</p>
+                        <p>·称号：发现森林之密 任务全程攻略</p>
+                        <p>·称号：发现森林之密 任务全程攻略</p>
+                        <p>·称号：发现森林之密 任务全程攻略</p>
+                        <p>·称号：发现森林之密 任务全程攻略</p>
+                    </li>
+                    <li class="wanjiajiaoliu_li wanjiajiaoliu_li_bottom">
+                    	<p>·灵魂回响生活技能玩法介绍一</p>
+                        <p>·灵魂回响生活技能玩法介绍一</p>
+                        <p>·灵魂回响生活技能玩法介绍一</p>
+                        <p>·灵魂回响生活技能玩法介绍一</p>
+                        <p>·灵魂回响生活技能玩法介绍一</p>
+                        <p>·灵魂回响生活技能玩法介绍一</p>
+                        <p>·灵魂回响生活技能玩法介绍一</p>
+                        <p>·灵魂回响生活技能玩法介绍一</p>
+                    </li>
+                </ul>
+        	</div>
+        </div>
+        <div class="fr">
+        	<div class="ziliao">
+                    <h3 class="ziliao_h3 clearfix"><i class="ziliao_h3_bg fl"></i><a href="#" class="fl">游戏资料</a></h3>
+                    <div class="zl_con">
+                        <ul class="ziliao_list">
+                            <li class="clearfix">
+                                <a href="#" class="zl fl">新手入门<span class="zl_sj"></span></a>
+                                <p class="zl_a clearfix fl"><a href="#">注册账号|</a><a href="#">注册账号|</a><a href="#">注册账号|</a><a href="#">注册账号</a></p>
+                            </li>
+                            <li class="clearfix">
+                                <a href="#" class="zl fl">新手入门<span class="zl_sj"></span></a>
+                                <p class="zl_a clearfix fl"><a href="#">注册账号|</a><a href="#">注册账号|</a><a href="#">注册账号|</a><a href="#">注册账号</a></p>
+                            </li>
+                            <li class="clearfix last">
+                                <a href="#" class="zl fl">新手入门<span class="zl_sj"></span></a>
+                                <p class="zl_a clearfix fl"><a href="#">注册账号|</a><a href="#">注册账号|</a><a href="#">注册账号|</a><a href="#">注册账号</a></p>
+                            </li>
+                            <li class="clearfix last">
+                                <a href="#" class="zl fl">新手入门<span class="zl_sj"></span></a>
+                                <p class="zl_a clearfix fl"><a href="#">注册账号|</a><a href="#">注册账号|</a><a href="#">注册账号|</a><a href="#">注册账号</a></p>
+                            </li>
+                        </ul>
+                        <p><a href="#" class="join">进入资料站</a></p>
+                	</div>
+                </div>
+        	<div class="youxiziliao_xia">
+            	<h4><i class="fl"></i><span class="fl cf3ca90">视觉欣赏</span></h4>
+                <div class="clearfix youxiziliao_xia_inp">
+                    <input type="submit" value="游戏视频" class="c9587ab z_active input_right"/>
+                    <input type="submit" value="游戏资料" class="c9587ab input_right"/>
+                    <a href="#" class="z_youxiziliaoxia_a fl">更多信息></a>
+                </div>
+				<ul class="youxiziliao_ul c9587ab w_show youxiziliao_ul_right">
+                	<li>
+                    	<a href="#"><img src="img/1 (1).jpg" /></a>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/1 (1).jpg" /></a>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/1 (1).jpg" /></a>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/1 (1).jpg" /></a>
+                    </li>
+                </ul>
+                <ul class="youxiziliao_ul c9587ab youxiziliao_ul_right">
+                	<li>
+                    	<a href="#"><img src="img/1 (2).jpg" /></a>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/1 (2).jpg" /></a>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/1 (2).jpg" /></a>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="img/1 (2).jpg" /></a>
+                    </li>
+                </ul>
+        	</div>
+        </div>
+    </div>
+    <div class="footer">
+    	<p class="f_bt">健康游戏公告</p>
+        <p class="f_p2">抵制不良游戏。拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+        <p class="f_p2 mt15">本游戏适合18周岁以上的成年人用户，未满18周岁的未成年用户请在家长的监督下进行游戏。</p>
+        <div class="f_end clearfix">
+        	<div class="end_1 fl">
+        		<p class="f_bg1 fl"></p>
+                <p class="f_bg2 fl"></p>
+            </div>
+            <div class="end_2 fl">
+            	<p>北京畅游时代数码技术有限公司版权所有&nbsp;&nbsp;|<a href="#" class="end_2 ml0">&nbsp;&nbsp;联系我们</a></p>
+                <p class="c_end">京网文[2011]0260-093号  <span class="end_2 ml0">| 京ICP证：</span>070525号</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

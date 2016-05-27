@@ -1,0 +1,719 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script>
+	window.onload=function(){ 
+		var aBox1=document.getElementById('ul1');
+		var aUl1=aBox1.getElementsByTagName('li');
+		var abox2=document.getElementById('ul2');
+		var aLi=abox2.getElementsByTagName('ul')
+			for(var i=0;i<aUl1.length; i++){
+			aUl1[i].UL=i;	
+			aUl1[i].onmouseover=function(){
+				for(var j=0; j<aUl1.length; j++){
+					aUl1[j].className='';
+					aLi[j].className='';
+					}
+				this.className ='box1_ui_li'
+				aLi[this.UL].className='box1_div_ul'
+				}
+			}
+		var aUL2=document.getElementById('shu');
+		var aLi2=aUL2.getElementsByTagName('li');
+		var atu=document.getElementById('tu');
+		var aImg=atu.getElementsByTagName('img')
+			for(var q=0;q<aLi2.length; q++){
+			aLi2[q].Im=q	
+			aLi2[q].onmouseover=function(){
+				for(var w=0; w<aLi2.length; w++){
+					aLi2[w].className='';
+					aImg[w].className='';
+					}
+				this.className ='box4_ul_li'
+				aImg[this.Im].className='box4_div3_img'
+				}
+			}
+		var aDiv=document.getElementById('tu1');
+		var aD1=aDiv.getElementsByTagName('li')
+			for(var e=0;e<aD1.length; e++){	
+			aD1[e].onmouseover=function(){
+				for(var r=0; r<aD1.length; r++){
+					aD1[r].className='';
+					}
+				this.className ='box4_div4'
+				}
+			}
+		var aDiv1=document.getElementById('div');
+			aDiv1.onclick = function(){
+			if(this.className == ''){
+					this.className = 'box5_div1';
+			}else{
+				this.className = '';
+			}
+		}
+		var aID7=document.getElementById('ID7');
+		var aID8=aID7.getElementsByTagName('li');
+		
+			for(var D=0;D<aID8.length; D++){
+			
+			aID8[D].onmouseover=function(){
+				for(var F=0; F<aID8.length; F++){
+					aID8[F].className='';
+					
+					}
+				this.className ='logo1_ul_li'
+				
+				}
+			}
+		tab('id1','id2')
+		tab('id3','id4')
+		tab('id5','id6')
+	}
+		
+		function tab(b,c){
+		var aId1=document.getElementById(b);
+		var aLi3=aId1.getElementsByTagName('li');
+		var aTd2=document.getElementById(c);
+		var aUL=aTd2.getElementsByTagName('div')
+			for(var r=0;r<aLi3.length; r++){
+			aLi3[r].tx=r	
+			aLi3[r].onmouseover=function(){
+				for(var t=0; t<aLi3.length; t++){
+					aLi3[t].className='';
+					aUL[t].className='';}
+				this.className ='box5_div3_ul_li'
+				aUL[this.tx].className='box5_div3_div'}
+			}
+		}
+
+</script>
+
+</head>
+
+<body>
+   
+  <div class="top clearfix">
+            <h1 class="logo fl"></h1>
+            <ul class="logo_ul clearfix fr">
+                <li class="logo_ul_li">注册
+                    <i></i>
+                </li>
+                <li class="logo_ul_li">充值
+                    <i></i>
+                </li>
+                <li class="logo_ul_li1">畅游+
+                    <i></i>
+                </li>
+                <li class="logo_ul_li2">客服
+                    <i></i>
+                </li>
+                <li class="logo_ul_li2">畅游全服务
+                    <i></i>
+                </li>
+                <li class="logo_ul_li2">畅游全游戏
+                    <i></i>
+                </li>
+            </ul>
+        </div>
+  <div class="zheng">      
+        <div class="nav clearfix">
+                <h2 class="logo1 fl"></h2>
+                <ul class="logo1_ul fr" id="ID7">
+                    <li >
+                        
+                        <P>首页</P>
+                        <p>HOME</p>
+                        
+                        
+                    </li>
+                    <li >
+                        <i class="logo1_ul_li_i"></i>
+                        <P>新闻公告</P>
+                        <p>HOME</p>
+
+                    </li>
+                    <li>
+                    	<i class="logo1_ul_li_i"></i>
+                        <P>游戏特色</P>
+                        <p>HOME</p>
+                    </li>
+                    <li>
+                    	<i class="logo1_ul_li_i"></i>
+                        <P>新手指南</P>
+                        <p>HOME</p>
+                    </li>
+                    <li>
+                    	<i class="logo1_ul_li_i"></i>
+                        <P>游戏下载</P>
+                        <p>HOME</p>
+                    </li>
+                    <li>
+                    	<i class="logo1_ul_li_i"></i>
+                        <P>活动专区</P>
+                        <p>HOME</p>
+                    </li>
+                    <li>
+                    	<i class="logo1_ul_li_i"></i>
+                        <P>视觉欣赏</P>
+                        <p>HOME</p>
+                    </li>
+                    <li>
+                    	<i class="logo1_ul_li_i"></i>
+                        <P>玩家互动</P>
+                        <p>HOME</p>
+                    </li>
+                    <li>
+                    	<i class="logo1_ul_li_i"></i>
+                        <P>客户服务</P>
+                        <p>HOME</p>
+                    </li>
+                </ul>
+        </div>
+        <div class="top">
+            <a class="box_i fl">
+            	<i class="box_i_i"></i>
+            </a>
+            <a class="box_i1 fl">
+            	<i class="box_i1_i"></i>
+            </a>
+            <a class="box_i1 fl">
+            	<i class="box_i1_i"></i>
+            </a>
+            <a class="box_i1 fl">
+            	<i class="box_i1_i"></i>
+            </a>
+            <a class="box_i1 fl">
+            	<i class="box_i1_i"></i>
+            </a>
+            <div class="box_div fl">
+                <i class="box_div_i"></i>
+                <p class="box_div_p">电信一区【元素殿堂】欢迎进驻！</p>
+                <p class="box_div_p1">电信一区【元素殿堂】欢迎进驻！</p>
+                <i class="box_div_i1"></i>
+                <p class="box_div_p2">距您上次访问200条更新</p>
+                <p class="box_div_p3">关注:</p>
+            </div>
+        </div>
+        <div class="top clearfix">
+            <img src="img/main_a1 (1).jpg" class="fl"/>
+            <div class="fl">
+                <ul class="box1_ul clearfix" id="ul1">
+                    <li class="box1_ui_li">综合</li>
+                    <li>新闻</li>
+                    <li>公告</li>
+                    <li>媒体</li>
+                </ul>
+                <div class="box1_div" id="ul2">
+                    <ul class="box1_div_ul">
+                        <li class="box1_div_ul_li">
+                        	<i class="box1_div_ul_li_i"></i>
+                            4月8日大板开启 新职业术士魔神天将
+                            <i class="box1_div_ul_li_i1"></i>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">揭秘术士进化史 多张设计稿曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">竞技场上线！进入pvp激斗时代</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">天降魔神！新职业术士多图曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">4月8日大板开启 新职业术士魔神天降</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">萌属性爆表！大神手绘同人图大放送</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色揭秘终极BOSS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="box1_div_ul_li2">更多信息
+                        	<i class="i"></i>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="box1_div_ul_li">
+                        	<i class="box1_div_ul_li_i"></i>
+                            4月8日大板开启天将
+                            <i class="box1_div_ul_li_i1"></i>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色SS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色BOSS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色揭秘终OSS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色揭秘终极BOS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色揭秘终SS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色揭秘终极BOSS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="box1_div_ul_li2">更多信息</li>
+                    </ul>
+                    <ul>
+                        <li class="box1_div_ul_li">
+                        	<i class="box1_div_ul_li_i"></i>
+                            4月8日大板开启 新职业术士魔神天将
+                            <i class="box1_div_ul_li_i1"></i>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色揭秘终极BOSS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色揭秘终极BOSS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色揭秘终极BOSS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色揭秘终极BOSS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色揭秘终极BOSS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色揭秘终极BOSS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="box1_div_ul_li2">更多信息</li>
+                    </ul>
+                    <ul>
+                        <li class="box1_div_ul_li">
+                        	<i class="box1_div_ul_li_i"></i>
+                            4月8日大板开启 新职业术士魔神天将
+                            <i class="box1_div_ul_li_i1"></i>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色揭秘终极BOSS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色揭秘终极BOSS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色揭秘终极BOSS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色揭秘终极BOSS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色揭秘终极BOSS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="clearfix box1_div_ul_li1">
+                            <p class="fl">【新闻】</p>
+                            <p class="fl box1_div_ul_li1_p">两大满级副本特色揭秘终极BOSS曝光</p>
+                            <p class="fl">03/24</p>
+                        </li>
+                        <li class="box1_div_ul_li2">更多信息</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="top clearfix">
+			<a href="#" class="fl box3_a"><img src="img/main_a2.jpg" /></a>
+            <a href="#" class="fl box3_a"><img src="img/main_a2.jpg" /></a>
+            <a href="#" class="fl box3_a"><img src="img/main_a2.jpg" /></a>
+            <a href="#" class="fl box3_a"><img src="img/main_a2.jpg" /></a>
+        </div>
+        <div class="top clearfix">
+             <div class="box4_div fl">
+                <ul class="box4_ul clearfix" id="shu">
+                    <li class="box4_ul_li">
+                    	<i class="box4_ul_li_i"></i>
+                    </li>
+                    <li> <i class="box4_ul_li_i"></i></li>
+                    <li> <i class="box4_ul_li_i"></i></li>
+                    <li> <i class="box4_ul_li_i"></i></li>
+                    <li> <i class="box4_ul_li_i"></i></li>
+                    <li> <i class="box4_ul_li_i"></i></li>
+                </ul>
+                <div class="box4_div3" id="tu">	
+                    <img src="img/shenshe.jpg" class="box4_div3_img"/>
+                    <img src="img/a6.png" />
+                    <img src="img/shenshe.jpg" />
+                    <img src="img/a6.png" />
+                    <img src="img/shenshe.jpg" />
+                    <img src="img/a6.png" />
+                </div>    
+             </div> 
+             <div class="box4_div1 fl">
+             	<h3 class="box4_div1_h3">
+                活动中心
+                	<i></i>
+                </h3>
+                <ul id="tu1">
+                    <li class="box4_div4">
+                        <div class="box4_div1_div">
+                            <img src="img/1.jpg" />
+                            <i></i>
+                            <p class="box4_div1_div_p">女武神的密保</p>
+                            <p class="box4_div1_div_p1">共7,294,712人关注</p>
+                        </div>
+                        <a href="#" class="box4_div1_a">
+                            <p class="fl box4_div1_a_p">神域成长礼</p>
+                            <p class="fr box4_div1_a_p1">进行中</p>
+                        </a>
+                    </li>    
+                    <li>
+                        <div class="box4_div1_div">
+                            <img src="img/1.jpg" />
+                            <i></i>
+                            <p class="box4_div1_div_p">女武神的密保</p>
+                            <p class="box4_div1_div_p1">共7,294,712人关注</p>
+                        </div>
+                        <a href="#" class="box4_div1_a">
+                            <p class="fl box4_div1_a_p">每日登陆有惊喜</p>
+                            <p class="fr box4_div1_a_p1">进行中</p>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="box4_div1_div">
+                            <img src="img/1.jpg" />
+                            <i></i>
+                            <p class="box4_div1_div_p">女武神的密保</p>
+                            <p class="box4_div1_div_p1">共7,294,712人关注</p>
+                        </div>
+                        <a href="#" class="box4_div1_a">
+                            <p class="fl box4_div1_a_p">绑定畅游+，送十格背包</p>
+                            <p class="fr box4_div1_a_p1">进行中</p>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="box4_div1_div">
+                            <img src="img/1.jpg" />
+                            <i></i>
+                            <p class="box4_div1_div_p">女武神的密保</p>
+                            <p class="box4_div1_div_p1">共7,294,712人关注</p>
+                        </div>
+                        <a href="#" class="box4_div1_a">
+                            <p class="fl box4_div1_a_p">豪尔莫斯宝库，凯尼亚大陆奇珍异宝热卖</p>
+                            <p class="fr box4_div1_a_p1">进行中</p>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="box4_div1_div">
+                            <img src="img/1.jpg" />
+                            <i></i>
+                            <p class="box4_div1_div_p">女武神的密保</p>
+                            <p class="box4_div1_div_p1">共7,294,712人关注</p>
+                        </div>
+                        <a href="#" class="box4_div1_a">
+                            <p class="fl box4_div1_a_p">下载手机版客户端，畅想移动互联</p>
+                            <p class="fr box4_div1_a_p1">进行中</p>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="box4_div1_div">
+                            <img src="img/1.jpg" />
+                            <i></i>
+                            <p class="box4_div1_div_p">女武神的密保</p>
+                            <p class="box4_div1_div_p1">共7,294,712人关注</p>
+                        </div>
+                        <a href="#" class="box4_div1_a">
+                            <p class="fl box4_div1_a_p">神域成长礼</p>
+                            <p class="fr box4_div1_a_p1">进行中</p>
+                        </a>
+                    </li>
+                </ul>    
+             </div>  
+        </div>
+        <div class="top clearfix tops">
+        	<div class=" fl">
+            	<div class="box5_div">
+                	<p class="box5_div_p">快接入口</p>
+                    <ul class="box5_div_ul clearfix">
+                    	<li>账号管理</li>
+                        <li>兑换中心</li>
+                        <li>账号安全</li>
+                        <li>畅游知道</li>
+                        <li>BUG提交</li>
+                        <li>客户端FAQ</li>
+                        <li>玩家社区</li>
+                        <li>加速器下载</li>
+                    </ul>
+                </div>
+                <img src="img/main_a3_3.jpg" />
+                <div id="div">
+                	<p class="box5_div1_p">
+                    	<span>媒体合作专区</span>
+                    	<i></i>                       
+                    </p>
+                    <div class="box5_div1_div"></div>
+                </div>
+                <div class="box5_div2"><img src="img/examen.jpg" class="box5_div2_img" /></div>
+            </div>
+            <div class="fl box4_div5">
+            	<div>
+                	<h3 class="box4_div1_h3">玩家交流
+                    	<i></i>
+                    </h3>
+                    <ul class="clearfix box5_div3_ul" id="id1">
+                    	<li class="box5_div3_ul_li">玩家攻略</li>
+                        <li>论坛热帖</li>
+                        <li>社区精华</li>
+                        <a href="#">更多信息</a>
+                    </ul>	
+                    <div class="box5_div3" id="id2">
+                    	<div class="box5_div3_div">
+                    		<img src="img/1031.jpg" class="fl"/>
+                        	<ul class="fl box5_div3_div_ul">
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>称号：发现森林之谜 任务全攻略</li>
+                                <li>屌丝逆袭 大神成长计划开启</li>
+                                <li>生活技能之烹饪技能详细解读</li>
+                                <li>阻止科萨特复活【英雄】成就攻略！</li>
+                                <li>独家攻略！灵魂回响效率冲级攻略！</li>
+                                <li>灵魂回响生活技能玩法介绍(二)</li>
+                                <li>灵魂回响生活技能玩法介绍(一)</li>
+                       		</ul>
+                    	</div>
+                        <div >
+                    		<img src="img/1031.jpg" class="fl"/>
+                        	<ul class="fl box5_div3_div_ul">
+                                <li>·*神谕者的考验*一点满级指引</li>
+                                <li>神射手射击天赋定位</li>
+                                <li>英雄模式 黑暗咆哮之林 副本攻略+视频</li>
+                                <li>英雄模式 黑骑士监狱 副本攻略+视频</li>
+                                <li>射击系神射手天赋加点及输出指南</li>
+                                <li>【极致内测】深度解析灵魂赞歌职业</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技技能详解</li>
+                       		</ul>
+                    	</div>
+                        <div >
+                    		<img src="img/1031.jpg" class="fl"/>
+                        	<ul class="fl box5_div3_div_ul">
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                       		</ul>
+                    	</div>
+                    </div>
+                </div> 
+                <div class="box4_div5_div">
+                	<h3 class="box4_div1_h3">玩家交流
+                    	<i></i>
+                    </h3>
+                    <ul class="clearfix box5_div3_ul" id="id3">
+                    	<li class="box5_div3_ul_li">玩家攻略</li>
+                        <li>玩家攻略</li>
+                        <li>玩家攻略</li>
+                        <a href="#">更多信息</a>
+                    </ul>	
+                    <div class="box5_div3" id="id4">
+                    	<div class="box5_div3_div">
+                    		<img src="img/1031.jpg" class="fl"/>
+                        	<ul class="fl box5_div3_div_ul">
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                       		</ul>
+                    	</div>
+                        <div >
+                    		<img src="img/1031.jpg" class="fl"/>
+                        	<ul class="fl box5_div3_div_ul">
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技技能详解</li>
+                       		</ul>
+                    	</div>
+                        <div >
+                    		<img src="img/1031.jpg" class="fl"/>
+                        	<ul class="fl box5_div3_div_ul">
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                       		</ul>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fl kuanl">
+            	<h3 class="box4_div1_h3 .box4_div1_h3s">玩家交流
+                    <i></i>
+                </h3>
+                <ul class="box6_ul">
+                	<li class="box6_ul_li clearfix">
+                    	<p class="box6_ul_li fl">新手入门</p>
+                        <a href="#" class="box6_ul_li_a">注册账号|</a>
+                        <a href="#">注册账号|</a>
+                        <a href="#">注册账号|</a>
+                    </li>
+                    <li class="box6_ul_li clearfix">
+                    	<p class="box6_ul_li fl">新手入门</p>
+                        <a href="#" class="box6_ul_li_a">注册账号|</a>
+                        <a href="#">注册账号|</a>
+                        <a href="#">注册账号|</a>
+                    </li>
+                    <li class="box6_ul_li clearfix">
+                    	<p class="box6_ul_li fl">新手入门</p>
+                        <a href="#" class="box6_ul_li_a">注册账号|</a>
+                        <a href="#">注册账号|</a>
+                        <a href="#">注册账号|</a>
+                    </li>
+                    <li class="box6_ul_li clearfix">
+                    	<p class="box6_ul_li fl">新手入门</p>
+                        <a href="#" class="box6_ul_li_a">注册账号|</a>
+                        <a href="#">注册账号|</a>
+                        <a href="#">注册账号|</a>
+                    </li>
+                    <a href="#" class="box6_ul_a">进入资料站</a>
+                </ul>
+                <h3 class="box4_div1_h3 box4_div1_h3s">玩家交流
+                    	<i></i>
+                    </h3>
+                <ul class="clearfix box5_div3_ul" id="id5">
+                    	<li class="box5_div3_ul_li">玩家攻略</li>
+                        <li>玩家攻略</li>
+                        <a href="#">更多信息</a>
+                </ul>	
+                <div class="box5_div3 box5_div3s" id="id6">
+                    	<div class="box5_div3_div">
+                    		<img src="img/1031.jpg" class="fl"/>
+                        	<ul class="fl box5_div3_div_ul">
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                       		</ul>
+                    	</div>
+                        <div >
+                    		<img src="img/1031.jpg" class="fl"/>
+                        	<ul class="fl box5_div3_div_ul">
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技能之烹饪技能详解</li>
+                                <li>生活技技能详解</li>
+                       		</ul>
+                    	</div>
+                        
+                </div>
+            </div>
+        </div>
+        
+        <div class="bottom">
+   		<p class="bottom_p">
+        	<i class="i1"></i>
+        	健康游戏公告
+       		<i class="i2"></i>
+       </p>
+       <p class="bottom_p1">抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+       <p class="bottom_p1">本游戏适合18周岁以上的成年人用户，未满18周岁的未成年用户请在家长的监督下进行游戏。</p>
+       <i class="i3"></i>
+       <div class="clearfix">
+       		<i class="i4 fl"></i>
+            <i class="i5 fl"></i>
+            <div class="fl bottom_div">
+            	<P class="bottom_p2">北京畅游时代数码技术有限公司版权所有 COPYRIGHT © 2011 CHANGYOU.COM LIMITED. ALL RIGHTS RESERVED. 法律声明 | 联系我们</P>
+                <p class="bottom_p2">京网文[2011]0260-093号 | 京ICP证：070525号</p>
+            </div>
+       </div>
+   </div>
+   </div>
+     
+      
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

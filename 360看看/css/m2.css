@@ -1,0 +1,151 @@
+#m2box{
+	display:inline-block;
+	position: relative;
+	background:#fff;
+}
+.imgbox{
+	position: relative;
+}
+.imgbox .m2box_img-tit{
+	position: absolute;
+	width: 100%;
+	height:36px;
+	line-height: 36px;
+	background:#000;
+	text-align: center;
+	bottom:0;
+	left:0;
+	color:#fff;
+}
+#m2box .btnbox,#m2box .btnbox .btn{
+	position: absolute;
+	width:45px;
+	height:80px;
+	top:50%;
+	margin-top: -40px;
+	left:0;
+	z-index:2;
+}
+#m2box .btnbox .btn{
+	width:45px;
+	height:80px;
+	display:block;
+	background:url(../img/m-btnbg-ico.png) no-repeat 0 -160px;
+}
+#m2box .btnbox .btn:hover{
+	background-position:0 -240px;
+}
+#m2box .m2box_img-tit strong{
+	color:#ff5d31;
+	font-size:14px;
+	padding:0 3px;
+	font-weight: bold;
+}
+.m2box-tit{
+	width:100%;
+	padding:14px 0 13px 0;
+	position: relative;
+	border-bottom:1px solid #ebebeb;
+}
+.m2box-tit p{
+	padding-left: 10px;
+}
+.m2box-tit1{
+	margin-bottom: 12px;
+	color:#333;
+}
+.m2box-tit2{
+	color:#999;
+}
+/*以下为onmouseover效果-前面加btn*/
+#m2box .pabox{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	cursor:pointer;
+	display:none;
+}
+.btn #m2box .pabox{
+	display:block;
+}
+/********/
+.opabg{
+	background:#000;
+	opacity:.3;
+	filter:alpha(opacity=30);
+	position: absolute;
+	width:100%;
+	height:100%;
+}
+.opacmain{
+	position:absolute;
+	top:0;
+	left:0;
+	padding-top:33px;
+	width:100%;
+}
+.opacmain dl{
+	text-align: center;
+	width:100%;
+	font-size:14px;
+	color:#fff;
+}
+.opacmain dt,.opacmain dd{
+	width:166px;
+	margin:0 auto;
+	white-space:nowrap;
+	text-align:left;
+}
+.opacmain dt{
+	margin-bottom: 18px;
+}
+.sbox{
+	padding-bottom: 29px;
+}
+.mb-star{
+	width:100px;
+	height:16px;
+	background:url(../img/mb-star.png) repeat-x 0 0;
+	display:inline-block;
+}
+.mb-star span{
+	display:block;
+	background:url(../img/mb-star.png) repeat-x 0 -33px;
+	height:16px;
+	width:48%;
+}
+.opacmain .s-tit{
+	margin-bottom: 15px;
+	opacity:.9;
+}
+#m2box .pabox_b{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height:100%;
+	background:#87c556;
+	display:none;
+}
+/***************/
+.btn #m2box .pabox_b{
+	display:block;
+}
+.pabox_b a,.pabox_b span{
+	float: left;
+	height: 30px;
+	margin-top:17px;
+}
+.pabox_b span{
+	width: 30px;
+	background:url(../img/m111.png);
+	margin:17px 10px 0 16px;
+}
+.pabox_b a{
+	color:#fff;
+	font-size: 18px;
+	font-weight: bold;
+	line-height:30px;
+}

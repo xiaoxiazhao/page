@@ -1,0 +1,67 @@
+/*
+李敏深
+2015年6月5日
+这个是不靠谱不CSS外链样式表
+*/
+*{
+	padding:0px;
+	margin:0px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	line-height:1em;
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+ul,ol{
+	list-style:none;
+}
+/*以上为初始化*/
+table{
+	border-collapse:collapse;
+}
+td,th{
+	padding:0;
+}
+/*表格清除默认样式*/
+.clearfix:after{
+	display:block;
+	content:"";
+	clear:both;}
+.clearfix{zoom:1;}
+/*清楚浮动*/
+.divkakaka{
+	width:30%;
+	height:100px;
+	border:1px solid red;
+	margin:0 auto;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size: 12px;
+	font-weight: normal;	
+}
+i,em{
+	font-style: normal;
+}
+b,strong{
+	font-weight: normal;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.box{
+	margin:0 auto;
+}
+img{
+	vertical-align:top;
+}
+table{
+	border-collapse:collapse;
+}
+th,td{
+	padding:0;
+}

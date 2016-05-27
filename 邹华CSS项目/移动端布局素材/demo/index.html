@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="inatial-scale=1.0,user-scalabel=no,width=device-width" />
+<title>无标题文档</title>
+<style>
+	*{ padding:0; margin:0; box-sizing:border-box;}
+	html{ font-size:12px; font-family:'Microsoft YaHei';}
+	a{ text-decoration:none; color:#7f7f7f;}
+	li{ list-style:none;}
+	
+	
+	nav,.sec_box,.head{ min-width:320px; max-width:640px;  margin:0 auto; overflow:hidden; margin-bottom:10px; box-shadow:1px 1px 4px #CCC;}
+	
+	nav a{ width:25%; float:left; height:50px; text-align:center; position:relative;}
+	nav a:before{ width:28px; height:20px; background:url(img/home-icons.png) no-repeat 0 -88px; content:''; display:block; background-size:100%; margin:4px auto;}
+	nav a:after{ width:1px; height:30px; content:''; background:#CCC; display:block; position:absolute; top:50%; right:0; margin-top:-15px;}
+	nav a:nth-child(4):after{ background:none;}
+	nav .app_link2:before{ background-position:0 -116px;}
+	nav .app_link3:before{ background-position:0 -144px;}
+	nav .app_link4:before{ background-position:0 -172px;}
+	
+	
+	.sec_box{ border-top:1px solid #CCC;}
+	.sec_box li{ float:left; width:33.3%; border-right:1px solid #CCC; padding:10px 5%; text-align:center;}
+	.sec_box img{ width:100%; padding-bottom:8px; vertical-align:top;}
+	.sec_box span{ color:#d8505c; display:block;}
+	.sec_box li:nth-child(3){ width:33.4%; border:none;}
+	.sec_box .seckill{ background:#d8505c; color:#FFF; margin:8px 0;}
+	
+	.ad{ min-width:320px; max-width:640px; margin:0 auto;}
+	.ad img{ width:100%;}
+	
+	.head{}
+	header{ display:table; width:100%;}
+	header h1{ width:40px; height:40px; border:1px solid red; display:table-cell;}
+	header .cell2{ width:90%; border:1px solid red; display:table-cell;}
+	header .cell3{ width:30px; border:1px solid red; display:table-cell;}
+</style>
+</head>
+
+<body>
+	<div class="head">
+        <header>
+            <h1 class="cell1"></h1>
+            <div class="cell2"></div>
+            <div class="cell3"></div>
+        </header>
+     </div>
+	<div class="ad">
+    	<img src="img/pic03.jpg" />
+    </div>
+	<nav>
+    	<a href="#" class="app_link1">购物车</a>
+        <a href="#" class="app_link2">充值</a>
+        <a href="#" class="app_link3">机票</a>
+        <a href="#" class="app_link4">我的</a>
+    </nav>
+    <ul class="sec_box">
+    	<li>
+        	<img src="img/pic01.jpg" />
+            <span>¥20.00</span>
+            <span class="seckill">7.1折</span>
+        </li>
+        <li>
+        	<img src="img/pic01.jpg" />
+            <span>¥20.00</span>
+            <span class="seckill">7.1折</span>
+        </li>
+        <li>
+        	<img src="img/pic01.jpg" />
+            <span>¥20.00</span>
+            <span class="seckill">7.1折</span>
+        </li>
+    </ul>
+</body>
+</html>

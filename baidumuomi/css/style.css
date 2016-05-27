@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+.m_w{ width:980px; margin:0 auto;}
+
+.head{ line-height:28px; border-bottom:1px solid #cccccc; position:relative; margin-bottom:28px;}
+.head b{ font-weight:bold;}
+.head a{ color:#73abc9;}
+.head .fr a{ border-right:1px solid #ccc; padding:0 20px; position:relative;}
+.head i{ position:absolute; width:6px; height:3px; background:url(../img/j_2.gif) no-repeat; top:50%; margin-top:-2px; right:10px;}
+.ps_box{ position:absolute; left:120px; top:0; border:1px solid #CCC; padding-right:20px; padding-left:10px;}
+.ps_box b{ width:4px; height:7px; background:url(../img/j_1.gif); position:absolute; left:-4px; top:10px;}
+.ps_box i{ width:14px; height:13px; background:url(../img/closeBtn.gif); position:absolute; right:6px; top:10px; cursor:pointer;}
+
+#logo{ float:left; width:320px; height:47px; background:url(../img/logo.png) no-repeat; text-indent:-999em; border-right:1px solid #CCC;}
+#logo a{ display:block; height:100%;}
+.searchBox{ float:left; width:410px; margin-left:30px;}
+.searchBox .txt{ width:310px; height:38px; border:1px solid #CCC; float:left;}
+.searchBox .btn{ width:79px; height:40px; float:left; background:url(../img/seach_ico.gif) no-repeat 6px center #ff658e; color:#FFF; font-size:16px; padding-left:20px;}
+.head_m_r{ float:right;}
+.searchBox a{ color:#999; padding:0 8px;}
+.search_hot{ margin-top:10px;}
+.head_m_r{ margin-right:58px;}
+
+.nav{ height:38px; background:#ff658e; border:1px solid #fe5985; position:relative; margin-top:8px;}
+.nav_h3{ width:260px; height:46px; background:#fafafa; position:absolute; bottom:-1px; font-size:16px; text-align: center; line-height:46px;}
+.nav_h3 i{ width:5px; height:47px; background:url(../img/nav_all_ico.gif) no-repeat; position:absolute; right:-5px; top:-1px;}
+.set_ico{ width:26px; height:18px; background:url(../img/set-ico.gif) no-repeat ; position:absolute; top:-10px; right:10px;}
+.nav_ul  { margin-left:265px;}
+.nav_ul li { position:relative; float:left;}
+.nav_ul a{ padding:10px 20px; display:inline-block; color:#FFF; font-size:14px;}
+.nar_r{ float:right; margin-top:10px;}
+.nar_r a,.nar_r p{ font-size:12px; color:#FFF;}
+.nav_ul a:hover,.nav_ul .active{ background:#ee3968;}
+.downPhone{ background:url(../img/down_ico.gif) no-repeat left center; padding-left:20px; margin-right:16px;}
+.nar_r .list{ background:url(../img/j_3.gif) no-repeat right center; padding-right:10px;}
+.main_menu{ float:left; width:220px;  box-shadow:4px 2px 14px #CCC; padding:0 20px; height:485px;}
+.main_menu{ line-height:100%;}
+.main_menu li{ height:47px; border-bottom:1px solid #f6f6f6; padding-top:9px;}
+.main_menu h3{ background:url(../img/icoPng.png) no-repeat; padding-left:30px; font-size:14px; font-weight:bold; height:24px; line-height:24px;}
+.main_menu p{ padding-left:30px; margin-top:4px;}
+.main_menu .ico_1{ background-position:0 0;}
+.main_menu .ico_2{ background-position:0 -26px;}
+.main_menu .ico_3{ background-position:0 -50px;}
+.main_menu .ico_4{ background-position:0 -81px;}
+.main_menu .ico_5{ background-position:0 -111px;}
+.main_menu .ico_6{ background-position:0 -139px;}
+.main_menu .ico_7{ background-position:0 -169px;}
+.main_menu .ico_8{ background-position:0 -204px;}
+.main_menu .last{ border-bottom:none;}
+
+.main_cont_r{ float:right; width:710px;}
+.main_cont_r_list li{ height:42px; line-height:42px; border-bottom:1px solid  #f3f3f3; padding-left:10px;}
+.main_cont_r_list span{ color:#999;}
+.main_cont_r_list a{ padding:0 10px;}
+.c_pink{ color:#ff6699;}
+
+.main_cont_h3{ background:url(../img/star_ico.gif) no-repeat left center; font-size:18px; margin-left:20px; padding-left:24px; margin-top:10px;}
+.main_cont_h3 p{ float:right;  margin-right:10px; margin-top:8px;}
+.main_cont_h3 i{ width:10px; height:10px; border-radius:5px; background:#cccccc; float:left; margin-left:10px; cursor:pointer;}
+.main_cont_h3 .active{ background:#ff6699;}
+.showbox{ margin-top:10px; border:1px solid #CCC; margin-left:10px;}
+.showbox p{ display:none;}
+.showbox  img{ vertical-align:top;}
+.showbox .show{ display:block;}
+
+.main_new{ border:1px solid #e1e2e3; background:#FFF; margin-top:10px;}
+.main_new h3{ font-size:20px; position:relative; margin:0 20px; border-bottom:1px solid #e1e2e3; height:42px; line-height:42px;}
+.main_new .time{ position:absolute; left:112px; top:2px; font-size:12px; color:#999999;}
+.main_new .time span{ background:#666666; color:#FFF; font-size:14px; font-weight:bold; border-radius:5px; padding:4px 8px;}
+.more_btn{ font-size:12px; float:right; color:#999; margin-right:6px;}
+.main_new_img{ border:1px solid #e1e2e3;}
+.main_new_list{ margin:10px 0px 10px 20px;}
+.main_new_list li{ margin-right:20px; float:left;}
+.main_new_list h4{ font-size:15px; color:#2b2b2b;}
+.main_new_list  h4 span{ color:#666666; font-size:14px;}
+.price_box .price{ font-size:20px; color:#fd8e51;}
+.price_box .price i{ font-size:24px;}
+.price_box  span{ color:#999999; font-size:14px;}
+.price_box .oldp{ text-decoration:line-through;}
+
+
+.user_change{ margin:19px auto 13px;}
+.user_change a{ font-weight:bold;}
+.sort_box{ float:left;}
+.sort_box a{ float:left; margin-right:20px; padding-right:13px;}
+.sort_box .active{ color:#ff6699;}
+.down_ico{ background:url(../img/down_ico2.gif) no-repeat right center;}
+.up_ico{ background:url(../img/up_ico.gif) no-repeat right center;}
+.change_ico{ background:url(../img/change_ico.gif) no-repeat right center;}
+.check_box{ float:left;}
+.c_checkbox{ background:url(../img/check_ico.gif) no-repeat; padding-left:20px; position:relative;}
+.hot{ width:22px; height:15px; position:absolute; background:url(../img/hot.gif) no-repeat; top:-12px; right:-10px;}
+.page_box{ float:right;}
+.page_box a{ font-weight:normal;}
+.prev_page{ background:url(../img/l_j.gif) no-repeat left center; padding-left:10px; margin-right:16px;}
+.next_page{ background:url(../img/r_j.gif) no-repeat right center; padding-right:10px; margin-left:16px;}
+.page_box i{ color:#F69; font-weight:bold;}
+
+.foot{ border-top:1px solid #dbdbdb; background:#fafafa; padding-top:45px; border-bottom:1px solid red;}
+
+.foot_ul { margin-bottom:63px;}
+.foot_ul li{ width:170px; float:left; border-left:1px solid #ccc; height:195px;}
+.foot_ul  h3{ font-size:15px; line-height:30px; height:30px; border-left:2px solid #fe8baa; padding-left:25px; margin-bottom:14px;}
+.foot_ul p{ padding-left:25px; line-height:28px;}
+.foot_ul a{ color:#999999;}
+.foot_ul .last h3{ height:32px; background:url(../img/phone_bg.gif) no-repeat; padding-left:98px; color:#fe8baa; font-size:18px;}
+.foot_ul .last{ width:290px;}
+.foot_p{ text-align:center;}
+
+

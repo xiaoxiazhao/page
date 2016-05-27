@@ -1,0 +1,511 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+html{background:#FFF;color:#000;}
+body{ font-size:12px; margin:0;line-height:100%;}
+h1,h2,h3,h4,h5,h6{ margin:0; font-weight:normal; font-size:12px;}
+a{ color:#000; text-decoration:none;}
+ol,ul,li{ list-style:none; padding:0; margin:0;}
+p{ margin:0;}
+i,em{ font-style:normal;}
+b,strong{ font-weight:normal;}
+a img{ border:none;}
+table{border-collapse:collapse;}
+.clearfix:after{ display:block; content:""; clear:both;}
+.clearfix{ zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+body{
+	background:#F4F4F4;
+}
+.hot_box{
+	width:1238px;
+	margin:0 auto;
+	margin-top:44px;
+}
+.hot_left{
+	width:1000px;
+	float:left;
+}
+.hot_nav h2{
+	font-size:31px;
+	font-weight:bold;
+	float:left;
+}
+.hot_child{
+	float:left;
+	margin-left:17px;
+}
+.hot_child a{
+	float:left;
+	font-size:12px;
+	height:20px;
+	line-height:20px;
+	padding:0 14px 0 18px;
+	border-right:1px solid #CCCCCC;
+}	
+.hot_nav a{
+	float:left;
+	line-height:20px;
+	padding-left:18px;
+}
+.hot_nav .more:hover{
+	color:#FA994E;
+	}
+.hot_child .on{
+	color:#FA994E;
+}
+.hot_list_box{
+	margin-top:20px;
+}
+.hot_big_left{
+	width:380px;
+	float:left;
+}
+.hot_big_left .pic{
+	display:block;
+	position:relative;
+	width:380px;
+}
+.hot_big_left .details{
+	display:block;
+	width:363px;
+	height:22px;
+	line-height:22px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:22px;
+	background:rgba(0,0,0,0.3);
+	padding-left:17px;
+	}
+.pic img{
+	display:block;
+}
+.details span{
+	width:12px;
+	height:10px;
+	background:url(img/433.png) no-repeat;
+	margin:6px 0 0 10px;
+}
+.hot_big_left p{
+	width:380px;
+	height:34px;
+	background:#fff;
+
+}
+.hot_big_left .new_tltle{
+	line-height:34px;
+	margin-left:10px;
+	}
+.new_tltle:hover{
+	color:#FD8D4E;
+}
+.hot_big_right{
+	width:600px;
+	margin-left:20px;
+	float:left;
+}
+.small_new_box{
+	width:180px;
+	float:left;
+	margin:0 20px 20px 0;
+}
+.small_new_box .pic{
+	width:180px;
+	display:block;
+	position:relative;
+}
+.small_new_box .details{
+	width:180px;
+	display:block;
+	position:absolute;
+	left:0;
+	bottom:0;
+	background:rgba(0,0,0,0.5);
+	height:22px;
+	line-height:22px;
+	}
+.small_new_box p{
+	height:34px;
+	background:#FFF;
+	line-height:34px;
+}
+.small_new_box .new_tltle{
+	margin-left:10px;
+}
+.hot_list_box li{
+	display:none;
+}
+.hot_list_box .show{
+	display:block;
+}
+.hot_right{
+	width:238px;
+	float:left;
+}
+.hot_right h2{
+	font-size:22px;
+	font-weight:bold;
+	margin-top:6px;
+}
+.hot_search{
+	margin-top:22px;
+}
+.hot_search a{
+	text-align:center;
+	color:#9A5A4A;
+	font-size:14px;
+	display:inline-block;
+}
+.hot_search .one{
+	width:118px;
+	height:70px;
+	background:#FBE8E3;
+	line-height:70px;
+	
+}
+.hot_search .two{
+	width:118px;
+	height:142px;
+	background:#FAD9D0;
+	line-height:142px;
+	margin-left:2px;
+	float:right;
+}
+.hot_search .three{
+	width:58px;
+	height:142px;
+	background:#FBE8E3;
+	line-height:26px;
+	float:left;
+	margin-top:2px;
+}
+.hot_search .four{
+	width:58px;
+	height:70px;
+	background:#FAD9D0;	
+	line-height:26px;
+	float:right;
+	margin-top:2px;	
+}
+.hot_search .five{
+	width:178px;
+	height:70px;
+	background:#FBE8E3;	
+	line-height:70px;
+	float:right;
+	margin-top:2px;
+}
+.hot_search .six{
+	width:118px;
+	height:70px;
+	background:#FBE8E3;	
+	line-height:70px;
+	float:left;
+	margin-top:2px;
+}
+.hot_search .seven{
+	width:118px;
+	height:70px;
+	background:#FAD9D0;	
+	line-height:70px;
+	float:right;
+	margin-top:2px;
+}
+.hot_search a:hover{
+	background:#B3D895;
+	color:#fff;
+}
+
+</style>
+
+	
+	
+	
+	
+	
+	
+	
+
+</head>
+
+<body>
+<div class="hot_box clearfix" id="dayHot">
+	<div class="hot_left">
+            <div class="hot_nav clearfix">
+                <h2>综艺</h2>
+                <div class="hot_child" id="hot">
+                    <a href="javascript:;" class="on">热门</a>
+                    <a href="javascript:;">选秀</a>
+                    <a href="javascript:;">情感</a>
+                    <a href="javascript:;">访谈</a>
+                </div>
+                <a href="javascript:;" class="more">更多&gt;&gt;</a>
+            </div>
+        	<ul class="hot_list_box" id="ulbox">
+            		<li class="show">
+                    		<div class="hot_big_left">
+                            	  <a href="javascript:;" class="pic">
+                                		<img src="img/t012cb763333dba1ac4.jpg" />
+                                        <p class="details"><span></span>嚣张女乘客打到协警</p>
+                                   </a>
+                                
+                                <p>
+                                	<a href="javascript:;" class="new_tltle">非诚勿扰</a>
+                                    <p>陆毅加盟报追老婆秘籍</p>
+                                </p>
+                            </div>
+							<div class="hot_big_right">
+                            	<div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                            </div>
+                    </li>
+                    <li>
+                    		<div class="hot_big_left">
+                            	  <a href="javascript:;" class="pic">
+                                		<img src="img/t016d33be0eb1a1fa1e.jpg" />
+                                        <p class="details"><span></span>嚣张女乘客打到协警</p>
+                                   </a>
+                                
+                                <p><a href="javascript:;" class="new_tltle">四川豪车为急救车让路</a></p>
+                            </div>
+							<div class="hot_big_right">
+                            	<div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                            </div>
+                    </li>
+                    <li>
+                    		<div class="hot_big_left">
+                            	  <a href="javascript:;" class="pic">
+                                		<img src="img/t01f8b687ca93fa9551.jpg" />
+                                        <p class="details"><span></span>嚣张女乘客打到协警</p>
+                                   </a>
+                                
+                                <p><a href="javascript:;" class="new_tltle">四川豪车为急救车让路</a></p>
+                            </div>
+							<div class="hot_big_right">
+                            	<div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                            </div>
+                    </li>
+                    <li>
+                    		<div class="hot_big_left">
+                            	  <a href="javascript:;" class="pic">
+                                		<img src="img/t01973672bb0855f9e1.jpg" />
+                                        <p class="details"><span></span>嚣张女乘客打到协警</p>
+                                   </a>
+                                
+                                <p><a href="javascript:;" class="new_tltle">四川豪车为急救车让路</a></p>
+                            </div>
+							<div class="hot_big_right">
+                            	<div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                                <div class="small_new_box">
+                            	  	<a href="javascript:;" class="pic">
+                                		<img src="img/t0194ed7368e22b2e8f.jpg" />
+                                        <p class="details"><span></span>理由：她在电视里瞪我</p>
+                                   	</a>
+                                
+                               		<p><a href="javascript:;" class="new_tltle">赵薇招观众奇葩理由起诉</a></p>
+                                </div>
+                            </div>
+                    </li>
+                    
+                 
+            </ul>    
+    </div>
+    <div class="hot_right">
+    	<h2>热搜词</h2>
+        <div class="hot_search clearfix">
+        	<a href="javascript:;" class="one">MERS入侵广东</a>
+            <a href="javascript:;" class="two">安钧璨因癌去世</a>
+            <a href="javascript:;" class="three">长江客船沉没</a>
+            <a href="javascript:;" class="four">吴佩慈二胎</a>
+            <a href="javascript:;" class="five">网报李晨求婚成功</a>
+            <a href="javascript:;" class="six">我们相爱吧停播</a>
+            <a href="javascript:;" class="seven">长颈鹿争女友</a>
+        </div>
+    </div>           
+</div>
+</body>
+</html>
